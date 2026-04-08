@@ -1,0 +1,44 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.color-1 {
+    color: #475569;
+}
+
+.bg-shad-1 {
+    background: #014C88;
+}
+
+.logo-img {
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.menu {
+    gap: 32px;
+}
+
+.menu li,
+.btnExpCourse {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.btnExpCourse {
+    padding: 10px 24px;
+    border-radius: 33554400px;
+    background: #014C88;
+    box-shadow: 0 10px 15px 0 rgba(59, 130, 246, 0.30), 0 4px 6px 0 rgba(59, 130, 246, 0.30);
+}
+
+.footerContainer {
+    padding: 64px 0;
+}

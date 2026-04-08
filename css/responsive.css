@@ -1,0 +1,19 @@
+@media (max-width:764px) {
+    .menu {
+        gap: 14px;
+    }
+
+    #navbarSupportedContent {
+        border-top: 1px solid #014C88;
+    }
+}
+
+@media (min-width:764px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+}
