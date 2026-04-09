@@ -184,8 +184,16 @@ body {
 }
 
 .whyChoosePara {
-    max-width: 620px;
+    max-width: 800px;
     width: 100%;
+}
+
+.play-overlay {
+    width: 80px;
+    height: 80px;
+    border-radius: 48px;
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.50);
 }
 
 /* Footer */

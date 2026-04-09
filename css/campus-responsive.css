@@ -29,6 +29,10 @@
         gap: 20px !important;
     }
 
+    .gap-md-30 {
+        gap: 30px !important;
+    }
+
     .gap-md-40 {
         gap: 40px !important;
     }
