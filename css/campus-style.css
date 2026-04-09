@@ -54,6 +54,13 @@ body {
     font-weight: 400 !important;
 }
 
+.ws-8 {
+    word-spacing: 8px !important;
+}
+
+.ws-20 {
+    word-spacing: 20px !important;
+}
 
 /* Header */
 .logo-img {
@@ -106,7 +113,7 @@ body {
 }
 
 .mainHeading {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 66px;
     letter-spacing: -1.5px;
@@ -121,7 +128,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 29.25px;
-    /* 162.5% */
 }
 
 .btn-apply,
@@ -146,76 +152,22 @@ body {
 }
 
 /* Main */
-.countBox {
-    min-width: 200px;
-}
-
-.skillImage {
-    max-height: 360px;
-    height: 100%;
-}
-
-.skillImage img,
-.careerOppImg img,
-.main-img {
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.00);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.main-img {
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(1, 76, 136, 0.30) 0%, rgba(1, 76, 136, 0.00) 100%) !important;
-}
-
-.main-img img {
-    border-radius: 16px;
-}
-
-.bgColorLinear {
-    padding: 48px 0px;
-}
-
-.bgLinear,
-.bgColorLinear {
-    border-bottom: 0.8px solid #F1F5F9;
-    background: linear-gradient(135deg, #EFF6FF 0%, #F1F7FF 14.29%, #F4F9FF 28.57%, #F6FAFF 42.86%, #F8FBFF 57.14%, #FAFCFF 71.43%, #FDFEFF 85.71%, #FFF 100%);
-}
-
-.iconBtn {
-    width: 48px;
-    height: 48px;
-    padding: 12px 12px 0 12px;
-    border-radius: 16px;
-}
-
-.iconBthHead,
-.programHeading,
 .whyCHooseHeading {
     font-size: 20px;
     line-height: 30px;
 }
 
-.programHead h3,
-.softSkillHead h3,
-.careerOppHead h3,
-.eligibeHead h3,
 .whyChooseHead h3 {
     font-size: 36px;
     line-height: 40px;
 }
 
-.programHead span,
-.softSkillHead span,
-.careerOppHead span,
-.eligibeHead span,
 .whyChooseHead span {
     width: 80px;
     height: 6px;
     border-radius: 26843500px;
 }
 
-.programCard,
 .whyCHooseCard {
     border-radius: 16px;
     border: 0.8px solid #F1F5F9;
@@ -224,7 +176,6 @@ body {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-.programIcon,
 .whyCHooseIcon {
     width: 60px;
     height: 60px;
@@ -232,79 +183,8 @@ body {
     border-radius: 16px;
 }
 
-.programPara {
-    max-width: 460px;
-    width: 100%;
-}
-
 .whyChoosePara {
     max-width: 620px;
-    width: 100%;
-}
-
-.eligiblityBg {
-    background: linear-gradient(135deg, #014C88 0%, #014E8B 14.29%, #01508E 28.57%, #015291 42.86%, #025494 57.14%, #025698 71.43%, #02589B 85.71%, #025A9E 100%), #FFF;
-}
-
-.eligiblityCard {
-    padding: 40px;
-    gap: 16px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.25);
-}
-
-.infra-banner {
-    min-height: 320px;
-}
-
-.infra-banner img {
-    height: 360px;
-}
-
-.infra-overlay {
-    background: linear-gradient(to top, rgba(10, 22, 50, .88) 0%, rgba(10, 22, 50, .40) 55%, transparent 100%);
-}
-
-.infra-content {
-    padding: 10px 48px;
-}
-
-.infra-content h2 {
-    font-size: 28px;
-    line-height: 36px;
-}
-
-.infra-content p,
-.plus-box span {
-    color: rgba(255, 255, 255, 0.90);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-.careerOppLogo {
-    width: 36px;
-    height: 36px;
-    padding: 8px 8px 0 8px;
-    border-radius: 26843500px;
-    background: #EFF6FF;
-}
-
-.plus-box {
-    padding: 25px;
-    border-radius: 16px;
-    border: 0.8px solid rgba(1, 76, 136, 0.10);
-    background: #EFF6FF;
-}
-
-.cta-heading {
-    font-size: 42px;
-    line-height: 48px;
-}
-
-.cta-para {
-    max-width: 800px;
     width: 100%;
 }
 
