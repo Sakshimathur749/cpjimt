@@ -3,29 +3,125 @@
         gap: 14px;
     }
 
+    .skillImage img {
+        height: auto;
+    }
+
+    .infra-banner img {
+        height: 310px;
+    }
+
+    .programPara,
+    .whyChoosePara {
+        max-width: 100%;
+        width: 100%;
+    }
+
     #navbarSupportedContent {
         border-top: 1px solid #014C88;
     }
 
+    .containerPy,
     .footerContainer {
-        padding: 40px 0px;
+        padding: 40px 10px !important;
+    }
+
+    .bgColorLinear {
+        padding: 30px 10px;
+    }
+
+    .infra-content {
+        padding: 10px 20px;
+    }
+
+    .programCard,
+    .eligiblityCard,
+    .whyCHooseCard,
+    .plus-box {
+        padding: 20px;
     }
 
     .gap-md-20 {
         gap: 20px !important;
     }
+
+    .gap-md-40 {
+        gap: 40px !important;
+    }
+
+    .mainHeading {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .cta-heading,
+    .careerOppHead h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .programHead h3,
+    .softSkillHead h3,
+    .eligibeHead h3,
+    .whyChooseHead h3 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .infra-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .softSkillPara,
+    .whyChoosePara,
+    .cta-para,
+    .careerOppPara {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .mainPara,
+    .programPara,
+    .softSkillPoint,
+    .eligiblityPoint,
+    .whyChoosePara,
+    .plus-box span,
+    .btn-apply,
+    .btn-brochure,
+    .btn-visit {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .iconBthHead,
+    .programHeading,
+    .whyCHooseHeading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .careerOppPoint {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .badge-main {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
 }
 
 @media (min-width:764px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: block !important;
-    }
-
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
-
     .gap-48 {
         gap: 48px !important;
+    }
+
+    .gap-65 {
+        gap: 65px !important;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
     }
 }
