@@ -1,4 +1,27 @@
-@media (max-width:764px) {
+@media (min-width:1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+}
+
+@media (max-width:993px) {
+    .custom-dropdown-menu {
+        box-shadow: none !important;
+        border-radius: 0px !important;
+    }
+
+    .custom-dropdown-menu .dropdown-item,
+    .custom-dropdown-menu {
+        background-color: #014C88;
+        color: white !important;
+    }
+}
+
+@media (max-width:769px) {
     .menu {
         gap: 14px;
     }
@@ -103,6 +126,15 @@
         font-size: 12px;
         line-height: 20px;
     }
+
+    .menu {
+        gap: 10px !important;
+    }
+
+    .headbanner {
+        font-size: 13px;
+    }
+
 }
 
 @media (min-width:764px) {
@@ -118,12 +150,26 @@
         gap: 100px !important;
     }
 
+    .skillImage {
+        max-height: 300px;
+        height: 100%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
     }
 
-    .skillImage {
-        max-height: 300px;
-        height: 100%;
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .menu {
+        gap: 18px;
     }
 }

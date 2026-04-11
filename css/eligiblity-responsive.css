@@ -1,4 +1,27 @@
-@media (max-width:764px) {
+@media (min-width:1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+}
+
+@media (max-width:993px) {
+    .custom-dropdown-menu {
+        box-shadow: none !important;
+        border-radius: 0px !important;
+    }
+
+    .custom-dropdown-menu .dropdown-item,
+    .custom-dropdown-menu {
+        background-color: #014C88;
+        color: white !important;
+    }
+}
+
+@media (max-width:769px) {
     .menu {
         gap: 14px;
     }
@@ -50,6 +73,10 @@
         gap: 40px !important;
     }
 
+    .menu {
+        gap: 10px !important;
+    }
+
     .mainHeading {
         font-size: 35px;
         line-height: 48px;
@@ -95,6 +122,10 @@
         line-height: 24px;
     }
 
+    .headbanner {
+        font-size: 13px;
+    }
+
     .iconBthHead,
     .programHeading,
     .whyCHooseHeading {
@@ -111,8 +142,22 @@
     .gap-65 {
         gap: 65px !important;
     }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
 
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .menu {
+        gap: 18px;
     }
 }
