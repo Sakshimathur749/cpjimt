@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 .font-robots {
@@ -48,6 +49,10 @@ body {
 
 .color-7 {
     color: #64748B !important;
+}
+
+.color-8 {
+    color: #94A3B8 !important;
 }
 
 .bg-shad-1 {
@@ -119,7 +124,8 @@ body {
 .headbanner,
 .accreditionpara,
 .recognitionHeading,
-.disclaimer-icon {
+.disclaimer-icon,
+.disclaimer-head {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -252,9 +258,15 @@ body {
     border-radius: 16px;
 }
 
+.mainHeading {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -1.5px;
+}
+
 /* Main */
-.whyCHooseHeading,
-.disclaimer-head {
+.whyCHooseHeading {
     font-size: 20px;
     line-height: 30px;
 }
@@ -265,7 +277,8 @@ body {
     line-height: 40px;
 }
 
-.whyChooseHead span {
+.whyChooseHead span,
+.softSkillHead span {
     width: 80px;
     height: 6px;
     border-radius: 26843500px;
@@ -287,6 +300,36 @@ body {
 }
 
 
+.disclaimer-container {
+    padding: 30px;
+    position: relative;
+    gap: 24px;
+    border-radius: 16px;
+    border: 1px solid #F1F5F9;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+.disclaimer-container::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    border-radius: 4000px 4000px 0px 0px;
+    height: 4px;
+    background: linear-gradient(180deg, #014C88 0%, #60A5FA 100%);
+}
+
+.discalimer-card {
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.disclaimer-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
 /* Footer */
 .social-icon {
     width: 40px;
@@ -302,7 +345,8 @@ body {
 .iconBthPara,
 .badge-font,
 .academicIndustryPara,
-.cta-para {
+.cta-para,
+.disclaimer-para {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;

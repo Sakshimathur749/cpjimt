@@ -57,9 +57,16 @@
         width: 100%;
     }
 
-    .whyCHooseCard {
+    .whyCHooseCard,
+    .disclaimer-container {
         padding: 20px;
     }
+
+    .mainHeading {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
 
     .ctaContainer {
         padding: 15px;
@@ -104,7 +111,8 @@
     .btn-apply,
     .whyChoosePara,
     .btn-brochure,
-    .btn-visit {
+    .btn-visit,
+    .softSkillPara {
         font-size: 14px;
         line-height: 24px;
     }
