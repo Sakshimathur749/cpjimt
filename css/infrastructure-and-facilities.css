@@ -1,13 +1,13 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .font-robots {
-  font-family: "Roboto Slab", serif !important;
+  font-family: 'Roboto Slab', serif !important;
 }
 
 .font-poppins {
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .fw-700 {
@@ -23,13 +23,15 @@ body {
 }
 
 .color-4 {
-  color: #0F172A !important;
+  color: #0f172a !important;
 }
 
-/* Infrastructure & Facilities Section */
+/* =====================
+   Infrastructure & Facilities Section
+   ===================== */
 .infrastructure-section {
   padding: 80px 0;
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
 }
 
 .section-header {
@@ -38,7 +40,7 @@ body {
 
 .section-title {
   font-size: 36px;
-  color: #0F172A;
+  color: #0f172a;
 }
 
 .section-title::before {
@@ -48,14 +50,14 @@ body {
   width: 100px;
   height: 6px;
   border-radius: 999px;
-  background: var(--color-azure-27, #014C88);
+  background: var(--color-azure-27, #014c88);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .section-subtitle {
   font-size: 16px;
-  color: #64748B;
+  color: #64748b;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
@@ -69,10 +71,14 @@ body {
 
 .facility-card {
   border-radius: 16px;
-  background: #FFF;
-  box-shadow: 0 4px 24px 0 rgba(1, 76, 136, 0.10), 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  box-shadow:
+    0 4px 24px 0 rgba(1, 76, 136, 0.1),
+    0 1px 4px 0 rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .facility-card:hover {
@@ -84,7 +90,7 @@ body {
   position: relative;
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, #003B5C 0%, #005A8C 100%);
+  background: linear-gradient(135deg, #003b5c 0%, #005a8c 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +131,7 @@ body {
 
 .facility-title {
   font-size: 20px;
-  color: #0F172A;
+  color: #0f172a;
   position: relative;
   padding-bottom: 12px;
 }
@@ -137,16 +143,18 @@ body {
   left: 0;
   width: 40px;
   height: 3px;
-  background: #003B5C;
+  background: #003b5c;
 }
 
 .facility-description {
   font-size: 14px;
-  color: #64748B;
+  color: #64748b;
   line-height: 1.6;
 }
 
-/* Video Modal */
+/* =====================
+   Video Modal
+   ===================== */
 .video-modal {
   display: none;
   position: fixed;
@@ -169,7 +177,6 @@ body {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -188,7 +195,6 @@ body {
     transform: translateY(50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
@@ -201,7 +207,7 @@ body {
   right: 0;
   background: transparent;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 40px;
   font-weight: 300;
   cursor: pointer;
@@ -234,7 +240,11 @@ body {
   height: 100%;
 }
 
-/* Tablet Responsive */
+/* =====================
+   Media Queries
+   ===================== */
+
+/* Tablet - 1024px */
 @media (max-width: 1024px) {
   .infrastructure-section {
     padding: 60px 0;
@@ -284,7 +294,7 @@ body {
   }
 }
 
-/* Mobile Responsive */
+/* Mobile - 768px */
 @media (max-width: 768px) {
   .infrastructure-section {
     padding: 48px 0;
@@ -343,6 +353,7 @@ body {
   }
 }
 
+/* Mobile - 480px */
 @media (max-width: 480px) {
   .infrastructure-section {
     padding: 40px 0;
