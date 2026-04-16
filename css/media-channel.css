@@ -36,14 +36,14 @@ body {
   text-align: center;
 }
 
-.section-title {
+.media-title {
   font-size: 36px;
   color: #0F172A;
   position: relative;
   display: inline-block;
 }
 
-.section-title::after {
+.media-title::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -55,13 +55,13 @@ body {
   border-radius: 2px;
 }
 
-.facilities-grid {
+.media-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.facility-card {
+.media-card {
   background: #FFFFFF;
   border-radius: 12px;
   overflow: hidden;
@@ -69,7 +69,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.facility-card:hover {
+.media-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
@@ -113,17 +113,17 @@ body {
   transform: scale(1.1);
 }
 
-.facility-content {
+.media-content {
   padding: 24px;
 }
 
-.facility-title {
+.media-card-title {
   font-size: 18px;
   color: #0F172A;
   line-height: 1.4;
 }
 
-.facility-date {
+.media-date {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -231,11 +231,11 @@ body {
     padding: 60px 0;
   }
 
-  .section-title {
+  .media-title {
     font-size: 32px;
   }
 
-  .facilities-grid {
+  .media-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -249,15 +249,15 @@ body {
     height: 56px;
   }
 
-  .facility-content {
+  .media-content {
     padding: 20px;
   }
 
-  .facility-title {
+  .media-title {
     font-size: 17px;
   }
 
-  .facility-date {
+  .media-date {
     font-size: 13px;
   }
 
@@ -277,11 +277,11 @@ body {
     padding: 48px 0;
   }
 
-  .section-title {
+  .media-title {
     font-size: 28px;
   }
 
-  .facilities-grid {
+  .media-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
@@ -295,15 +295,15 @@ body {
     height: 60px;
   }
 
-  .facility-content {
+  .media-content {
     padding: 20px 16px;
   }
 
-  .facility-title {
+  .media-title {
     font-size: 16px;
   }
 
-  .facility-date {
+  .media-date {
     font-size: 13px;
   }
 
@@ -323,7 +323,7 @@ body {
     padding: 40px 0;
   }
 
-  .section-title {
+  .media-title {
     font-size: 24px;
   }
 
@@ -336,11 +336,11 @@ body {
     height: 52px;
   }
 
-  .facility-title {
+  .media-title {
     font-size: 15px;
   }
 
-  .facility-date {
+  .media-date {
     font-size: 12px;
   }
 
