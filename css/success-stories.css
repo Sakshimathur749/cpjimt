@@ -18,18 +18,6 @@
   display: inline-block;
 }
 
-.ss-title::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: #ff6b35;
-  border-radius: 2px;
-}
-
 /* Grid: 3 columns, last row centered */
 .ss-grid {
   max-width: 1096px;
