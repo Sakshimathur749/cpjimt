@@ -97,7 +97,8 @@
     .btn-apply,
     .whyChoosePara,
     .btn-brochure,
-    .btn-visit {
+    .btn-visit,
+    .event-title {
         font-size: 14px;
         line-height: 24px;
     }
@@ -114,6 +115,10 @@
 
     .headbanner {
         font-size: 13px;
+    }
+
+    .btn-load-more {
+        padding: 10px 36px;
     }
 
 }
