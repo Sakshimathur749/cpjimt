@@ -598,7 +598,6 @@
   }
 
   .recruiter-card {
-    padding: 12px 16px;
     min-height: 60px;
     width: calc(33.333% - 12px);
     flex: 0 0 calc(33.333% - 12px);
