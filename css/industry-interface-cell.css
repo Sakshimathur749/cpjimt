@@ -1,0 +1,633 @@
+/* Genesis Section Styles */
+.genesis-section {
+  padding: 80px 0;
+  background-color: #F8FAFC;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.genesis-title {
+  font-size: 36px;
+  color: #0F172A;
+  position: relative;
+  display: inline-block;
+}
+
+.genesis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.genesis-card {
+  border-radius: 16px;
+  border: 1px solid #374151;
+  overflow: hidden;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.genesis-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.genesis-card-inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1.5fr;
+  gap: 32px;
+  min-height: 320px;
+}
+
+.genesis-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.genesis-image img {
+  transition: transform 0.5s ease;
+}
+
+.genesis-card:hover .genesis-image img {
+  transform: scale(1.05);
+}
+
+.genesis-content {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.genesis-card-title {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.genesis-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+
+.genesis-btn {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Variants */
+.genesis-card-cyan {
+  background: #008B9F;
+}
+
+.genesis-card-cyan .genesis-btn {
+  color: #0891B2;
+}
+
+.genesis-card-cyan .genesis-btn:hover {
+  background-color: #0891B2;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+}
+
+.genesis-card-yellow {
+  background: #C29C25;
+}
+
+.genesis-card-yellow .genesis-btn {
+  color: #CA8A04;
+}
+
+.genesis-card-yellow .genesis-btn:hover {
+  background-color: #CA8A04;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(202, 138, 4, 0.3);
+}
+
+.genesis-card-blue {
+  background: #05518C;
+}
+
+.genesis-card-blue .genesis-btn {
+  color: #1E40AF;
+}
+
+.genesis-card-blue .genesis-btn:hover {
+  background-color: #1E40AF;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.genesis-card-red {
+  background: #A2473B;
+}
+
+.genesis-card-red .genesis-btn {
+  color: #B91C1C;
+}
+
+.genesis-card-red .genesis-btn:hover {
+  background-color: #B91C1C;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .genesis-section {
+    padding: 60px 0;
+  }
+
+  .genesis-title {
+    font-size: 32px;
+  }
+
+  .genesis-grid {
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .genesis-card-inner {
+    min-height: 280px;
+  }
+
+  .genesis-card-title {
+    font-size: 22px;
+  }
+
+  .genesis-card-text {
+    font-size: 14px;
+  }
+
+  .genesis-btn {
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+
+  .genesis-card-inner {
+    display: block;
+    min-height: auto;
+  }
+
+  .genesis-image {
+    max-height: 280px;
+    margin-bottom: 16px;
+  }
+
+  .genesis-image img {
+    max-height: 280px;
+  }
+
+  .genesis-card {
+    padding: 16px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .genesis-section {
+    padding: 48px 0;
+  }
+
+  .genesis-title {
+    font-size: 28px;
+  }
+
+  .genesis-grid {
+    gap: 24px;
+    margin-top: 32px;
+  }
+
+  .genesis-card-inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .genesis-image {
+    height: 240px;
+  }
+
+  .genesis-card-title {
+    font-size: 20px;
+    margin-bottom: 16px !important;
+  }
+
+  .genesis-card-text {
+    font-size: 14px;
+    margin-bottom: 16px !important;
+  }
+
+  .genesis-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .genesis-section {
+    padding: 40px 0;
+  }
+
+  .genesis-title {
+    font-size: 24px;
+  }
+
+  .genesis-grid {
+    gap: 20px;
+    margin-top: 28px;
+  }
+
+  .genesis-image {
+    height: 200px;
+  }
+
+  .genesis-card-title {
+    font-size: 18px;
+    margin-bottom: 12px !important;
+  }
+
+  .genesis-card-text {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px !important;
+  }
+
+  .genesis-btn {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+}
+
+
+/* Placements Section Styles */
+.placements-section {
+  position: relative;
+  padding: 80px 0;
+  background-image: url('../images/placement-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.placements-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%);
+  z-index: 1;
+}
+
+.placements-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.placements-subtitle {
+  font-size: 16px;
+  color: #DBEAFE;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.placements-title {
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.placements-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-divider {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stat-item:last-child .stat-divider {
+  display: none;
+}
+
+.stat-number {
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #DBEAFE;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .placements-section {
+    padding: 80px 0;
+  }
+
+  .placements-subtitle {
+    font-size: 15px;
+  }
+
+  .placements-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .placements-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+    max-width: 600px;
+  }
+
+  .stat-item {
+    padding: 15px;
+  }
+
+  .stat-divider {
+    height: 70px;
+  }
+
+  .stat-item:nth-child(2) .stat-divider,
+  .stat-item:nth-child(4) .stat-divider {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: 42px;
+  }
+
+  .stat-label {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .placements-section {
+    padding: 60px 0;
+    background-attachment: scroll;
+  }
+
+  .placements-subtitle {
+    font-size: 14px;
+  }
+
+  .placements-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .placements-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 0;
+    max-width: 500px;
+  }
+
+  .stat-item {
+    padding: 12px;
+  }
+
+  .stat-divider {
+    height: 60px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .placements-section {
+    padding: 50px 0;
+  }
+
+  .placements-subtitle {
+    font-size: 13px;
+  }
+
+  .placements-title {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .placements-stats {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 300px;
+  }
+
+  .stat-item {
+    padding: 10px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+}
+
+
+/* Top Recruiters Section Styles */
+.recruiters-section {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.recruiters-title {
+  font-size: 38px;
+  color: #0F172A;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.recruiters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+  max-width: 1096px;
+
+}
+
+.recruiter-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  min-height: 75px;
+  max-height: 75px;
+  width: calc(20% - 20px);
+  flex: 0 0 calc(20% - 20px);
+}
+
+.recruiter-card:hover {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.recruiter-logo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recruiter-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.3s ease;
+}
+
+.recruiter-card:hover .recruiter-logo img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .recruiters-section {
+    padding: 60px 0;
+  }
+
+  .recruiters-title {
+    font-size: 32px;
+  }
+
+  .recruiters-grid {
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .recruiter-card {
+    padding: 12px 26px;
+    min-height: 80px;
+    width: calc(25% - 16px);
+    flex: 0 0 calc(25% - 16px);
+  }
+
+  .recruiter-logo {
+    height: 70px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .recruiters-section {
+    padding: 48px 0;
+  }
+
+  .recruiters-title {
+    font-size: 28px;
+  }
+
+  .recruiters-grid {
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .recruiter-card {
+    min-height: 60px;
+    width: calc(33.333% - 12px);
+    flex: 0 0 calc(33.333% - 12px);
+  }
+
+  .recruiter-logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recruiters-section {
+    padding: 40px 0;
+  }
+
+  .recruiters-title {
+    font-size: 24px;
+  }
+
+  .recruiters-grid {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .recruiter-card {
+    width: calc(50% - 8px);
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .recruiter-logo {
+    height: 50px;
+  }
+}
