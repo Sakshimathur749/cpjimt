@@ -68,6 +68,10 @@
         gap: 20px !important;
     }
 
+    .gap-md-30 {
+        gap: 30px !important;
+    }
+
     .gap-md-40 {
         gap: 40px !important;
     }
@@ -86,7 +90,8 @@
     .programHead h3,
     .softSkillHead h3,
     .eligibeHead h3,
-    .whyChooseHead h3 {
+    .whyChooseHead h3,
+    .section-title {
         font-size: 28px;
         line-height: 30px;
     }
@@ -112,7 +117,8 @@
     .plus-box span,
     .btn-apply,
     .btn-brochure,
-    .btn-visit {
+    .btn-visit,
+    .industialPara {
         font-size: 14px;
         line-height: 24px;
     }
@@ -147,6 +153,10 @@
 @media (min-width:764px) {
     .gap-48 {
         gap: 48px !important;
+    }
+
+    .gap-56 {
+        gap: 56px !important;
     }
 
     .gap-65 {

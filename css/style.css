@@ -22,6 +22,10 @@ body {
     border-radius: 16px !important;
 }
 
+.border-radius-t-16 {
+    border-radius: 16px 16px 0px 0px !important;
+}
+
 .color-1 {
     color: #475569 !important;
 }
@@ -42,6 +46,14 @@ body {
     color: #01829A !important;
 }
 
+.color-6 {
+    color: #DC2626 !important;
+}
+
+.color-7 {
+    color: #1D293D !important;
+}
+
 .bg-shad-1 {
     background: #014C88 !important;
 }
@@ -54,6 +66,10 @@ body {
     background: #01829A !important;
 }
 
+.bg-shad-4 {
+    background: #E2180E !important;
+}
+
 .fw-700 {
     font-weight: 700 !important;
 }
@@ -64,6 +80,10 @@ body {
 
 .fw-400 {
     font-weight: 400 !important;
+}
+
+.border-top {
+    border-top: 0.8px solid #F1F5F9;
 }
 
 /* Header */
@@ -168,7 +188,7 @@ body {
     border: 0.8px solid rgba(96, 165, 250, 0.30);
     background: rgba(96, 165, 250, 0.20);
     padding: 10px 18px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .mainHeading {
