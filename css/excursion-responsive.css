@@ -97,7 +97,8 @@
     .btn-apply,
     .whyChoosePara,
     .btn-brochure,
-    .btn-visit {
+    .btn-visit,
+    .excursion-badge {
         font-size: 14px;
         line-height: 24px;
     }
@@ -116,6 +117,9 @@
         font-size: 13px;
     }
 
+    .excursion-badge {
+        padding: 10px 15px;
+    }
 }
 
 

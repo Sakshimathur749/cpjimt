@@ -323,6 +323,11 @@ body {
     border-radius: 26843500px;
 }
 
+.trip-card {
+    min-height: 220px;
+    height: 100%;
+}
+
 /* Footer */
 .social-icon {
     width: 40px;
