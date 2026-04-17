@@ -125,61 +125,66 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Color Variants */
-.genesis-card-cyan {
+/* Color Variants via nth-child */
+
+/* 1st card - Cyan */
+.genesis-card:nth-child(1) {
   background: #008b9f;
 }
 
-.genesis-card-cyan .genesis-btn {
+.genesis-card:nth-child(1) .genesis-btn {
   color: #0891b2;
 }
 
-.genesis-card-cyan .genesis-btn:hover {
+.genesis-card:nth-child(1) .genesis-btn:hover {
   background-color: #0891b2;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
 }
 
-.genesis-card-yellow {
+/* 2nd card - Yellow */
+.genesis-card:nth-child(2) {
   background: #c29c25;
 }
 
-.genesis-card-yellow .genesis-btn {
+.genesis-card:nth-child(2) .genesis-btn {
   color: #ca8a04;
 }
 
-.genesis-card-yellow .genesis-btn:hover {
+.genesis-card:nth-child(2) .genesis-btn:hover {
   background-color: #ca8a04;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(202, 138, 4, 0.3);
 }
 
-.genesis-card-blue {
+/* 3rd card - Blue */
+.genesis-card:nth-child(3) {
   background: #05518c;
 }
 
-.genesis-card-blue .genesis-btn {
+.genesis-card:nth-child(3) .genesis-btn {
   color: #1e40af;
 }
 
-.genesis-card-blue .genesis-btn:hover {
+.genesis-card:nth-child(3) .genesis-btn:hover {
   background-color: #1e40af;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
 }
 
-.genesis-card-red {
+/* 4th card - Red */
+.genesis-card:nth-child(4) {
   background: #a2473b;
 }
 
-.genesis-card-red .genesis-btn {
+.genesis-card:nth-child(4) .genesis-btn {
   color: #b91c1c;
 }
 
-.genesis-card-red .genesis-btn:hover {
+.genesis-card:nth-child(4) .genesis-btn:hover {
   background-color: #b91c1c;
   color: #ffffff;
   transform: translateY(-2px);
