@@ -1,152 +1,91 @@
-@media (min-width:1200px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
+@media (max-width: 769px) {
+  .play-overlay {
+    width: 50px;
+    height: 50px;
+  }
 
-    .navbar-expand-lg .navbar-collapse {
-        display: none !important;
-    }
+  .play-overlay svg {
+    width: 16px;
+  }
+  .containerPy {
+    padding: 40px 10px !important;
+  }
+  .bgColorLinear {
+    padding: 30px 10px;
+  }
+
+  .whyChoosePara {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .whyCHooseCard {
+    padding: 20px;
+  }
+
+  .gap-md-20 {
+    gap: 20px !important;
+  }
+
+  .gap-md-30 {
+    gap: 30px !important;
+  }
+
+  .gap-md-40 {
+    gap: 40px !important;
+  }
+
+  .mainHeading {
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .cta-heading,
+  .careerOppHead h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .programHead h3,
+  .softSkillHead h3,
+  .eligibeHead h3,
+  .whyChooseHead h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .whyChoosePara,
+  .videoText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mainPara,
+  .btn-apply,
+  .whyChoosePara,
+  .btn-brochure,
+  .btn-visit,
+  .event-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .iconBthHead,
+  .whyCHooseHeading {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .btn-load-more {
+    padding: 10px 36px;
+  }
 }
 
-@media (max-width:993px) {
-    .custom-dropdown-menu {
-        box-shadow: none !important;
-        border-radius: 0px !important;
-    }
+@media (min-width: 764px) {
+  .gap-48 {
+    gap: 48px !important;
+  }
 
-    .custom-dropdown-menu .dropdown-item,
-    .custom-dropdown-menu {
-        background-color: #014C88;
-        color: white !important;
-    }
-}
-
-@media (max-width:769px) {
-    .menu {
-        gap: 14px;
-    }
-
-    .play-overlay {
-        width: 50px;
-        height: 50px;
-    }
-
-    .play-overlay svg {
-        width: 16px;
-    }
-
-    #navbarSupportedContent {
-        border-top: 1px solid #014C88;
-    }
-
-    .containerPy {
-        padding: 40px 10px !important;
-    }
-
-    .bgColorLinear {
-        padding: 30px 10px;
-    }
-
-    .whyChoosePara {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .whyCHooseCard {
-        padding: 20px;
-    }
-
-    .gap-md-20 {
-        gap: 20px !important;
-    }
-
-    .gap-md-30 {
-        gap: 30px !important;
-    }
-
-    .gap-md-40 {
-        gap: 40px !important;
-    }
-
-    .mainHeading {
-        font-size: 35px;
-        line-height: 48px;
-    }
-
-    .cta-heading,
-    .careerOppHead h3 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .programHead h3,
-    .softSkillHead h3,
-    .eligibeHead h3,
-    .whyChooseHead h3 {
-        font-size: 28px;
-        line-height: 30px;
-    }
-
-    .whyChoosePara,
-    .videoText {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .mainPara,
-    .btn-apply,
-    .whyChoosePara,
-    .btn-brochure,
-    .btn-visit,
-    .event-title {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .iconBthHead,
-    .whyCHooseHeading {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .menu {
-        gap: 10px !important;
-    }
-
-    .headbanner {
-        font-size: 13px;
-    }
-
-    .btn-load-more {
-        padding: 10px 36px;
-    }
-
-}
-
-@media (min-width:764px) {
-    .gap-48 {
-        gap: 48px !important;
-    }
-
-    .gap-65 {
-        gap: 65px !important;
-    }
-}
-
-@media (min-width:992px) and (max-width:1200px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-        display: none !important;
-    }
-
-    .nav-link {
-        font-size: 12px;
-    }
-
-    .menu {
-        gap: 18px;
-    }
+  .gap-65 {
+    gap: 65px !important;
+  }
 }

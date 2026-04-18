@@ -1,31 +1,6 @@
-@media (min-width:1200px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
 
-    .navbar-expand-lg .navbar-collapse {
-        display: none !important;
-    }
-}
-
-@media (max-width:993px) {
-    .custom-dropdown-menu {
-        box-shadow: none !important;
-        border-radius: 0px !important;
-    }
-
-    .custom-dropdown-menu .dropdown-item,
-    .custom-dropdown-menu {
-        background-color: #014C88;
-        color: white !important;
-    }
-}
 
 @media (max-width:769px) {
-    .menu {
-        gap: 14px;
-    }
-
     .play-overlay {
         width: 50px;
         height: 50px;
@@ -34,16 +9,9 @@
     .play-overlay svg {
         width: 16px;
     }
-
-    #navbarSupportedContent {
-        border-top: 1px solid #014C88;
-    }
-
-    .containerPy,
-    .footerContainer {
+    .containerPy {
         padding: 40px 10px !important;
     }
-
     .bgColorLinear {
         padding: 30px 10px;
     }
@@ -108,20 +76,10 @@
         font-size: 18px;
         line-height: 28px;
     }
-
-    .menu {
-        gap: 10px !important;
-    }
-
-    .headbanner {
-        font-size: 13px;
-    }
-
     .excursion-badge {
         padding: 10px 15px;
     }
 }
-
 
 @media (min-width:764px) {
     .gap-48 {
@@ -137,20 +95,3 @@
     }
 }
 
-@media (min-width:992px) and (max-width:1200px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none !important;
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-        display: none !important;
-    }
-
-    .nav-link {
-        font-size: 12px;
-    }
-
-    .menu {
-        gap: 18px;
-    }
-}

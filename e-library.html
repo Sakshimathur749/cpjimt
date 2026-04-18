@@ -1,115 +1,361 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Library - CPJIMT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/grievance-redressal-cell.css" />
+    <link rel="stylesheet" href="css/eligiblity-style.css" />
+    <link rel="stylesheet" href="css/eligiblity-responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Library - CPJIMT</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/grievance-redressal-cell.css" />
-  <link rel="stylesheet" href="css/eligiblity-style.css" />
-  <link rel="stylesheet" href="css/eligiblity-responsive.css" />
-</head>
-
-<body>
-  <div class="container-fluid bg-shad-3">
-    <div class="container ">
-      <div
-        class="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center justify-content-sm-between gap-3 py-3 ">
-        <p class="mb-0 font-poppins text-uppercase font-poppins headbanner text-white">Lorem Ispum lorem ispum
-          lorem ispum
-        </p>
+  <body>
+    <div class="container-fluid bg-shad-3">
+      <div class="container">
         <div
-          class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between gap-2 gap-md-5">
-          <ul
-            class="text-center d-flex gap-3 gap-md-4 list-unstyled align-items-md-center justify-content-md-center mb-2 mb-md-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                Campus Life @CPJIMT
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#ffffff" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                About Us
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#ffffff" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                <li><a class="dropdown-item" href="#">Leadership</a></li>
-                <li><a class="dropdown-item" href="#">Accreditations</a></li>
-              </ul>
-            </li>
-          </ul>
-          <button
-            class="text-nowrap bg-white border-radius-16 d-flex align-items-center justify-content-center border-0 px-4 py-2 font-poppins color-5 fw-600 bannerbtn">Apply
-            Now</button>
+          class="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center justify-content-sm-between gap-3 py-3"
+        >
+          <p class="mb-0 font-poppins text-uppercase font-poppins headbanner text-white">
+            Lorem Ispum lorem ispum lorem ispum
+          </p>
+          <div
+            class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between gap-2 gap-md-5"
+          >
+            <ul
+              class="text-center d-flex gap-3 gap-md-4 list-unstyled align-items-md-center justify-content-md-center mb-2 mb-md-0"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                >
+                  Campus Life @CPJIMT
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                >
+                  About Us
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership</a></li>
+                  <li><a class="dropdown-item" href="#">Accreditations</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button
+              class="text-nowrap bg-white border-radius-16 d-flex align-items-center justify-content-center border-0 px-4 py-2 font-poppins color-5 fw-600 bannerbtn"
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <nav class="navbar navbar-expand-lg py-4">
-    <div class="container ">
-      <div class="w-100 d-flex align-items-center justify-content-between gap-3 gap-md-4 mb-3 mb-lg-0">
-        <div class="logo-img"><img src="images/CPJ Logo.webp" class="h-100 w-100 object-fit-cover" alt="">
+    <nav class="navbar navbar-expand-lg py-4">
+      <div class="container">
+        <div class="w-100 d-flex align-items-center justify-content-between gap-3 gap-md-4 mb-3 mb-lg-0">
+          <div class="logo-img"><img src="images/CPJ Logo.webp" class="h-100 w-100 object-fit-cover" alt="" /></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-none d-lg-flex justify-content-center">
+            <ul
+              class="menu text-center d-flex flex-column flex-md-row list-unstyled align-items-md-center justify-content-md-center mb-md-0"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                >
+                  About Us
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership</a></li>
+                  <li><a class="dropdown-item" href="#">Accreditations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Programmes
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">BBA</a></li>
+                  <li><a class="dropdown-item" href="#">BCA</a></li>
+                  <li><a class="dropdown-item" href="#">B.Tech</a></li>
+                  <li><a class="dropdown-item" href="#">MBA</a></li>
+                  <li><a class="dropdown-item" href="#">MCA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Academia & Administration
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Faculty</a></li>
+                  <li><a class="dropdown-item" href="#">Research</a></li>
+                  <li><a class="dropdown-item" href="#">Administration</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Admissions
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Apply Online</a></li>
+                  <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
+                  <li><a class="dropdown-item" href="#">Transport Fee</a></li>
+                  <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
+                  <li><a class="dropdown-item" href="#">Admission Brochure</a></li>
+                  <li><a class="dropdown-item" href="#">Pixi Card</a></li>
+                  <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Infrastructure
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Library</a></li>
+                  <li><a class="dropdown-item" href="#">Labs</a></li>
+                  <li><a class="dropdown-item" href="#">Hostel</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Industry Interface
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Placements</a></li>
+                  <li><a class="dropdown-item" href="#">MoUs</a></li>
+                  <li><a class="dropdown-item" href="#">Internships</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-none d-lg-flex justify-content-center">
-          <ul
-            class="menu text-center d-flex flex-column flex-md-row list-unstyled align-items-md-center justify-content-md-center mb-md-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
+        <div class="collapse navbar-collapse justify-content-center pt-4" id="navbarSupportedContent">
+          <ul class="menu d-flex flex-column list-unstyled w-100 px-3 mb-0">
+            <li class="nav-item dropdown border-bottom py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 About Us
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
                 <li><a class="dropdown-item" href="#">Leadership</a></li>
                 <li><a class="dropdown-item" href="#">Accreditations</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
+
+            <li class="nav-item dropdown border-bottom py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 Programmes
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">BBA</a></li>
                 <li><a class="dropdown-item" href="#">BCA</a></li>
                 <li><a class="dropdown-item" href="#">B.Tech</a></li>
@@ -117,35 +363,61 @@
                 <li><a class="dropdown-item" href="#">MCA</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
+
+            <li class="nav-item dropdown border-bottom py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 Academia & Administration
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">Faculty</a></li>
                 <li><a class="dropdown-item" href="#">Research</a></li>
                 <li><a class="dropdown-item" href="#">Administration</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
+
+            <li class="nav-item dropdown border-bottom py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 Admissions
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">Apply Online</a></li>
                 <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
                 <li><a class="dropdown-item" href="#">Transport Fee</a></li>
@@ -155,35 +427,61 @@
                 <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
+
+            <li class="nav-item dropdown border-bottom py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 Infrastructure
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">Library</a></li>
                 <li><a class="dropdown-item" href="#">Labs</a></li>
                 <li><a class="dropdown-item" href="#">Hostel</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
+
+            <li class="nav-item dropdown py-1">
+              <a
+                class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style="font-size: 14px"
+              >
                 Industry Interface
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                >
                   <path
                     d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
+                    fill="#0F172A"
+                  />
                 </svg>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu">
+              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
                 <li><a class="dropdown-item" href="#">Placements</a></li>
                 <li><a class="dropdown-item" href="#">MoUs</a></li>
                 <li><a class="dropdown-item" href="#">Internships</a></li>
@@ -192,541 +490,490 @@
           </ul>
         </div>
       </div>
-      <div class="collapse navbar-collapse justify-content-center pt-4" id="navbarSupportedContent">
-        <ul class="menu d-flex flex-column list-unstyled w-100 px-3 mb-0">
-
-          <li class="nav-item dropdown border-bottom py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              About Us
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-              <li><a class="dropdown-item" href="#">Leadership</a></li>
-              <li><a class="dropdown-item" href="#">Accreditations</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown border-bottom py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              Programmes
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">BBA</a></li>
-              <li><a class="dropdown-item" href="#">BCA</a></li>
-              <li><a class="dropdown-item" href="#">B.Tech</a></li>
-              <li><a class="dropdown-item" href="#">MBA</a></li>
-              <li><a class="dropdown-item" href="#">MCA</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown border-bottom py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              Academia & Administration
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">Faculty</a></li>
-              <li><a class="dropdown-item" href="#">Research</a></li>
-              <li><a class="dropdown-item" href="#">Administration</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown border-bottom py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              Admissions
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">Apply Online</a></li>
-              <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
-              <li><a class="dropdown-item" href="#">Transport Fee</a></li>
-              <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
-              <li><a class="dropdown-item" href="#">Admission Brochure</a></li>
-              <li><a class="dropdown-item" href="#">Pixi Card</a></li>
-              <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown border-bottom py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              Infrastructure
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">Library</a></li>
-              <li><a class="dropdown-item" href="#">Labs</a></li>
-              <li><a class="dropdown-item" href="#">Hostel</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown py-1">
-            <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-              href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-              Industry Interface
-              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                fill="none">
-                <path
-                  d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                  fill="#0F172A" />
-              </svg>
-            </a>
-            <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-              <li><a class="dropdown-item" href="#">Placements</a></li>
-              <li><a class="dropdown-item" href="#">MoUs</a></li>
-              <li><a class="dropdown-item" href="#">Internships</a></li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <main class="container-fluid mainImage">
-    <div class="container containerPy">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 mb-4 mb-md-2">
-          <div class="d-flex flex-column gap-2">
-            <h1 class="text-white font-poppins mainHeading pe-lg-4">Our Recruiters</h1>
-            <p class="font-robots color-2 mainPara">
-              Lorem ipsum dolor sit amet consectetur. Lorem nibh est in justo amet. Ultrices non molestie sit non
-              pulvinar consectetur. Senectus lectus porttitor tortor dictumst ut. Vestibulum turpis gravida porta sed.
-              Velit viverra ultrices euismod risus velit. Fames ultricies aliquet placerat eu mi sit amet.
-            </p>
-            <div class="d-flex flex-column flex-md-row align-items-md-center gap-3">
-              <button
-                class="btn-apply font-poppins text-center bg-white d-flex align-items-center justify-content-center color-3">
-                Apply Now
-              </button>
-              <button
-                class="btn-brochure font-poppins text-center text-white bg-transparent d-flex align-items-center justify-content-center">
-                Download Brochure
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="main-img">
-            <img src="images/Image (MBA students in classroom).webp" class="h-100 w-100 object-fit-cover p-1" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- E-Library Section -->
-  <section class="grievance-tables-section">
-    <div class="container">
-      <!-- Page Header -->
-      <div class="grievance-block-header text-center mb-4 mb-lg-5">
-        <h2 class="grievance-block-title font-poppins fw-700">E-LIBRARY</h2>
-        <div class="grievance-underline"></div>
-      </div>
-
-      <!-- Intro -->
-      <div class="grievance-intro">
-        <p class="font-robots grievance-intro-para mb-0" style="color: #000">
-          Students can access online Journals for their reference. Visit our E-Library.
-        </p>
-      </div>
-
-      <!-- Table 1: Management, Commerce & IT -->
-      <div class="grievance-table-block">
-        <h2 class="grievance-table-heading font-poppins" style="color: #014c88">
-          E-LIBRARY – MANAGEMENT, COMMERCE &amp; IT
-        </h2>
-        <div class="grievance-table-wrapper">
-          <table class="grievance-table">
-            <thead>
-              <tr>
-                <th class="font-poppins">Sr.No.</th>
-                <th class="font-poppins">Name of Journal</th>
-                <th class="font-poppins">Online Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="font-robots">1</td>
-                <td class="font-robots">Jstor (database)</td>
-                <td class="font-robots"><a href="http://jstor.ac.in" target="_blank">http://jstor.ac.in</a></td>
-              </tr>
-              <tr>
-                <td class="font-robots">2</td>
-                <td class="font-robots">Decision: Indian Institute of Mgt. Calcutta</td>
-                <td class="font-robots">
-                  <a href="http://link.springer.com/journal/40622"
-                    target="_blank">http://link.springer.com/journal/40622</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">3</td>
-                <td class="font-robots">Vikalpa: The Journal for Decision Makers</td>
-                <td class="font-robots">
-                  <a href="http://journals.sagepub.com/home/vik"
-                    target="_blank">http://journals.sagepub.com/home/vik</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">4</td>
-                <td class="font-robots">Vision: The Journal of Business Perspective</td>
-                <td class="font-robots">
-                  <a href="http://vision.sagepub.com" target="_blank">http://vision.sagepub.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">5</td>
-                <td class="font-robots">Foreign Trade Review</td>
-                <td class="font-robots">
-                  <a href="http://ftr.sagepub.com" target="_blank">http://ftr.sagepub.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">6</td>
-                <td class="font-robots">Asian Journal of Management Cases</td>
-                <td class="font-robots">
-                  <a href="http://ajc.sagepub.com" target="_blank">http://ajc.sagepub.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">7</td>
-                <td class="font-robots">Human Resource Development</td>
-                <td class="font-robots">
-                  <a href="http://journals.sagepub.com/home/hrd" target="_blank">journals.sagepub.com/home/hrd</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">8</td>
-                <td class="font-robots">Prabandhan: Indian Journal of Management</td>
-                <td class="font-robots">
-                  <a href="http://www.indianjournalofmanagement.com"
-                    target="_blank">http://www.indianjournalofmanagement.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">9</td>
-                <td class="font-robots">Indian Journal of Finance</td>
-                <td class="font-robots">
-                  <a href="http://www.indianjournaloffinance.co.in"
-                    target="_blank">http://www.indianjournaloffinance.co.in</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">10</td>
-                <td class="font-robots">Artha Vijnana: Indian Journal of Economics &amp; Research</td>
-                <td class="font-robots">
-                  <a href="http://www.indianjournalofeconomicsandresearch.com"
-                    target="_blank">http://www.indianjournalofeconomicsandresearch.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">11</td>
-                <td class="font-robots">Indian Journal of Marketing</td>
-                <td class="font-robots">
-                  <a href="http://www.indianjournalofmarketing.com"
-                    target="_blank">http://www.indianjournalofmarketing.com</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Table 2: Law -->
-      <div class="grievance-table-block">
-        <h2 class="grievance-table-heading font-poppins" style="color: #014c88">E-LIBRARY – LAW</h2>
-        <div class="grievance-table-wrapper">
-          <table class="grievance-table">
-            <thead>
-              <tr>
-                <th class="font-poppins">Sr.No.</th>
-                <th class="font-poppins">Name of Journal</th>
-                <th class="font-poppins">Online Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="font-robots">1</td>
-                <td class="font-robots">Yale Law Journal</td>
-                <td class="font-robots">
-                  <a href="https://www.yalelawjournal.org" target="_blank">https://www.yalelawjournal.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">2</td>
-                <td class="font-robots">National Green Tribunal Reporter</td>
-                <td class="font-robots">
-                  <a href="http://www.greentribunal.gov.in" target="_blank">www.greentribunal.gov.in</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">3</td>
-                <td class="font-robots">Univ. Journal of Ethics, Criminal Justice and Law</td>
-                <td class="font-robots">
-                  <a href="http://www.serialspub.com" target="_blank">www.serialspub.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">4</td>
-                <td class="font-robots">KanunBirisi</td>
-                <td class="font-robots">
-                  <a href="http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive"
-                    target="_blank">http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">5</td>
-                <td class="font-robots">Yilka</td>
-                <td class="font-robots">
-                  <a href="http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive"
-                    target="_blank">http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">6</td>
-                <td class="font-robots">Journal of Indian Law Institute</td>
-                <td class="font-robots">
-                  <a href="http://www.ili.ac.in/jili/index.html"
-                    target="_blank">http://www.ili.ac.in/jili/index.html</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">7</td>
-                <td class="font-robots">Legal Information Institute of India</td>
-                <td class="font-robots">
-                  <a href="http://www.liiofindia.org" target="_blank">www.liiofindia.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">8</td>
-                <td class="font-robots">Judgments Information System</td>
-                <td class="font-robots"><a href="http://www.judis.nic.in" target="_blank">www.judis.nic.in</a></td>
-              </tr>
-              <tr>
-                <td class="font-robots">9</td>
-                <td class="font-robots">Judgments</td>
-                <td class="font-robots">
-                  <a href="http://www.indiankanoon.org" target="_blank">www.indiankanoon.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">10</td>
-                <td class="font-robots">Aspen Family Law &amp; Policy Journal</td>
-                <td class="font-robots">
-                  <a href="https://www.law.harvard.edu" target="_blank">https://www.law.harvard.edu</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">11</td>
-                <td class="font-robots">Comparative Law Review</td>
-                <td class="font-robots">
-                  <a href="http://www.comparativelawreview.umk.pl" target="_blank">www.comparativelawreview.umk.pl</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">12</td>
-                <td class="font-robots">Entertainment and Sports Law Journal</td>
-                <td class="font-robots">
-                  <a href="https://www.entertainmentsportslawjournal.com"
-                    target="_blank">https://www.entertainmentsportslawjournal.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">13</td>
-                <td class="font-robots">Human Affairs</td>
-                <td class="font-robots">
-                  <a href="http://www.humanaffairs.sk" target="_blank">www.humanaffairs.sk</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">14</td>
-                <td class="font-robots">Harvard Human Rights Journal</td>
-                <td class="font-robots">
-                  <a href="https://harvardhrj.com/category/harvard-law-journal"
-                    target="_blank">https://harvardhrj.com/category/harvard-law-journal</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">15</td>
-                <td class="font-robots">National Green Law Review</td>
-                <td class="font-robots">
-                  <a href="https://www.lawreview.org" target="_blank">https://www.lawreview.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">16</td>
-                <td class="font-robots">Journal of Information, Law and Technology</td>
-                <td class="font-robots">
-                  <a href="https://lawreview.rep.org" target="_blank">https://lawreview.rep.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">17</td>
-                <td class="font-robots">Journal of International Commercial Law and Technology</td>
-                <td class="font-robots"><a href="http://www.jiclt.com" target="_blank">http://www.jiclt.com</a></td>
-              </tr>
-              <tr>
-                <td class="font-robots">18</td>
-                <td class="font-robots">Journal of Law &amp; Family Studies</td>
-                <td class="font-robots">
-                  <a href="https://family.lawreview.org" target="_blank">https://family.lawreview.org</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">19</td>
-                <td class="font-robots">Journal of Philosophy, Science and Law</td>
-                <td class="font-robots">
-                  <a href="https://www.pdcnet.org/jpsl" target="_blank">https://www.pdcnet.org/jpsl</a>
-                </td>
-              </tr>
-              <tr>
-                <td class="font-robots">20</td>
-                <td class="font-robots">Journal of Politics and Law</td>
-                <td class="font-robots">
-                  <a href="https://www.ccsenet.org/jpl" target="_blank">https://www.ccsenet.org/jpl</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="container-fluid bg-shad-1 footerContainer">
-    <div class="container d-flex flex-column gap-48 gap-md-20">
-      <div class="row">
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <div class="d-flex flex-column gap-3 gap-md-4">
-            <div class="logo-img"><img src="images/Image.webp" class="h-100 object-fit-cover" alt="" /></div>
-            <div class="fpara">
-              <p class="color-2 font-robots mb-2">
-                Committed to delivering quality higher and professional education through academic excellence.
+    </nav>
+    <main class="container-fluid mainImage">
+      <div class="container containerPy">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-4 mb-md-2">
+            <div class="d-flex flex-column gap-2">
+              <h1 class="text-white font-poppins mainHeading pe-lg-4">Our Recruiters</h1>
+              <p class="font-robots color-2 mainPara">
+                Lorem ipsum dolor sit amet consectetur. Lorem nibh est in justo amet. Ultrices non molestie sit non
+                pulvinar consectetur. Senectus lectus porttitor tortor dictumst ut. Vestibulum turpis gravida porta sed.
+                Velit viverra ultrices euismod risus velit. Fames ultricies aliquet placerat eu mi sit amet.
               </p>
-            </div>
-            <div class="d-flex gap-3 gap-md-4 align-items-center">
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M15.0007 1.66602H12.5007C11.3956 1.66602 10.3358 2.105 9.55437 2.8864C8.77297 3.66781 8.33398 4.72761 8.33398 5.83268V8.33268H5.83398V11.666H8.33398V18.3327H11.6673V11.666H14.1673L15.0007 8.33268H11.6673V5.83268C11.6673 5.61167 11.7551 5.39971 11.9114 5.24343C12.0677 5.08715 12.2796 4.99935 12.5007 4.99935H15.0007V1.66602Z"
-                    stroke="#DBEAFE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M18.3327 3.3327C18.3327 3.3327 17.7493 5.0827 16.666 6.16603C17.9993 14.4994 8.83268 20.5827 1.66602 15.8327C3.49935 15.916 5.33268 15.3327 6.66602 14.166C2.49935 12.916 0.416016 7.99937 2.49935 4.16603C4.33268 6.3327 7.16602 7.5827 9.99935 7.49937C9.24935 3.99937 13.3327 1.99937 15.8327 4.3327C16.7493 4.3327 18.3327 3.3327 18.3327 3.3327Z"
-                    stroke="#DBEAFE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M13.334 6.66602C14.6601 6.66602 15.9318 7.1928 16.8695 8.13048C17.8072 9.06816 18.334 10.3399 18.334 11.666V17.4993H15.0007V11.666C15.0007 11.224 14.8251 10.8001 14.5125 10.4875C14.1999 10.1749 13.776 9.99935 13.334 9.99935C12.892 9.99935 12.468 10.1749 12.1555 10.4875C11.8429 10.8001 11.6673 11.224 11.6673 11.666V17.4993H8.33398V11.666C8.33398 10.3399 8.86077 9.06816 9.79845 8.13048C10.7361 7.1928 12.0079 6.66602 13.334 6.66602Z"
-                    stroke="#DBEAFE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M4.99935 7.5H1.66602V17.5H4.99935V7.5Z" stroke="#DBEAFE" stroke-width="1.66667"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M3.33268 4.99935C4.25316 4.99935 4.99935 4.25316 4.99935 3.33268C4.99935 2.41221 4.25316 1.66602 3.33268 1.66602C2.41221 1.66602 1.66602 2.41221 1.66602 3.33268C1.66602 4.25316 2.41221 4.99935 3.33268 4.99935Z"
-                    stroke="#DBEAFE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+              <div class="d-flex flex-column flex-md-row align-items-md-center gap-3">
+                <button
+                  class="btn-apply font-poppins text-center bg-white d-flex align-items-center justify-content-center color-3"
+                >
+                  Apply Now
+                </button>
+                <button
+                  class="btn-brochure font-poppins text-center text-white bg-transparent d-flex align-items-center justify-content-center"
+                >
+                  Download Brochure
+                </button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex flex-column align-items-md-center mb-3 mb-md-0">
-          <div class="d-flex flex-column gap-3">
-            <h3 class="text-white foothead fw-700 font-poppins mb-0">Quick Links</h3>
-            <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footlinks">About Us</li>
-              <li class="color-2 font-robots footlinks">Institutes</li>
-              <li class="color-2 font-robots footlinks">Academic Philosophy</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 d-flex flex-column align-items-md-center">
-          <div class="d-flex flex-column gap-3">
-            <h3 class="text-white foothead fw-700 font-poppins mb-0">Contact</h3>
-            <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footlinks">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="me-2" height="16" viewBox="0 0 16 16"
-                  fill="none">
-                  <g opacity="0.7">
-                    <path
-                      d="M13.3327 6.66732C13.3327 9.99598 9.64002 13.4627 8.40002 14.5333C8.2845 14.6202 8.14388 14.6672 7.99935 14.6672C7.85482 14.6672 7.7142 14.6202 7.59868 14.5333C6.35868 13.4627 2.66602 9.99598 2.66602 6.66732C2.66602 5.25283 3.22792 3.89628 4.22811 2.89608C5.22831 1.89589 6.58486 1.33398 7.99935 1.33398C9.41384 1.33398 10.7704 1.89589 11.7706 2.89608C12.7708 3.89628 13.3327 5.25283 13.3327 6.66732Z"
-                      stroke="#DBEAFE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z"
-                      stroke="#DBEAFE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                </svg>
-                Delhi, India
-              </li>
-              <li class="color-2 font-robots footlinks">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" class="me-2" height="16" viewBox="0 0 16 16"
-                  fill="none">
-                  <g opacity="0.7">
-                    <path
-                      d="M13.334 2.66602H2.66732C1.93094 2.66602 1.33398 3.26297 1.33398 3.99935V11.9993C1.33398 12.7357 1.93094 13.3327 2.66732 13.3327H13.334C14.0704 13.3327 14.6673 12.7357 14.6673 11.9993V3.99935C14.6673 3.26297 14.0704 2.66602 13.334 2.66602Z"
-                      stroke="#DBEAFE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M14.6673 4.66602L8.68732 8.46602C8.4815 8.59497 8.24353 8.66336 8.00065 8.66336C7.75777 8.66336 7.5198 8.59497 7.31398 8.46602L1.33398 4.66602"
-                      stroke="#DBEAFE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                </svg>
-                info@cpj.edu.in
-              </li>
-            </ul>
+          <div class="col-12 col-md-6">
+            <div class="main-img">
+              <img
+                src="images/Image (MBA students in classroom).webp"
+                class="h-100 w-100 object-fit-cover p-1"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div class="row copyrightBorder">
-        <div class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between text-center pt-3">
-          <p class="color-2 font-robots copyrightPara fw-400 mb-1">
-            © 2026 CPJ Group of Institutions. All Rights Reserved.
-          </p>
-          <ul class="d-flex align-items-center gap-4 list-unstyled mb-md-0">
-            <li class="color-2 font-robots copyrightPara fw-400">Privacy Policy</li>
-            <li class="color-2 font-robots copyrightPara fw-400">Terms of Use</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-</body>
+    </main>
 
+    <!-- E-Library Section -->
+    <section class="grievance-tables-section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="grievance-block-header text-center mb-4 mb-lg-5">
+          <h2 class="grievance-block-title font-poppins fw-700">E-LIBRARY</h2>
+          <div class="grievance-underline"></div>
+        </div>
+
+        <!-- Intro -->
+        <div class="grievance-intro">
+          <p class="font-robots grievance-intro-para mb-0" style="color: #000">
+            Students can access online Journals for their reference. Visit our E-Library.
+          </p>
+        </div>
+
+        <!-- Table 1: Management, Commerce & IT -->
+        <div class="grievance-table-block">
+          <h2 class="grievance-table-heading font-poppins" style="color: #014c88">
+            E-LIBRARY – MANAGEMENT, COMMERCE &amp; IT
+          </h2>
+          <div class="grievance-table-wrapper">
+            <table class="grievance-table">
+              <thead>
+                <tr>
+                  <th class="font-poppins">Sr.No.</th>
+                  <th class="font-poppins">Name of Journal</th>
+                  <th class="font-poppins">Online Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-robots">1</td>
+                  <td class="font-robots">Jstor (database)</td>
+                  <td class="font-robots"><a href="http://jstor.ac.in" target="_blank">http://jstor.ac.in</a></td>
+                </tr>
+                <tr>
+                  <td class="font-robots">2</td>
+                  <td class="font-robots">Decision: Indian Institute of Mgt. Calcutta</td>
+                  <td class="font-robots">
+                    <a href="http://link.springer.com/journal/40622" target="_blank"
+                      >http://link.springer.com/journal/40622</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">3</td>
+                  <td class="font-robots">Vikalpa: The Journal for Decision Makers</td>
+                  <td class="font-robots">
+                    <a href="http://journals.sagepub.com/home/vik" target="_blank"
+                      >http://journals.sagepub.com/home/vik</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">4</td>
+                  <td class="font-robots">Vision: The Journal of Business Perspective</td>
+                  <td class="font-robots">
+                    <a href="http://vision.sagepub.com" target="_blank">http://vision.sagepub.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">5</td>
+                  <td class="font-robots">Foreign Trade Review</td>
+                  <td class="font-robots">
+                    <a href="http://ftr.sagepub.com" target="_blank">http://ftr.sagepub.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">6</td>
+                  <td class="font-robots">Asian Journal of Management Cases</td>
+                  <td class="font-robots">
+                    <a href="http://ajc.sagepub.com" target="_blank">http://ajc.sagepub.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">7</td>
+                  <td class="font-robots">Human Resource Development</td>
+                  <td class="font-robots">
+                    <a href="http://journals.sagepub.com/home/hrd" target="_blank">journals.sagepub.com/home/hrd</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">8</td>
+                  <td class="font-robots">Prabandhan: Indian Journal of Management</td>
+                  <td class="font-robots">
+                    <a href="http://www.indianjournalofmanagement.com" target="_blank"
+                      >http://www.indianjournalofmanagement.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">9</td>
+                  <td class="font-robots">Indian Journal of Finance</td>
+                  <td class="font-robots">
+                    <a href="http://www.indianjournaloffinance.co.in" target="_blank"
+                      >http://www.indianjournaloffinance.co.in</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">10</td>
+                  <td class="font-robots">Artha Vijnana: Indian Journal of Economics &amp; Research</td>
+                  <td class="font-robots">
+                    <a href="http://www.indianjournalofeconomicsandresearch.com" target="_blank"
+                      >http://www.indianjournalofeconomicsandresearch.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">11</td>
+                  <td class="font-robots">Indian Journal of Marketing</td>
+                  <td class="font-robots">
+                    <a href="http://www.indianjournalofmarketing.com" target="_blank"
+                      >http://www.indianjournalofmarketing.com</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Table 2: Law -->
+        <div class="grievance-table-block">
+          <h2 class="grievance-table-heading font-poppins" style="color: #014c88">E-LIBRARY – LAW</h2>
+          <div class="grievance-table-wrapper">
+            <table class="grievance-table">
+              <thead>
+                <tr>
+                  <th class="font-poppins">Sr.No.</th>
+                  <th class="font-poppins">Name of Journal</th>
+                  <th class="font-poppins">Online Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-robots">1</td>
+                  <td class="font-robots">Yale Law Journal</td>
+                  <td class="font-robots">
+                    <a href="https://www.yalelawjournal.org" target="_blank">https://www.yalelawjournal.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">2</td>
+                  <td class="font-robots">National Green Tribunal Reporter</td>
+                  <td class="font-robots">
+                    <a href="http://www.greentribunal.gov.in" target="_blank">www.greentribunal.gov.in</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">3</td>
+                  <td class="font-robots">Univ. Journal of Ethics, Criminal Justice and Law</td>
+                  <td class="font-robots">
+                    <a href="http://www.serialspub.com" target="_blank">www.serialspub.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">4</td>
+                  <td class="font-robots">KanunBirisi</td>
+                  <td class="font-robots">
+                    <a href="http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive" target="_blank"
+                      >http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">5</td>
+                  <td class="font-robots">Yilka</td>
+                  <td class="font-robots">
+                    <a href="http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive" target="_blank"
+                      >http://sp.ulakbim.uov.tr/index.php/hukukdergi/issue/archive</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">6</td>
+                  <td class="font-robots">Journal of Indian Law Institute</td>
+                  <td class="font-robots">
+                    <a href="http://www.ili.ac.in/jili/index.html" target="_blank"
+                      >http://www.ili.ac.in/jili/index.html</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">7</td>
+                  <td class="font-robots">Legal Information Institute of India</td>
+                  <td class="font-robots">
+                    <a href="http://www.liiofindia.org" target="_blank">www.liiofindia.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">8</td>
+                  <td class="font-robots">Judgments Information System</td>
+                  <td class="font-robots"><a href="http://www.judis.nic.in" target="_blank">www.judis.nic.in</a></td>
+                </tr>
+                <tr>
+                  <td class="font-robots">9</td>
+                  <td class="font-robots">Judgments</td>
+                  <td class="font-robots">
+                    <a href="http://www.indiankanoon.org" target="_blank">www.indiankanoon.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">10</td>
+                  <td class="font-robots">Aspen Family Law &amp; Policy Journal</td>
+                  <td class="font-robots">
+                    <a href="https://www.law.harvard.edu" target="_blank">https://www.law.harvard.edu</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">11</td>
+                  <td class="font-robots">Comparative Law Review</td>
+                  <td class="font-robots">
+                    <a href="http://www.comparativelawreview.umk.pl" target="_blank">www.comparativelawreview.umk.pl</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">12</td>
+                  <td class="font-robots">Entertainment and Sports Law Journal</td>
+                  <td class="font-robots">
+                    <a href="https://www.entertainmentsportslawjournal.com" target="_blank"
+                      >https://www.entertainmentsportslawjournal.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">13</td>
+                  <td class="font-robots">Human Affairs</td>
+                  <td class="font-robots">
+                    <a href="http://www.humanaffairs.sk" target="_blank">www.humanaffairs.sk</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">14</td>
+                  <td class="font-robots">Harvard Human Rights Journal</td>
+                  <td class="font-robots">
+                    <a href="https://harvardhrj.com/category/harvard-law-journal" target="_blank"
+                      >https://harvardhrj.com/category/harvard-law-journal</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">15</td>
+                  <td class="font-robots">National Green Law Review</td>
+                  <td class="font-robots">
+                    <a href="https://www.lawreview.org" target="_blank">https://www.lawreview.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">16</td>
+                  <td class="font-robots">Journal of Information, Law and Technology</td>
+                  <td class="font-robots">
+                    <a href="https://lawreview.rep.org" target="_blank">https://lawreview.rep.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">17</td>
+                  <td class="font-robots">Journal of International Commercial Law and Technology</td>
+                  <td class="font-robots"><a href="http://www.jiclt.com" target="_blank">http://www.jiclt.com</a></td>
+                </tr>
+                <tr>
+                  <td class="font-robots">18</td>
+                  <td class="font-robots">Journal of Law &amp; Family Studies</td>
+                  <td class="font-robots">
+                    <a href="https://family.lawreview.org" target="_blank">https://family.lawreview.org</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">19</td>
+                  <td class="font-robots">Journal of Philosophy, Science and Law</td>
+                  <td class="font-robots">
+                    <a href="https://www.pdcnet.org/jpsl" target="_blank">https://www.pdcnet.org/jpsl</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-robots">20</td>
+                  <td class="font-robots">Journal of Politics and Law</td>
+                  <td class="font-robots">
+                    <a href="https://www.ccsenet.org/jpl" target="_blank">https://www.ccsenet.org/jpl</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-shad-1 footerContainer">
+      <div class="container d-flex flex-column gap-48 gap-md-20">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="d-flex flex-column gap-3 gap-md-4">
+              <div class="logo-img"><img src="images/Image.webp" class="h-100 object-fit-cover" alt="" /></div>
+              <div class="fpara">
+                <p class="color-2 font-robots mb-2">
+                  Committed to delivering quality higher and professional education through academic excellence.
+                </p>
+              </div>
+              <div class="d-flex gap-3 gap-md-4 align-items-center">
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M15.0007 1.66602H12.5007C11.3956 1.66602 10.3358 2.105 9.55437 2.8864C8.77297 3.66781 8.33398 4.72761 8.33398 5.83268V8.33268H5.83398V11.666H8.33398V18.3327H11.6673V11.666H14.1673L15.0007 8.33268H11.6673V5.83268C11.6673 5.61167 11.7551 5.39971 11.9114 5.24343C12.0677 5.08715 12.2796 4.99935 12.5007 4.99935H15.0007V1.66602Z"
+                      stroke="#DBEAFE"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M18.3327 3.3327C18.3327 3.3327 17.7493 5.0827 16.666 6.16603C17.9993 14.4994 8.83268 20.5827 1.66602 15.8327C3.49935 15.916 5.33268 15.3327 6.66602 14.166C2.49935 12.916 0.416016 7.99937 2.49935 4.16603C4.33268 6.3327 7.16602 7.5827 9.99935 7.49937C9.24935 3.99937 13.3327 1.99937 15.8327 4.3327C16.7493 4.3327 18.3327 3.3327 18.3327 3.3327Z"
+                      stroke="#DBEAFE"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M13.334 6.66602C14.6601 6.66602 15.9318 7.1928 16.8695 8.13048C17.8072 9.06816 18.334 10.3399 18.334 11.666V17.4993H15.0007V11.666C15.0007 11.224 14.8251 10.8001 14.5125 10.4875C14.1999 10.1749 13.776 9.99935 13.334 9.99935C12.892 9.99935 12.468 10.1749 12.1555 10.4875C11.8429 10.8001 11.6673 11.224 11.6673 11.666V17.4993H8.33398V11.666C8.33398 10.3399 8.86077 9.06816 9.79845 8.13048C10.7361 7.1928 12.0079 6.66602 13.334 6.66602Z"
+                      stroke="#DBEAFE"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.99935 7.5H1.66602V17.5H4.99935V7.5Z"
+                      stroke="#DBEAFE"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.33268 4.99935C4.25316 4.99935 4.99935 4.25316 4.99935 3.33268C4.99935 2.41221 4.25316 1.66602 3.33268 1.66602C2.41221 1.66602 1.66602 2.41221 1.66602 3.33268C1.66602 4.25316 2.41221 4.99935 3.33268 4.99935Z"
+                      stroke="#DBEAFE"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column align-items-md-center mb-3 mb-md-0">
+            <div class="d-flex flex-column gap-3">
+              <h3 class="text-white foothead fw-700 font-poppins mb-0">Quick Links</h3>
+              <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footlinks">About Us</li>
+                <li class="color-2 font-robots footlinks">Institutes</li>
+                <li class="color-2 font-robots footlinks">Academic Philosophy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column align-items-md-center">
+            <div class="d-flex flex-column gap-3">
+              <h3 class="text-white foothead fw-700 font-poppins mb-0">Contact</h3>
+              <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footlinks">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    class="me-2"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        d="M13.3327 6.66732C13.3327 9.99598 9.64002 13.4627 8.40002 14.5333C8.2845 14.6202 8.14388 14.6672 7.99935 14.6672C7.85482 14.6672 7.7142 14.6202 7.59868 14.5333C6.35868 13.4627 2.66602 9.99598 2.66602 6.66732C2.66602 5.25283 3.22792 3.89628 4.22811 2.89608C5.22831 1.89589 6.58486 1.33398 7.99935 1.33398C9.41384 1.33398 10.7704 1.89589 11.7706 2.89608C12.7708 3.89628 13.3327 5.25283 13.3327 6.66732Z"
+                        stroke="#DBEAFE"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 8.66699C9.10457 8.66699 10 7.77156 10 6.66699C10 5.56242 9.10457 4.66699 8 4.66699C6.89543 4.66699 6 5.56242 6 6.66699C6 7.77156 6.89543 8.66699 8 8.66699Z"
+                        stroke="#DBEAFE"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  Delhi, India
+                </li>
+                <li class="color-2 font-robots footlinks">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    class="me-2"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        d="M13.334 2.66602H2.66732C1.93094 2.66602 1.33398 3.26297 1.33398 3.99935V11.9993C1.33398 12.7357 1.93094 13.3327 2.66732 13.3327H13.334C14.0704 13.3327 14.6673 12.7357 14.6673 11.9993V3.99935C14.6673 3.26297 14.0704 2.66602 13.334 2.66602Z"
+                        stroke="#DBEAFE"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.6673 4.66602L8.68732 8.46602C8.4815 8.59497 8.24353 8.66336 8.00065 8.66336C7.75777 8.66336 7.5198 8.59497 7.31398 8.46602L1.33398 4.66602"
+                        stroke="#DBEAFE"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                  info@cpj.edu.in
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row copyrightBorder">
+          <div
+            class="d-flex flex-wrap flex-md-nowrap justify-content-center justify-content-md-between text-center pt-3"
+          >
+            <p class="color-2 font-robots copyrightPara fw-400 mb-1">
+              © 2026 CPJ Group of Institutions. All Rights Reserved.
+            </p>
+            <ul class="d-flex align-items-center gap-4 list-unstyled mb-md-0">
+              <li class="color-2 font-robots copyrightPara fw-400">Privacy Policy</li>
+              <li class="color-2 font-robots copyrightPara fw-400">Terms of Use</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
