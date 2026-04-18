@@ -6,6 +6,7 @@
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
     }
+
 }
 
 @media (max-width:993px) {
@@ -13,6 +14,7 @@
         box-shadow: none !important;
         border-radius: 0px !important;
     }
+
 
     .custom-dropdown-menu .dropdown-item,
     .custom-dropdown-menu {
@@ -44,16 +46,21 @@
         border-top: 1px solid #014C88;
     }
 
-    .containerPy,
-    .footerContainer {
+    .containerPy {
         padding: 40px 10px !important;
     }
+
+    .footerContainer {
+        padding: 40px 10px 20px 10px !important;
+    }
+
 
     .bgColorLinear {
         padding: 30px 10px;
     }
 
-    .infra-content {
+    .infra-content,
+    .faqbutton button {
         padding: 10px 20px;
     }
 
@@ -120,7 +127,8 @@
     .btn-brochure,
     .btn-visit,
     .industialPara,
-    .text-col p {
+    .text-col p,
+    .faqbutton button {
         font-size: 14px;
         line-height: 24px;
     }
@@ -132,7 +140,9 @@
         line-height: 28px;
     }
 
-    .careerOppPoint {
+    .careerOppPoint,
+    .copyrightPara,
+    .fpara p {
         font-size: 12px;
         line-height: 20px;
     }
