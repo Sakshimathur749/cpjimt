@@ -96,7 +96,8 @@
         line-height: 30px;
     }
 
-    .infra-content h2 {
+    .infra-content h2,
+    .text-col h2 {
         font-size: 22px;
         line-height: 30px;
     }
@@ -118,7 +119,8 @@
     .btn-apply,
     .btn-brochure,
     .btn-visit,
-    .industialPara {
+    .industialPara,
+    .text-col p {
         font-size: 14px;
         line-height: 24px;
     }
