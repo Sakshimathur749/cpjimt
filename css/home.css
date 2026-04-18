@@ -134,6 +134,44 @@ body {
 }
 
 /* =====================
+   Banner Entrance Animations
+   ===================== */
+@keyframes bannerContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bannerImageIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-banner-content,
+.home-banner-images {
+  opacity: 0;
+}
+
+.banner-animate-content {
+  animation: bannerContentIn 0.8s ease forwards;
+}
+
+.banner-animate-image {
+  animation: bannerImageIn 0.8s ease 0.2s forwards;
+}
+
+/* =====================
    Home Banner Section
    ===================== */
 .home-banner-section {
@@ -198,12 +236,11 @@ body {
   font-weight: 500;
 }
 
-.home-banner-tag-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #f5c518;
-  flex-shrink: 0;
+.banner-tag-border {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: radial-gradient(circle, #f0bf02 0%, #f0bf0200 100%);
+  border-image-slice: 1;
 }
 
 .home-banner-heading {
@@ -294,12 +331,22 @@ body {
 
 .home-banner-bg-layer {
   position: absolute;
-  top: 71px;
-  right: 175px;
+  top: 62px;
+  right: 125px;
   z-index: 1;
-  width: 160px;
+  width: 236px;
   height: auto;
   opacity: 0.9;
+  animation: rotateBgLayer 12s linear infinite;
+}
+
+@keyframes rotateBgLayer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* =====================
@@ -321,7 +368,7 @@ body {
   padding: 12px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 8px;
   background-color: #014c88;
 }
@@ -357,6 +404,34 @@ body {
 /* =====================
    Programs Offered Section
    ===================== */
+
+/* Card scroll-in animation */
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.programs-offered-card {
+  opacity: 0;
+}
+
+.programs-offered-card.card-visible {
+  animation: cardFadeUp 0.6s ease forwards;
+}
+
+.programs-offered-card.card-visible:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.programs-offered-card.card-visible:nth-child(3) {
+  animation-delay: 0.3s;
+}
 .programs-offered-section {
   padding: 72px 0px;
 }
@@ -389,6 +464,14 @@ body {
   border-radius: 0px;
   overflow: hidden;
   background: #ffffff;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.programs-offered-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 .programs-offered-img-wrap {
@@ -403,6 +486,11 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.programs-offered-card:hover .programs-offered-img {
+  transform: scale(1.04);
 }
 
 .programs-offered-card-body {
@@ -477,7 +565,61 @@ body {
   flex-direction: column;
   gap: 20px;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
   transition: background-color 0.2s ease;
+}
+
+.why-love-card.card-visible {
+  animation: cardFadeUp 0.6s ease forwards;
+}
+
+.why-love-card.card-visible:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.why-love-card.card-visible:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.why-love-card.card-visible:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.why-love-card.card-visible:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.why-love-card.card-visible:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+/* Hover overlay description */
+.why-love-card-desc {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(1, 76, 136, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 32px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.why-love-card:hover .why-love-card-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-love-card-desc p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.75;
+  margin: 0;
+  text-align: center;
 }
 
 .why-love-icon-wrap {
@@ -711,9 +853,60 @@ body {
   grid-column: span 4;
 }
 
+/* Gallery item — scroll-in animation */
+@keyframes galleryFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .gallery-item {
   overflow: hidden;
   border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.gallery-item.gallery-visible {
+  animation: galleryFadeIn 0.5s ease forwards;
+}
+
+/* stagger each item */
+.gallery-item.gallery-visible:nth-child(1) {
+  animation-delay: 0s;
+}
+.gallery-item.gallery-visible:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.gallery-item.gallery-visible:nth-child(3) {
+  animation-delay: 0.16s;
+}
+.gallery-item.gallery-visible:nth-child(4) {
+  animation-delay: 0.24s;
+}
+.gallery-item.gallery-visible:nth-child(5) {
+  animation-delay: 0.32s;
+}
+.gallery-item.gallery-visible:nth-child(6) {
+  animation-delay: 0.4s;
+}
+.gallery-item.gallery-visible:nth-child(7) {
+  animation-delay: 0.48s;
+}
+.gallery-item.gallery-visible:nth-child(8) {
+  animation-delay: 0.56s;
+}
+.gallery-item.gallery-visible:nth-child(9) {
+  animation-delay: 0.64s;
+}
+.gallery-item.gallery-visible:nth-child(10) {
+  animation-delay: 0.72s;
 }
 
 .gallery-img {
@@ -725,11 +918,176 @@ body {
 }
 
 .gallery-item:hover .gallery-img {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 
 .gallery-item:nth-child(n + 8) .gallery-img {
   height: 240px;
+}
+
+/* Hover overlay */
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 76, 136, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.gallery-zoom-icon {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* =====================
+   Gallery Lightbox Modal
+   ===================== */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.gallery-modal.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.gallery-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: pointer;
+}
+
+.gallery-modal-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 60px;
+}
+
+.gallery-modal-img {
+  width: 100%;
+  height: 500px;
+  max-width: 900px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-modal-img.is-switching {
+  opacity: 0;
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.gallery-modal-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.gallery-modal-nav {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 1;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.gallery-modal-nav:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-modal-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive lightbox */
+@media (max-width: 767px) {
+  .gallery-modal-content {
+    margin: 0 12px;
+    max-height: 280px;
+  }
+  .gallery-modal-img {
+    height: 280px;
+  }
+  .gallery-modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-modal-content {
+    margin: 0 8px;
+    max-height: 220px;
+  }
+  .gallery-modal-img {
+    height: 220px;
+  }
+  .gallery-modal-nav {
+    width: 34px;
+    height: 34px;
+    font-size: 24px;
+  }
 }
 
 /* =====================
@@ -767,12 +1125,15 @@ body {
   gap: 10px;
 }
 
-.home-testimonial-grid {
+.home-testimonial-swiper {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-testimonial-swiper .swiper-slide {
+  height: auto;
 }
 
 .home-testimonial-card {
@@ -781,7 +1142,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 34px;
-  box-shadow: 0 0 50px 0 rgba(17, 17, 26, 0.05);
+  box-shadow: 0 0 20px 0 rgba(17, 17, 26, 0.05);
   transition: box-shadow 0.25s ease;
 }
 
@@ -1162,7 +1523,7 @@ body {
     padding: 16px 8px;
     text-align: center;
     align-items: center;
-    min-height: 96px;
+    min-height: 106px;
   }
   .home-banner-stat-divider {
     display: none;
@@ -1171,7 +1532,7 @@ body {
     font-size: 28px;
   }
   .home-banner-stat-label {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   /* Programs Offered */
@@ -1281,10 +1642,6 @@ body {
   .home-testimonial-header {
     margin-bottom: 32px;
   }
-  .home-testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
   .home-testimonial-quotes-img {
     width: 120px;
   }
@@ -1327,7 +1684,7 @@ body {
     gap: 24px;
   }
   .home-banner-heading {
-    font-size: 26px;
+    font-size: 30px;
   }
   .home-banner-tag {
     font-size: 11px;
@@ -1350,9 +1707,6 @@ body {
   }
   .home-banner-stat-item {
     flex: 0 0 50%;
-  }
-  .home-banner-stat-label {
-    font-size: 10px;
   }
 
   /* Programs Offered */

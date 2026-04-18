@@ -85,6 +85,26 @@ body {
   -webkit-overflow-scrolling: touch;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.grievance-table-wrapper::-webkit-scrollbar {
+  height: 4px;
+}
+
+.grievance-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 2px;
+}
+
+.grievance-table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+
+.grievance-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 .grievance-table {
@@ -232,6 +252,7 @@ body {
   .grievance-table td {
     padding: 9px 10px;
     font-size: 11px;
+    min-width: 160px;
   }
 }
 
