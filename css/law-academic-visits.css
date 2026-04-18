@@ -1,0 +1,226 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-robots {
+  font-family: 'Roboto Slab', serif !important;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.color-4 {
+  color: #0f172a !important;
+}
+
+/* =====================
+   About the Programme Section
+   ===================== */
+.law-visits-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.law-visits-header {
+  margin-bottom: 16px;
+}
+
+.law-visits-title {
+  font-size: 28px;
+  color: #014c88;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.law-visits-underline {
+  width: 60px;
+  height: 3px;
+  background: #e63946;
+  border-radius: 2px;
+  margin: 0 auto 28px;
+}
+
+.law-visits-intro {
+  font-size: 14px;
+  color: #45556c;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 1084px;
+}
+
+/* =====================
+   Photo Grid
+   ===================== */
+.law-visits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.law-visit-card {
+  position: relative;
+  border-radius: 15.148px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #e2e8f0;
+  box-shadow:
+    0 3.787px 5.68px -0.947px rgba(0, 0, 0, 0.1),
+    0 1.893px 3.787px -1.893px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.law-visit-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.32) 50%, rgba(0, 0, 0, 0) 75%);
+}
+
+.law-visit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.law-visit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.law-visit-card:hover .law-visit-img {
+  transform: scale(1.04);
+}
+
+.law-visit-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 16px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+}
+
+.date-text {
+  display: block;
+  color: #fff;
+  font-size: 9.467px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.201px; /* 150% */
+}
+
+.law-visit-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  display: block;
+}
+
+/* =====================
+   Media Queries
+   ===================== */
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .law-visits-section {
+    padding: 60px 0;
+  }
+
+  .law-visits-title {
+    font-size: 24px;
+  }
+
+  .law-visits-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .law-visits-intro {
+    font-size: 13px;
+  }
+
+  .law-visit-label {
+    font-size: 10px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .law-visit-card {
+    border-radius: 10.148px;
+  }
+
+  .law-visits-section {
+    padding: 48px 0;
+  }
+
+  .law-visits-title {
+    font-size: 22px;
+  }
+
+  .law-visits-underline {
+    margin-bottom: 20px;
+  }
+
+  .law-visits-intro {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+
+  .law-visits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .law-visit-label {
+    font-size: 10px;
+  }
+}
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+  .law-visits-section {
+    padding: 36px 0;
+  }
+
+  .law-visits-title {
+    font-size: 20px;
+  }
+
+  .law-visits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .law-visit-label {
+    font-size: 9px;
+  }
+
+  .law-visit-overlay {
+    padding: 16px 6px 6px;
+  }
+}
