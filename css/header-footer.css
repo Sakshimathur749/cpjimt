@@ -11,6 +11,10 @@
   box-shadow: none !important;
 }
 
+.bg-shad-3 {
+  background: #01829a !important;
+}
+
 .menu {
   gap: 32px;
 }
