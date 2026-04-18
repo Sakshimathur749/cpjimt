@@ -97,4 +97,7 @@
   .news-grid-title {
     font-size: 22px;
   }
+  .news-card-img-wrap {
+    aspect-ratio: unset;
+  }
 }
