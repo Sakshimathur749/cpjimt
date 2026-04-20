@@ -1,1226 +1,1583 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPJ UG Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CPJ UG Website</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/header-footer.css" />
-  <link rel="stylesheet" href="css/home.css" />
-</head>
-
-<body>
-  <div class="container-fluid bg-shad-3">
-    <div class="container ">
-      <div
-        class="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center justify-content-sm-between gap-2 gap-md-3 py-2 py-md-3 ">
-        <p class="mb-0 font-poppins text-uppercase font-poppins headbanner text-white">Lorem Ispum lorem ispum
-          lorem ispum
-        </p>
+  <body>
+    <div class="container-fluid bg-shad-3">
+      <div class="container">
         <div
-          class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between gap-2 gap-md-5">
-          <ul
-            class="text-center d-flex gap-3 gap-md-4 list-unstyled align-items-md-center justify-content-md-center mb-2 mb-md-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                Campus Life @CPJIMT
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#ffffff" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">Clubs & Committees</a></li>
-                <li><a class="dropdown-item" href="#">Event Calendar</a></li>
-                <li><a class="dropdown-item" href="#">Event Gallery</a></li>
-                <li><a class="dropdown-item" href="#">Video Gallery</a></li>
-                <li><a class="dropdown-item" href="#">National Events</a></li>
-                <li><a class="dropdown-item" href="#">Excursion Trips</a></li>
-                <li><a class="dropdown-item" href="#">Sports Gallery</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                Students Corner
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#ffffff" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">ERP</a></li>
-                <li><a class="dropdown-item" href="#">Grievance Redressal Cell</a></li>
-                <li><a class="dropdown-item" href="#">E-Library</a></li>
-                <li><a class="dropdown-item" href="#">Quick Access</a></li>
-                <li><a class="dropdown-item" href="#">Student Awareness </a></li>
-                <li><a class="dropdown-item" href="#">CPJIMT Newsletter</a></li>
-                <li><a class="dropdown-item" href="#">Blogs</a></li>
-                <li><a class="dropdown-item" href="#">Student Handbook</a></li>
-              </ul>
-            </li>
-          </ul>
-          <button
-            class="text-nowrap bg-white border-radius-16 d-flex align-items-center justify-content-center border-0 px-4 py-2 font-poppins color-5 fw-600 bannerbtn">Apply
-            Now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-lg py-4">
-    <div class="container ">
-      <div class="w-100 d-flex align-items-center justify-content-between gap-3 gap-md-4 mb-3 mb-lg-0">
-        <div class="logo-img"><img src="images/CPJ Logo.webp" class="h-100 w-100 object-fit-cover" alt="">
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="d-none d-lg-flex justify-content-center">
-          <ul
-            class="menu text-center d-flex flex-column flex-md-row list-unstyled align-items-md-center justify-content-md-center mb-md-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                About Us
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
-                <li><a class="dropdown-item" href="#">About The College</a></li>
-                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                <li><a class="dropdown-item" href="#">Leadership Council</a></li>
-                <li><a class="dropdown-item" href="#">Acred</a></li>
-                <li><a class="dropdown-item" href="#">Advisory Board</a></li>
-                <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
-                <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
-                <li><a class="dropdown-item" href="#">NSS Cell</a></li>
-                <li><a class="dropdown-item" href="#">Disclaimer</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true">
-                Programmes
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu" style="min-width: 300px;">
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                    UG (Under Graduate)
-                    <svg class="submenu-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6"
-                      viewBox="0 0 9 6" fill="none">
-                      <path
-                        d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                        fill="#0F172A" />
-                    </svg>
-                  </a>
-                  <ul class="collapse-menu list-unstyled">
-                    <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
-                    <li><a class="dropdown-item" href="#">About The College</a></li>
-                    <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                    <li><a class="dropdown-item" href="#">Leadership Council</a></li>
-                    <li><a class="dropdown-item" href="#">Acred</a></li>
-                    <li><a class="dropdown-item" href="#">Advisory Board</a></li>
-                    <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
-                    <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
-                    <li><a class="dropdown-item" href="#">NSS Cell</a></li>
-                    <li><a class="dropdown-item" href="#">Disclaimer</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                    PG (Post Graduate)
-                    <svg class="submenu-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6"
-                      viewBox="0 0 9 6" fill="none">
-                      <path
-                        d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                        fill="#0F172A" />
-                    </svg>
-                  </a>
-                  <ul class="collapse-menu list-unstyled">
-                    <li><a class="dropdown-item" href="#">MBA</a></li>
-                    <li><a class="dropdown-item" href="#">MCA</a></li>
-                    <li><a class="dropdown-item" href="#">LL.M</a></li>
-                  </ul>
-                </li>
-
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
-                Academia & Administration
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">School of Management, Technology & Law</a></li>
-                <li><a class="dropdown-item" href="#">Administrative Team </a></li>
-                <li><a class="dropdown-item" href="#">Adjunct Industry Resources</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
-                Admissions
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">Apply Online</a></li>
-                <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
-                <li><a class="dropdown-item" href="#">Transport Fee</a></li>
-                <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
-                <li><a class="dropdown-item" href="#">Admission Brochure</a></li>
-                <li><a class="dropdown-item" href="#">Pixi Card</a></li>
-                <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
-                Infrastructure
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
-                href="#" role="button" data-bs-toggle="dropdown">
-                Industry Interface
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu">
-                <li><a class="dropdown-item" href="#">Industry Interface Cell</a></li>
-                <li><a class="dropdown-item" href="#">Recruiters</a></li>
-                <li><a class="dropdown-item" href="#">Placement Drives</a></li>
-                <li><a class="dropdown-item" href="#">Internship Drives</a></li>
-                <li><a class="dropdown-item" href="#">Academic Visits </a></li>
-                <li><a class="dropdown-item" href="#">Industrial Visits</a></li>
-                <li><a class="dropdown-item" href="#">Success Stories</a></li>
-                <li><a class="dropdown-item" href="#">Media Channel</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
-        <div class="offcanvas-header">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="list-unstyled">
-            <li class="menu-item dropdown border-bottom py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                About Us
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-                <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
-                <li><a class="dropdown-item" href="#">About The College</a></li>
-                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                <li><a class="dropdown-item" href="#">Leadership Council</a></li>
-                <li><a class="dropdown-item" href="#">Acred</a></li>
-                <li><a class="dropdown-item" href="#">Advisory Board</a></li>
-                <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
-                <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
-                <li><a class="dropdown-item" href="#">NSS Cell</a></li>
-                <li><a class="dropdown-item" href="#">Disclaimer</a></li>
-              </ul>
-            </li>
-
-            <li class="menu-item dropdown border-bottom py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                Programmes
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                    UG (Under Graduate)
-                    <svg class="submenu-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6"
-                      viewBox="0 0 9 6" fill="none">
-                      <path
-                        d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                        fill="#0F172A" />
-                    </svg>
-                  </a>
-                  <ul class="collapse-menu list-unstyled">
-                    <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
-                    <li><a class="dropdown-item" href="#">About The College</a></li>
-                    <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                    <li><a class="dropdown-item" href="#">Leadership Council</a></li>
-                    <li><a class="dropdown-item" href="#">Acred</a></li>
-                    <li><a class="dropdown-item" href="#">Advisory Board</a></li>
-                    <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
-                    <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
-                    <li><a class="dropdown-item" href="#">NSS Cell</a></li>
-                    <li><a class="dropdown-item" href="#">Disclaimer</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                    PG (Post Graduate)
-                    <svg class="submenu-arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6"
-                      viewBox="0 0 9 6" fill="none">
-                      <path
-                        d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                        fill="#0F172A" />
-                    </svg>
-                  </a>
-                  <ul class="collapse-menu list-unstyled">
-                    <li><a class="dropdown-item" href="#">MBA</a></li>
-                    <li><a class="dropdown-item" href="#">MCA</a></li>
-                    <li><a class="dropdown-item" href="#">LL.M</a></li>
-                  </ul>
-                </li>
-
-              </ul>
-            </li>
-
-            <li class="menu-item dropdown border-bottom py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                Academia & Administration
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-                <li><a class="dropdown-item text-wrap" href="#">School of Management, Technology & Law</a></li>
-                <li><a class="dropdown-item" href="#">Administrative Team </a></li>
-                <li><a class="dropdown-item" href="#">Adjunct Industry Resources</a></li>
-              </ul>
-            </li>
-
-            <li class="menu-item dropdown border-bottom py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                Admissions
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-                <li><a class="dropdown-item" href="#">Apply Online</a></li>
-                <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
-                <li><a class="dropdown-item" href="#">Transport Fee</a></li>
-                <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
-                <li><a class="dropdown-item" href="#">Admission Brochure</a></li>
-                <li><a class="dropdown-item" href="#">Pixi Card</a></li>
-                <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
-              </ul>
-            </li>
-
-            <li class="menu-item dropdown border-bottom py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                Infrastructure
-              </a>
-            </li>
-
-            <li class="menu-item dropdown py-1">
-              <a class="menu-title dropdown-toggle color-4 font-poppins fw-700 d-flex justify-content-between align-items-center"
-                href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px;">
-                Industry Interface
-                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6"
-                  fill="none">
-                  <path
-                    d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
-                    fill="#0F172A" />
-                </svg>
-              </a>
-              <ul class="dropdown-menu custom-dropdown-menu position-static w-100 mt-1">
-                <li><a class="dropdown-item" href="#">Industry Interface Cell</a></li>
-                <li><a class="dropdown-item" href="#">Recruiters</a></li>
-                <li><a class="dropdown-item" href="#">Placement Drives</a></li>
-                <li><a class="dropdown-item" href="#">Internship Drives</a></li>
-                <li><a class="dropdown-item" href="#">Academic Visits </a></li>
-                <li><a class="dropdown-item" href="#">Industrial Visits</a></li>
-                <li><a class="dropdown-item" href="#">Success Stories</a></li>
-                <li><a class="dropdown-item" href="#">Media Channel</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- ===== HOME BANNER SECTION ===== -->
-  <!-- ===== HOME BANNER SECTION ===== -->
-  <section class="home-banner-section">
-    <!-- Background Video -->
-    <video class="home-banner-video" autoplay muted loop playsinline>
-      <source src="images/home-banner-video.mp4" type="video/mp4" />
-    </video>
-    <!-- Gradient Overlay -->
-    <div class="home-banner-overlay"></div>
-    <div class="position-absolute top-0 start-0 w-100 h-100"
-      style="background: url('images/grid-img.png'); background-size: cover; z-index: 99"></div>
-    <div class="home-banner-container position-relative cpj-container text-md-start text-center" style="z-index: 99">
-      <!-- Left Content -->
-      <div class="home-banner-content">
-        <div class="home-banner-tag justify-content-md-start justify-content-center">
-          <span class="">
-            <img src="images/banner-icon.svg" />
-          </span>
-          <span class="font-poppins banner-tag-border">Welcome to CPJ Institute of Management &amp; Technology</span>
-        </div>
-        <h1 class="home-banner-heading font-poppins mb-2">
-          <span class="border-text"> Making Quality </span><br />
-          Education <span class="home-banner-heading-highlight">Accessible to All</span>
-        </h1>
-        <p class="home-banner-desc font-robots mb-4">
-          At CPJIMT, we offer <strong>courses in law, management, and technology</strong> with top-notch faculty and
-          <strong>career-focused</strong> learning at affordable fees.
-        </p>
-        <a href="#"
-          class="mx-md-0 mx-auto home-banner-btn font-poppins justify-content-md-start justify-content-center">
-          Get Started Today
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Right Images -->
-      <div class="home-banner-images d-md-block d-none">
-        <img src="images/banner-student-img.webp" alt="Student" class="home-banner-student-img" />
-        <img src="images/banner-bg-layer.webp" alt="" class="home-banner-bg-layer" aria-hidden="true" />
-      </div>
-    </div>
-
-    <!-- Stats Bar -->
-  </section>
-  <!-- ===== END HOME BANNER SECTION ===== -->
-
-  <!-- ===== END Stats SECTION ===== -->
-  <section class="stats-section-main">
-    <div class="home-banner-stats">
-      <div class="home-banner-stats-inner">
-        <div class="home-banner-stat-item ps-md-3">
-          <span class="home-banner-stat-number font-poppins">7000+</span>
-          <span class="home-banner-stat-label font-robots">Alumni</span>
-        </div>
-        <div class="home-banner-stat-divider"></div>
-        <div class="home-banner-stat-item ps-md-3">
-          <span class="home-banner-stat-number font-poppins">3000+</span>
-          <span class="home-banner-stat-label font-robots">Students</span>
-        </div>
-        <div class="home-banner-stat-divider"></div>
-        <div class="home-banner-stat-item ps-md-3">
-          <span class="home-banner-stat-number font-poppins">1000+</span>
-          <span class="home-banner-stat-label font-robots">Industrial &amp; Academic Visits</span>
-        </div>
-        <div class="home-banner-stat-divider"></div>
-        <div class="home-banner-stat-item ps-md-3">
-          <span class="home-banner-stat-number font-poppins">1000+</span>
-          <span class="home-banner-stat-label font-robots">Academic Activities</span>
-        </div>
-        <div class="home-banner-stat-divider"></div>
-        <div class="home-banner-stat-item ps-md-3">
-          <span class="home-banner-stat-number font-poppins">100+</span>
-          <span class="home-banner-stat-label font-robots">Staff</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===== END Stats SECTION ===== -->
-
-  <!-- ===== PROGRAMS OFFERED SECTION ===== -->
-  <section class="programs-offered-section">
-    <div class="cpj-container">
-      <div class="programs-offered-header">
-        <span class="home-section-tagline font-poppins">Learning at CPJIMT</span>
-        <h2 class="home-section-title font-poppins">Programs Offered</h2>
-      </div>
-      <div class="programs-offered-grid">
-        <!-- Card 1 -->
-        <div class="programs-offered-card">
-          <div class="programs-offered-img-wrap">
-            <img src="images/program-offered-img-1.webp" alt="Bachelor of Business Administration"
-              class="programs-offered-img" />
-          </div>
-          <div class="programs-offered-card-body">
-            <h3 class="programs-offered-card-title font-poppins" title="Bachelor of Business Administration (BBA)">
-              Bachelor of Business Administration (BBA)
-            </h3>
-            <p class="programs-offered-card-desc font-robots">
-              Intellectual Ability, Executive Personality &amp; Managerial Skills Leadership Qualities Real-Life Case
-              Studies , Various Interest-Based Specializations
-            </p>
-            <p class="programs-offered-card-meta font-poppins">Duration 3 Years | Eligibility 45% in XII</p>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="programs-offered-card">
-          <div class="programs-offered-img-wrap">
-            <img src="images/program-offered-img-1.webp" alt="Bachelor of Computer Applications"
-              class="programs-offered-img" />
-          </div>
-          <div class="programs-offered-card-body">
-            <h3 class="programs-offered-card-title font-poppins" title="Bachelor of Computer Applications (BCA)">
-              Bachelor of Computer Applications (BCA)
-            </h3>
-            <p class="programs-offered-card-desc font-robots">
-              Computer Science Industrial Computing Analysis &amp; Synthesis
-            </p>
-            <p class="programs-offered-card-meta font-poppins">Duration 3 Years | Eligibility 45% in XII</p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="programs-offered-card">
-          <div class="programs-offered-img-wrap">
-            <img src="images/program-offered-img-1.webp" alt="Bachelor of Technology" class="programs-offered-img" />
-          </div>
-          <div class="programs-offered-card-body">
-            <h3 class="programs-offered-card-title font-poppins"
-              title="Bachelor of Technology in Computer Science &amp; Engineering B.Tech (CSE)">
-              Bachelor of Technology in Computer Science &amp; Engineering B.Tech (CSE)
-            </h3>
-            <p class="programs-offered-card-desc font-robots">
-              AI &amp; Machine Learning (ML) Specialization | Technical Abilities | Analytical Thinking
-              Problem-Solving Skills
-            </p>
-            <p class="programs-offered-card-meta font-poppins">Duration 4 Years | Eligibility 45% in XII PCM</p>
+          class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center justify-content-md-between gap-2 gap-md-3 py-2 py-md-3"
+        >
+          <p class="mb-0 font-poppins text-uppercase font-poppins headbanner text-white">
+            Lorem Ispum lorem ispum lorem ispum
+          </p>
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between gap-2 gap-md-5"
+          >
+            <ul
+              class="text-center d-flex gap-3 gap-md-4 list-unstyled align-items-md-center justify-content-md-center mb-2 mb-md-0"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                >
+                  Campus Life @CPJIMT
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Clubs & Committees</a></li>
+                  <li><a class="dropdown-item" href="#">Event Calendar</a></li>
+                  <li><a class="dropdown-item" href="#">Event Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">National Events</a></li>
+                  <li><a class="dropdown-item" href="#">Excursion Trips</a></li>
+                  <li><a class="dropdown-item" href="#">Sports Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white font-poppins fw-600 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true"
+                >
+                  Students Corner
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ERP</a></li>
+                  <li><a class="dropdown-item" href="#">Grievance Redressal Cell</a></li>
+                  <li><a class="dropdown-item" href="#">E-Library</a></li>
+                  <li><a class="dropdown-item" href="#">Quick Access</a></li>
+                  <li><a class="dropdown-item" href="#">Student Awareness </a></li>
+                  <li><a class="dropdown-item" href="#">CPJIMT Newsletter</a></li>
+                  <li><a class="dropdown-item" href="#">Blogs</a></li>
+                  <li><a class="dropdown-item" href="#">Student Handbook</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button
+              class="text-nowrap bg-white border-radius-16 d-flex align-items-center justify-content-center border-0 px-4 py-2 font-poppins color-5 fw-600 bannerbtn"
+            >
+              Apply Now
+            </button>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ===== END PROGRAMS OFFERED SECTION ===== -->
 
-  <!-- ===== WHY STUDENTS LOVE SECTION ===== -->
-  <section class="why-love-section">
-    <div class="cpj-container">
-      <div class="why-love-header">
-        <span class="home-section-tagline font-poppins">Students enjoy their time at CPJIMT, here's...</span>
-        <h2 class="home-section-title font-poppins">Why our Students Love CPJIMT?</h2>
-      </div>
-      <div class="why-love-grid">
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/industry-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">Industry-Ready Programs</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/file-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">Outstanding Placements</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/growth-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">Facilities Conducive to Growth</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/grad-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">18+ Years of Education Legacy</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/human-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">We Go Beyond Academics</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-        <div class="why-love-card">
-          <div class="why-love-icon-wrap">
-            <img src="images/grad-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
-          </div>
-          <p class="why-love-card-title font-poppins">Guest Lectures by India's Top Jurists</p>
-          <div class="why-love-card-desc">
-            <p class="font-robots">
-              Our programs are designed and taught by industry experts and topped up by value-added courses and
-              certifications that ensure the top companies demand you.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===== END WHY STUDENTS LOVE SECTION ===== -->
+    <nav class="navbar navbar-expand-lg py-xxl-4 py-3">
+      <div class="container">
+        <div class="w-100 d-flex align-items-center justify-content-between gap-3 gap-md-4">
+          <div class="logo-img"><img src="images/CPJ Logo.webp" class="h-100 w-100 object-fit-cover" alt="" /></div>
+          <button class="navbar-toggler mob-toggler-btn" type="button" id="mobMenuOpenBtn" aria-label="Open menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="desktop-nav-menu d-none d-xl-flex justify-content-center pe-xxl-0 pe-5">
+            <ul
+              class="menu text-center d-flex flex-column flex-md-row list-unstyled align-items-md-center justify-content-md-center mb-md-0"
+            >
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  About Us
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
+                  <li><a class="dropdown-item" href="#">About The College</a></li>
+                  <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                  <li><a class="dropdown-item" href="#">Leadership Council</a></li>
+                  <li><a class="dropdown-item" href="#">Acred</a></li>
+                  <li><a class="dropdown-item" href="#">Advisory Board</a></li>
+                  <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
+                  <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
+                  <li><a class="dropdown-item" href="#">NSS Cell</a></li>
+                  <li><a class="dropdown-item" href="#">Disclaimer</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  Programmes
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu" style="min-width: 300px">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                      UG (Under Graduate)
+                      <svg
+                        class="submenu-arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="6"
+                        viewBox="0 0 9 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                          fill="#0F172A"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="collapse-menu list-unstyled">
+                      <li><a class="dropdown-item" href="#">About CPJ Group of Institutions</a></li>
+                      <li><a class="dropdown-item" href="#">About The College</a></li>
+                      <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                      <li><a class="dropdown-item" href="#">Leadership Council</a></li>
+                      <li><a class="dropdown-item" href="#">Acred</a></li>
+                      <li><a class="dropdown-item" href="#">Advisory Board</a></li>
+                      <li><a class="dropdown-item" href="#">Awards & Recognitions</a></li>
+                      <li><a class="dropdown-item" href="#">CPJIMT in News</a></li>
+                      <li><a class="dropdown-item" href="#">NSS Cell</a></li>
+                      <li><a class="dropdown-item" href="#">Disclaimer</a></li>
+                    </ul>
+                  </li>
 
-  <!-- ===== HOME PLACEMENTS SECTION ===== -->
-  <section class="home-placements-section">
-    <div class="home-placements-overlay"></div>
-    <div class="container">
-      <div class="home-placements-content">
-        <p class="home-placements-subtitle font-poppins fw-400 mb-2">Students choose for our numbers</p>
-        <h2 class="home-placements-title font-poppins fw-600">Placements at CPJIMT</h2>
-        <div class="home-placements-stats text-center">
-          <div class="home-stat-item">
-            <div class="home-stat-divider"></div>
-            <h3 class="home-stat-number font-robots fw-700">100+</h3>
-            <p class="home-stat-label font-poppins fw-400">Recruiters</p>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                      PG (Post Graduate)
+                      <svg
+                        class="submenu-arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="6"
+                        viewBox="0 0 9 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                          fill="#0F172A"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="collapse-menu list-unstyled">
+                      <li><a class="dropdown-item" href="#">MBA</a></li>
+                      <li><a class="dropdown-item" href="#">MCA</a></li>
+                      <li><a class="dropdown-item" href="#">LL.M</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  Academia & Administration
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">School of Management, Technology & Law</a></li>
+                  <li><a class="dropdown-item" href="#">Administrative Team </a></li>
+                  <li><a class="dropdown-item" href="#">Adjunct Industry Resources</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  Admissions
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Apply Online</a></li>
+                  <li><a class="dropdown-item" href="#">Eligibility Criteria</a></li>
+                  <li><a class="dropdown-item" href="#">Transport Fee</a></li>
+                  <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
+                  <li><a class="dropdown-item" href="#">Admission Brochure</a></li>
+                  <li><a class="dropdown-item" href="#">Pixi Card</a></li>
+                  <li><a class="dropdown-item" href="#">Collexo Portal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  Infrastructure
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle color-4 font-poppins fw-700 px-0 d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  Industry Interface
+                  <svg
+                    class="arrow-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.19731 5.94275C4.10314 5.90458 4.0157 5.83969 3.93498 5.74809L0.221973 1.53435C0.073991 1.36641 0 1.15267 0 0.89313C0 0.633588 0.073991 0.419847 0.221973 0.251908C0.369955 0.0839695 0.558296 0 0.786996 0C1.0157 0 1.20404 0.0839695 1.35202 0.251908L4.5 3.82443L7.64798 0.251908C7.79596 0.0839695 7.9843 0 8.213 0C8.4417 0 8.63004 0.0839695 8.77803 0.251908C8.92601 0.419847 9 0.633588 9 0.89313C9 1.15267 8.92601 1.36641 8.77803 1.53435L5.06502 5.74809C4.9843 5.83969 4.89686 5.90458 4.80269 5.94275C4.70852 5.98092 4.60762 6 4.5 6C4.39238 6 4.29148 5.98092 4.19731 5.94275Z"
+                      fill="#0F172A"
+                    />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Industry Interface Cell</a></li>
+                  <li><a class="dropdown-item" href="#">Recruiters</a></li>
+                  <li><a class="dropdown-item" href="#">Placement Drives</a></li>
+                  <li><a class="dropdown-item" href="#">Internship Drives</a></li>
+                  <li><a class="dropdown-item" href="#">Academic Visits </a></li>
+                  <li><a class="dropdown-item" href="#">Industrial Visits</a></li>
+                  <li><a class="dropdown-item" href="#">Success Stories</a></li>
+                  <li><a class="dropdown-item" href="#">Media Channel</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="home-stat-item">
-            <div class="home-stat-divider"></div>
-            <h3 class="home-stat-number font-robots fw-700">12 LPA</h3>
-            <p class="home-stat-label font-poppins fw-400">Highest Package</p>
-          </div>
-          <div class="home-stat-item">
-            <div class="home-stat-divider"></div>
-            <h3 class="home-stat-number font-robots fw-700">6.5 LPA</h3>
-            <p class="home-stat-label font-poppins fw-400">Average Package</p>
-          </div>
-          <div class="home-stat-item">
-            <div class="home-stat-divider"></div>
-            <h3 class="home-stat-number font-robots fw-700">5000+</h3>
-            <p class="home-stat-label font-poppins fw-400">Placement Offers</p>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===== END HOME PLACEMENTS SECTION ===== -->
-  <section class="home-recruiters-section">
-    <div class="cpj-container">
-      <div class="why-love-header">
-        <span class="home-section-tagline font-poppins">Placements or internships, here are the...</span>
-        <h2 class="home-section-title font-poppins">Top Recruiters Hiring Our Students</h2>
-      </div>
-      <div class="home-recruiters-grid mx-auto">
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/aditiya-birla-logo.webp" alt="Aditya Birla Group" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/lenscart-logo.webp" alt="Lenskart" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/accenture-logo.webp" alt="Accenture" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/genpact-logo.webp" alt="Genpact" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/godrej-logo.webp" alt="Godrej" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/mahindra-logo.webp" alt="Tech Mahindra" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/hcl-logo.webp" alt="HCL" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/irsc-logo.webp" alt="IRSC" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/lawyers-logo.webp" alt="NB Lawyers" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-
-        <div class="home-recruiter-card">
-          <div class="home-recruiter-logo">
-            <img src="images/lex-indis-law-logo.webp" alt="Lex Indis Law" class="h-100 w-100 object-fit-contain" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== STUDENT LIFE GALLERY SECTION ===== -->
-  <section class="student-life-section">
-    <div class="cpj-container">
-      <div class="student-life-header">
-        <span class="home-section-tagline font-poppins">Here's how your journey in the college looks like</span>
-        <h2 class="student-life-title home-section-title font-poppins">Student Life at CPJIMT</h2>
-      </div>
-      <div class="student-life-grid">
-        <!-- Row 1: wide + small + small -->
-        <div class="gallery-item gallery-item--wide" data-index="0">
-          <img src="images/galley-img-1.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item" data-index="1">
-          <img src="images/galley-img-2.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item" data-index="2">
-          <img src="images/galley-img-3.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <!-- Row 2: four equal -->
-        <div class="gallery-item" data-index="3">
-          <img src="images/galley-img-4.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item" data-index="4">
-          <img src="images/galley-img-5.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item" data-index="5">
-          <img src="images/galley-img-6.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item" data-index="6">
-          <img src="images/galley-img-7.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <!-- Row 3: three equal -->
-        <div class="gallery-item gallery-item--third" data-index="7">
-          <img src="images/galley-img-8.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item gallery-item--third" data-index="8">
-          <img src="images/galley-img-9.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-        <div class="gallery-item gallery-item--third" data-index="9">
-          <img src="images/galley-img-10.webp" alt="Student Life" class="gallery-img" />
-          <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY LIGHTBOX MODAL ===== -->
-  <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Image viewer">
-    <div class="gallery-modal-backdrop" id="galleryBackdrop"></div>
-    <button class="gallery-modal-close" id="galleryClose" aria-label="Close">&times;</button>
-    <button class="gallery-modal-nav gallery-modal-prev" id="galleryPrev" aria-label="Previous">&#8249;</button>
-    <div class="gallery-modal-content">
-      <img src="" alt="Gallery image" class="gallery-modal-img" id="galleryModalImg" />
-    </div>
-    <button class="gallery-modal-nav gallery-modal-next" id="galleryNext" aria-label="Next">&#8250;</button>
-    <div class="gallery-modal-counter" id="galleryCounter"></div>
-  </div>
-  <!-- ===== END GALLERY LIGHTBOX MODAL ===== -->
-
-  <!-- ===== TESTIMONIAL SECTION ===== -->
-  <section class="home-testimonial-section">
-    <div class="cpj-container position-relative">
-      <div class="home-testimonial-quotes-bg">
-        <img src="images/quots-img.png" alt="" aria-hidden="true" class="home-testimonial-quotes-img" />
-      </div>
-      <div class="home-testimonial-header">
-        <span class="home-section-tagline font-poppins">We don't boast on ourselves inevidently...</span>
-        <h2 class="home-section-title font-poppins font-robots">Our Students' Success Speaks</h2>
-      </div>
-      <div class="swiper home-testimonial-swiper py-4">
-        <div class="swiper-wrapper">
-          <!-- Card 1 -->
-          <div class="swiper-slide px-lg-3 px-2">
-            <div class="home-testimonial-card">
-              <p class="home-testimonial-text font-robots">
-                I am currently working with Diwan Advocates as an Assistant Advocate, and I got this platform with the
-                help of Genesis Cell at CPJIMT.
-              </p>
-              <div class="home-testimonial-reviewer">
-                <img src="images/home-testimonial-img-1.webp" alt="Disha Pal" class="home-testimonial-avatar" />
-                <div class="home-testimonial-info">
-                  <span class="home-testimonial-name font-robots">Disha Pal</span>
-                  <span class="home-testimonial-role font-robots">Diwan Advocates</span>
-                </div>
+        <!-- Mobile Sliding Menu -->
+        <div class="mob-menu-overlay" id="mobMenuOverlay"></div>
+        <div class="mob-menu-drawer" id="mobMenuDrawer">
+          <!-- Panel wrapper (slides horizontally) -->
+          <div class="mob-menu-panels" id="mobMenuPanels">
+            <!-- LEVEL 0: Main Menu -->
+            <div class="mob-panel active" data-level="0">
+              <div class="mob-panel-header">
+                <span class="mob-panel-title font-poppins fw-600">Menu</span>
+                <button class="mob-close-btn" id="mobCloseBtn" aria-label="Close menu">&times;</button>
               </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row has-child" data-target="panel-about">
+                  <span>About Us</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <li class="mob-menu-row has-child" data-target="panel-programmes">
+                  <span>Programmes</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <li class="mob-menu-row has-child" data-target="panel-academia">
+                  <span>Academia &amp; Administration</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <li class="mob-menu-row has-child" data-target="panel-admissions">
+                  <span>Admissions</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <li class="mob-menu-row">
+                  <span>Infrastructure</span>
+                </li>
+                <li class="mob-menu-row has-child" data-target="panel-industry">
+                  <span>Industry Interface</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 1: About Us -->
+            <div class="mob-panel" data-level="1" id="panel-about">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">About Us</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">About CPJ Group of Institutions</a></li>
+                <li class="mob-menu-row"><a href="#">About The College</a></li>
+                <li class="mob-menu-row"><a href="#">Vision &amp; Mission</a></li>
+                <li class="mob-menu-row"><a href="#">Leadership Council</a></li>
+                <li class="mob-menu-row"><a href="#">Acred</a></li>
+                <li class="mob-menu-row"><a href="#">Advisory Board</a></li>
+                <li class="mob-menu-row"><a href="#">Awards &amp; Recognitions</a></li>
+                <li class="mob-menu-row"><a href="#">CPJIMT in News</a></li>
+                <li class="mob-menu-row"><a href="#">NSS Cell</a></li>
+                <li class="mob-menu-row"><a href="#">Disclaimer</a></li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 1: Programmes -->
+            <div class="mob-panel" data-level="1" id="panel-programmes">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">Programmes</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row has-child" data-target="panel-ug">
+                  <span>UG (Under Graduate)</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <li class="mob-menu-row has-child" data-target="panel-pg">
+                  <span>PG (Post Graduate)</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M1 1L6 6L1 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 2: UG -->
+            <div class="mob-panel" data-level="2" id="panel-ug">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">UG (Under Graduate)</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">About CPJ Group of Institutions</a></li>
+                <li class="mob-menu-row"><a href="#">About The College</a></li>
+                <li class="mob-menu-row"><a href="#">Vision &amp; Mission</a></li>
+                <li class="mob-menu-row"><a href="#">Leadership Council</a></li>
+                <li class="mob-menu-row"><a href="#">Acred</a></li>
+                <li class="mob-menu-row"><a href="#">Advisory Board</a></li>
+                <li class="mob-menu-row"><a href="#">Awards &amp; Recognitions</a></li>
+                <li class="mob-menu-row"><a href="#">CPJIMT in News</a></li>
+                <li class="mob-menu-row"><a href="#">NSS Cell</a></li>
+                <li class="mob-menu-row"><a href="#">Disclaimer</a></li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 2: PG -->
+            <div class="mob-panel" data-level="2" id="panel-pg">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">PG (Post Graduate)</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">MBA</a></li>
+                <li class="mob-menu-row"><a href="#">MCA</a></li>
+                <li class="mob-menu-row"><a href="#">LL.M</a></li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 1: Academia -->
+            <div class="mob-panel" data-level="1" id="panel-academia">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">Academia &amp; Administration</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">School of Management, Technology &amp; Law</a></li>
+                <li class="mob-menu-row"><a href="#">Administrative Team</a></li>
+                <li class="mob-menu-row"><a href="#">Adjunct Industry Resources</a></li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 1: Admissions -->
+            <div class="mob-panel" data-level="1" id="panel-admissions">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">Admissions</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">Apply Online</a></li>
+                <li class="mob-menu-row"><a href="#">Eligibility Criteria</a></li>
+                <li class="mob-menu-row"><a href="#">Transport Fee</a></li>
+                <li class="mob-menu-row"><a href="#">Hostel Fee</a></li>
+                <li class="mob-menu-row"><a href="#">Admission Brochure</a></li>
+                <li class="mob-menu-row"><a href="#">Pixi Card</a></li>
+                <li class="mob-menu-row"><a href="#">Collexo Portal</a></li>
+              </ul>
+            </div>
+
+            <!-- LEVEL 1: Industry Interface -->
+            <div class="mob-panel" data-level="1" id="panel-industry">
+              <div class="mob-panel-header">
+                <button class="mob-back-btn" aria-label="Back">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                    <path
+                      d="M6 1L1 6L6 11"
+                      stroke="#0F172A"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <span class="mob-panel-title font-poppins fw-600">Industry Interface</span>
+                <button class="mob-close-btn" aria-label="Close menu">&times;</button>
+              </div>
+              <ul class="mob-menu-list list-unstyled mb-0">
+                <li class="mob-menu-row"><a href="#">Industry Interface Cell</a></li>
+                <li class="mob-menu-row"><a href="#">Recruiters</a></li>
+                <li class="mob-menu-row"><a href="#">Placement Drives</a></li>
+                <li class="mob-menu-row"><a href="#">Internship Drives</a></li>
+                <li class="mob-menu-row"><a href="#">Academic Visits</a></li>
+                <li class="mob-menu-row"><a href="#">Industrial Visits</a></li>
+                <li class="mob-menu-row"><a href="#">Success Stories</a></li>
+                <li class="mob-menu-row"><a href="#">Media Channel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HOME BANNER SECTION ===== -->
+    <!-- ===== HOME BANNER SECTION ===== -->
+    <section class="home-banner-section">
+      <!-- Background Video -->
+      <video class="home-banner-video" autoplay muted loop playsinline>
+        <source src="images/home-banner-video.mp4" type="video/mp4" />
+      </video>
+      <!-- Gradient Overlay -->
+      <div class="home-banner-overlay"></div>
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: url('images/grid-img.png'); background-size: cover; z-index: 99"
+      ></div>
+      <div class="home-banner-container position-relative cpj-container text-md-start text-center" style="z-index: 99">
+        <!-- Left Content -->
+        <div class="home-banner-content">
+          <div class="home-banner-tag justify-content-md-start justify-content-center">
+            <span class="">
+              <img src="images/banner-icon.svg" />
+            </span>
+            <span class="font-poppins banner-tag-border">Welcome to CPJ Institute of Management &amp; Technology</span>
+          </div>
+          <h1 class="home-banner-heading font-poppins mb-2">
+            <span class="border-text"> Making Quality </span><br />
+            Education <span class="home-banner-heading-highlight">Accessible to All</span>
+          </h1>
+          <p class="home-banner-desc font-robots mb-4">
+            At CPJIMT, we offer <strong>courses in law, management, and technology</strong> with top-notch faculty and
+            <strong>career-focused</strong> learning at affordable fees.
+          </p>
+          <a
+            href="#"
+            class="mx-md-0 mx-auto home-banner-btn font-poppins justify-content-md-start justify-content-center"
+          >
+            Get Started Today
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right Images -->
+        <div class="home-banner-images d-md-block d-none">
+          <img src="images/banner-student-img.webp" alt="Student" class="home-banner-student-img" />
+          <img src="images/banner-bg-layer.webp" alt="" class="home-banner-bg-layer" aria-hidden="true" />
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+    </section>
+    <!-- ===== END HOME BANNER SECTION ===== -->
+
+    <!-- ===== END Stats SECTION ===== -->
+    <section class="stats-section-main">
+      <div class="home-banner-stats">
+        <div class="home-banner-stats-inner">
+          <div class="home-banner-stat-item ps-md-3">
+            <span class="home-banner-stat-number font-poppins">7000+</span>
+            <span class="home-banner-stat-label font-robots">Alumni</span>
+          </div>
+          <div class="home-banner-stat-divider"></div>
+          <div class="home-banner-stat-item ps-md-3">
+            <span class="home-banner-stat-number font-poppins">3000+</span>
+            <span class="home-banner-stat-label font-robots">Students</span>
+          </div>
+          <div class="home-banner-stat-divider"></div>
+          <div class="home-banner-stat-item ps-md-3">
+            <span class="home-banner-stat-number font-poppins">1000+</span>
+            <span class="home-banner-stat-label font-robots">Industrial &amp; Academic Visits</span>
+          </div>
+          <div class="home-banner-stat-divider"></div>
+          <div class="home-banner-stat-item ps-md-3">
+            <span class="home-banner-stat-number font-poppins">1000+</span>
+            <span class="home-banner-stat-label font-robots">Academic Activities</span>
+          </div>
+          <div class="home-banner-stat-divider"></div>
+          <div class="home-banner-stat-item ps-md-3">
+            <span class="home-banner-stat-number font-poppins">100+</span>
+            <span class="home-banner-stat-label font-robots">Staff</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END Stats SECTION ===== -->
+
+    <!-- ===== PROGRAMS OFFERED SECTION ===== -->
+    <section class="programs-offered-section">
+      <div class="cpj-container">
+        <div class="programs-offered-header">
+          <span class="home-section-tagline font-poppins">Learning at CPJIMT</span>
+          <h2 class="home-section-title font-poppins">Programs Offered</h2>
+        </div>
+        <div class="programs-offered-grid">
+          <!-- Card 1 -->
+          <div class="programs-offered-card">
+            <div class="programs-offered-img-wrap">
+              <img
+                src="images/program-offered-img-1.webp"
+                alt="Bachelor of Business Administration"
+                class="programs-offered-img"
+              />
+            </div>
+            <div class="programs-offered-card-body">
+              <h3 class="programs-offered-card-title font-poppins" title="Bachelor of Business Administration (BBA)">
+                Bachelor of Business Administration (BBA)
+              </h3>
+              <p class="programs-offered-card-desc font-robots">
+                Intellectual Ability, Executive Personality &amp; Managerial Skills Leadership Qualities Real-Life Case
+                Studies , Various Interest-Based Specializations
+              </p>
+              <p class="programs-offered-card-meta font-poppins">Duration 3 Years | Eligibility 45% in XII</p>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="swiper-slide px-lg-3 px-2">
-            <div class="home-testimonial-card">
-              <p class="home-testimonial-text">
-                I would like to express a special thanks to CPJIMT's Genesis Cell for the placement with Accenture as
-                a Data Handler intern.
+          <div class="programs-offered-card">
+            <div class="programs-offered-img-wrap">
+              <img
+                src="images/program-offered-img-1.webp"
+                alt="Bachelor of Computer Applications"
+                class="programs-offered-img"
+              />
+            </div>
+            <div class="programs-offered-card-body">
+              <h3 class="programs-offered-card-title font-poppins" title="Bachelor of Computer Applications (BCA)">
+                Bachelor of Computer Applications (BCA)
+              </h3>
+              <p class="programs-offered-card-desc font-robots">
+                Computer Science Industrial Computing Analysis &amp; Synthesis
               </p>
-              <div class="home-testimonial-reviewer">
-                <img src="images/home-testimonial-img-2.webp" alt="Armaan Aggarwal" class="home-testimonial-avatar" />
-                <div class="home-testimonial-info">
-                  <span class="home-testimonial-name">Armaan Aggarwal</span>
-                  <span class="home-testimonial-role">Accenture</span>
-                </div>
-              </div>
+              <p class="programs-offered-card-meta font-poppins">Duration 3 Years | Eligibility 45% in XII</p>
             </div>
           </div>
-          <div class="swiper-slide px-lg-3 px-2">
-            <div class="home-testimonial-card">
-              <p class="home-testimonial-text font-robots">
-                I am currently working with Diwan Advocates as an Assistant Advocate, and I got this platform with the
-                help of Genesis Cell at CPJIMT.
+          <!-- Card 3 -->
+          <div class="programs-offered-card">
+            <div class="programs-offered-img-wrap">
+              <img src="images/program-offered-img-1.webp" alt="Bachelor of Technology" class="programs-offered-img" />
+            </div>
+            <div class="programs-offered-card-body">
+              <h3
+                class="programs-offered-card-title font-poppins"
+                title="Bachelor of Technology in Computer Science &amp; Engineering B.Tech (CSE)"
+              >
+                Bachelor of Technology in Computer Science &amp; Engineering B.Tech (CSE)
+              </h3>
+              <p class="programs-offered-card-desc font-robots">
+                AI &amp; Machine Learning (ML) Specialization | Technical Abilities | Analytical Thinking
+                Problem-Solving Skills
               </p>
-              <div class="home-testimonial-reviewer">
-                <img src="images/home-testimonial-img-1.webp" alt="Disha Pal" class="home-testimonial-avatar" />
-                <div class="home-testimonial-info">
-                  <span class="home-testimonial-name font-robots">Disha Pal</span>
-                  <span class="home-testimonial-role font-robots">Diwan Advocates</span>
-                </div>
-              </div>
+              <p class="programs-offered-card-meta font-poppins">Duration 4 Years | Eligibility 45% in XII PCM</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- ===== END PROGRAMS OFFERED SECTION ===== -->
+
+    <!-- ===== WHY STUDENTS LOVE SECTION ===== -->
+    <section class="why-love-section">
+      <div class="cpj-container">
+        <div class="why-love-header">
+          <span class="home-section-tagline font-poppins">Students enjoy their time at CPJIMT, here's...</span>
+          <h2 class="home-section-title font-poppins">Why our Students Love CPJIMT?</h2>
+        </div>
+        <div class="why-love-grid">
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/industry-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">Industry-Ready Programs</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/file-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">Outstanding Placements</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/growth-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">Facilities Conducive to Growth</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/grad-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">18+ Years of Education Legacy</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/human-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">We Go Beyond Academics</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+          <div class="why-love-card">
+            <div class="why-love-icon-wrap">
+              <img src="images/grad-icon.svg" alt="" class="why-love-icon" aria-hidden="true" />
+            </div>
+            <p class="why-love-card-title font-poppins">Guest Lectures by India's Top Jurists</p>
+            <div class="why-love-card-desc">
+              <p class="font-robots">
+                Our programs are designed and taught by industry experts and topped up by value-added courses and
+                certifications that ensure the top companies demand you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END WHY STUDENTS LOVE SECTION ===== -->
+
+    <!-- ===== HOME PLACEMENTS SECTION ===== -->
+    <section class="home-placements-section">
+      <div class="home-placements-overlay"></div>
+      <div class="container">
+        <div class="home-placements-content">
+          <p class="home-placements-subtitle font-poppins fw-400 mb-2">Students choose for our numbers</p>
+          <h2 class="home-placements-title font-poppins fw-600">Placements at CPJIMT</h2>
+          <div class="home-placements-stats text-center">
+            <div class="home-stat-item">
+              <div class="home-stat-divider"></div>
+              <h3 class="home-stat-number font-robots fw-700">100+</h3>
+              <p class="home-stat-label font-poppins fw-400">Recruiters</p>
+            </div>
+            <div class="home-stat-item">
+              <div class="home-stat-divider"></div>
+              <h3 class="home-stat-number font-robots fw-700">12 LPA</h3>
+              <p class="home-stat-label font-poppins fw-400">Highest Package</p>
+            </div>
+            <div class="home-stat-item">
+              <div class="home-stat-divider"></div>
+              <h3 class="home-stat-number font-robots fw-700">6.5 LPA</h3>
+              <p class="home-stat-label font-poppins fw-400">Average Package</p>
+            </div>
+            <div class="home-stat-item">
+              <div class="home-stat-divider"></div>
+              <h3 class="home-stat-number font-robots fw-700">5000+</h3>
+              <p class="home-stat-label font-poppins fw-400">Placement Offers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END HOME PLACEMENTS SECTION ===== -->
+    <section class="home-recruiters-section">
+      <div class="cpj-container">
+        <div class="why-love-header">
+          <span class="home-section-tagline font-poppins">Placements or internships, here are the...</span>
+          <h2 class="home-section-title font-poppins">Top Recruiters Hiring Our Students</h2>
+        </div>
+        <div class="home-recruiters-grid mx-auto">
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img
+                src="images/aditiya-birla-logo.webp"
+                alt="Aditya Birla Group"
+                class="h-100 w-100 object-fit-contain"
+              />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/lenscart-logo.webp" alt="Lenskart" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/accenture-logo.webp" alt="Accenture" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/genpact-logo.webp" alt="Genpact" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/godrej-logo.webp" alt="Godrej" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/mahindra-logo.webp" alt="Tech Mahindra" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/hcl-logo.webp" alt="HCL" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/irsc-logo.webp" alt="IRSC" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/lawyers-logo.webp" alt="NB Lawyers" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+
+          <div class="home-recruiter-card">
+            <div class="home-recruiter-logo">
+              <img src="images/lex-indis-law-logo.webp" alt="Lex Indis Law" class="h-100 w-100 object-fit-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STUDENT LIFE GALLERY SECTION ===== -->
+    <section class="student-life-section">
+      <div class="cpj-container">
+        <div class="student-life-header">
+          <span class="home-section-tagline font-poppins">Here's how your journey in the college looks like</span>
+          <h2 class="student-life-title home-section-title font-poppins">Student Life at CPJIMT</h2>
+        </div>
+        <div class="student-life-grid">
+          <!-- Row 1: wide + small + small -->
+          <div class="gallery-item gallery-item--wide" data-index="0">
+            <img src="images/galley-img-1.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item" data-index="1">
+            <img src="images/galley-img-2.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item" data-index="2">
+            <img src="images/galley-img-3.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <!-- Row 2: four equal -->
+          <div class="gallery-item" data-index="3">
+            <img src="images/galley-img-4.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item" data-index="4">
+            <img src="images/galley-img-5.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item" data-index="5">
+            <img src="images/galley-img-6.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item" data-index="6">
+            <img src="images/galley-img-7.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <!-- Row 3: three equal -->
+          <div class="gallery-item gallery-item--third" data-index="7">
+            <img src="images/galley-img-8.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item gallery-item--third" data-index="8">
+            <img src="images/galley-img-9.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+          <div class="gallery-item gallery-item--third" data-index="9">
+            <img src="images/galley-img-10.webp" alt="Student Life" class="gallery-img" />
+            <div class="gallery-item-overlay"><span class="gallery-zoom-icon">&#x26F6;</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY LIGHTBOX MODAL ===== -->
+    <div class="gallery-modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <div class="gallery-modal-backdrop" id="galleryBackdrop"></div>
+      <button class="gallery-modal-close" id="galleryClose" aria-label="Close">&times;</button>
+      <button class="gallery-modal-nav gallery-modal-prev" id="galleryPrev" aria-label="Previous">&#8249;</button>
+      <div class="gallery-modal-content">
+        <img src="" alt="Gallery image" class="gallery-modal-img" id="galleryModalImg" />
+      </div>
+      <button class="gallery-modal-nav gallery-modal-next" id="galleryNext" aria-label="Next">&#8250;</button>
+      <div class="gallery-modal-counter" id="galleryCounter"></div>
     </div>
-  </section>
-  <!-- ===== END TESTIMONIAL SECTION ===== -->
+    <!-- ===== END GALLERY LIGHTBOX MODAL ===== -->
 
-  <!-- ===== FAQ SECTION ===== -->
-  <section class="home-faq-section">
-    <div class="cpj-container">
-      <div class="home-faq-header">
-        <span class="home-section-tagline font-poppins">Answers to your...</span>
-        <h2 class="home-section-title font-robots">Frequently Asked Questions (FAQs)</h2>
-      </div>
-      <div class="home-faq-grid" id="faqAccordion">
-        <!-- Left Column -->
-        <div class="home-faq-col">
-          <div class="accordion">
-            <!-- Item 1 - open by default -->
-            <div class="accordion-item home-faq-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button home-faq-btn" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                  How can I apply for admission to CPJIMT?
-                  <span class="faq-icon"></span>
-                </button>
-              </h2>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body home-faq-body">
-                  The application process may vary based on the program. Generally, you can apply online through the
-                  college's official website. Check the admission section for detailed instructions, eligibility
-                  criteria, and application deadlines.
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="accordion-item home-faq-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button home-faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                  How does CPJIMT support placements for students?
-                  <span class="faq-icon"></span>
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body home-faq-body">
-                  CPJIMT has a dedicated Genesis Cell (Placement Cell) that actively connects students with top
-                  recruiters. The cell organizes placement drives, mock interviews, resume workshops, and industry
-                  interactions to prepare students for the job market.
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- ===== TESTIMONIAL SECTION ===== -->
+    <section class="home-testimonial-section">
+      <div class="cpj-container position-relative">
+        <div class="home-testimonial-quotes-bg">
+          <img src="images/quots-img.png" alt="" aria-hidden="true" class="home-testimonial-quotes-img" />
         </div>
-
-        <!-- Right Column -->
-        <div class="home-faq-col">
-          <div class="accordion">
-            <div class="accordion-item home-faq-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button home-faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                  Are there any scholarship programs available for students?
-                  <span class="faq-icon"></span>
-                </button>
-              </h2>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body home-faq-body">
-                  Yes, CPJIMT offers various scholarship programs for meritorious and economically weaker students.
-                  Scholarships are also available through government schemes. Visit the admissions office or the
-                  official website for eligibility and application details.
+        <div class="home-testimonial-header">
+          <span class="home-section-tagline font-poppins">We don't boast on ourselves inevidently...</span>
+          <h2 class="home-section-title font-poppins font-robots">Our Students' Success Speaks</h2>
+        </div>
+        <div class="swiper home-testimonial-swiper py-4">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide px-lg-3 px-2">
+              <div class="home-testimonial-card">
+                <p class="home-testimonial-text font-robots">
+                  I am currently working with Diwan Advocates as an Assistant Advocate, and I got this platform with the
+                  help of Genesis Cell at CPJIMT.
+                </p>
+                <div class="home-testimonial-reviewer">
+                  <img src="images/home-testimonial-img-1.webp" alt="Disha Pal" class="home-testimonial-avatar" />
+                  <div class="home-testimonial-info">
+                    <span class="home-testimonial-name font-robots">Disha Pal</span>
+                    <span class="home-testimonial-role font-robots">Diwan Advocates</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <!-- Item 4 -->
-            <div class="accordion-item home-faq-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button home-faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                  Can international students apply for CPJIMT?
-                  <span class="faq-icon"></span>
-                </button>
-              </h2>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body home-faq-body">
-                  CPJIMT welcomes applications from international students. Prospective international applicants
-                  should contact the admissions office directly for guidance on the application process, visa
-                  requirements, and available programs.
+            <!-- Card 2 -->
+            <div class="swiper-slide px-lg-3 px-2">
+              <div class="home-testimonial-card">
+                <p class="home-testimonial-text">
+                  I would like to express a special thanks to CPJIMT's Genesis Cell for the placement with Accenture as
+                  a Data Handler intern.
+                </p>
+                <div class="home-testimonial-reviewer">
+                  <img src="images/home-testimonial-img-2.webp" alt="Armaan Aggarwal" class="home-testimonial-avatar" />
+                  <div class="home-testimonial-info">
+                    <span class="home-testimonial-name">Armaan Aggarwal</span>
+                    <span class="home-testimonial-role">Accenture</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <!-- Item 5 -->
-            <div class="accordion-item home-faq-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button home-faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                  Does CPJIMT organize extracurricular activities for students?
-                  <span class="faq-icon"></span>
-                </button>
-              </h2>
-              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body home-faq-body">
-                  Absolutely. CPJIMT encourages holistic development through a wide range of extracurricular
-                  activities including sports, cultural events, NSS, clubs, committees, excursions, and national-level
-                  competitions to enrich student life beyond academics.
+            <div class="swiper-slide px-lg-3 px-2">
+              <div class="home-testimonial-card">
+                <p class="home-testimonial-text font-robots">
+                  I am currently working with Diwan Advocates as an Assistant Advocate, and I got this platform with the
+                  help of Genesis Cell at CPJIMT.
+                </p>
+                <div class="home-testimonial-reviewer">
+                  <img src="images/home-testimonial-img-1.webp" alt="Disha Pal" class="home-testimonial-avatar" />
+                  <div class="home-testimonial-info">
+                    <span class="home-testimonial-name font-robots">Disha Pal</span>
+                    <span class="home-testimonial-role font-robots">Diwan Advocates</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ===== END FAQ SECTION ===== -->
+    </section>
+    <!-- ===== END TESTIMONIAL SECTION ===== -->
 
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="home-faq-section">
+      <div class="cpj-container">
+        <div class="home-faq-header">
+          <span class="home-section-tagline font-poppins">Answers to your...</span>
+          <h2 class="home-section-title font-robots">Frequently Asked Questions (FAQs)</h2>
+        </div>
+        <div class="home-faq-grid" id="faqAccordion">
+          <!-- Left Column -->
+          <div class="home-faq-col">
+            <div class="accordion">
+              <!-- Item 1 - open by default -->
+              <div class="accordion-item home-faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button home-faq-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                  >
+                    How can I apply for admission to CPJIMT?
+                    <span class="faq-icon"></span>
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body home-faq-body">
+                    The application process may vary based on the program. Generally, you can apply online through the
+                    college's official website. Check the admission section for detailed instructions, eligibility
+                    criteria, and application deadlines.
+                  </div>
+                </div>
+              </div>
 
-  <footer class="container-fluid footer-bg footerContainer">
-    <div class="container d-flex flex-column gap-48 gap-md-3">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-3">
-          <div class="d-flex flex-column gap-3 gap-md-4">
-            <div class="logo-img"><img src="images/Image.webp" class="h-100 object-fit-cover" alt="" />
-            </div>
-            <div class="fpara ">
-              <p class="font-robots mb-2 color-8 ls-2 pe-lg-4">CPJ Institute of Management and Technology
-                is
-                dedicated
-                to providing students with a transformative educational experience, fostering
-                innovation, and preparing them for leadership roles in a globalized world.</p>
-            </div>
-            <div class="d-flex flex-column gap-3 faqbutton">
-              <button
-                class="color-3 fw-600 font-robots outline-0 border-0 bg-white w-100 border-radius-16 bg-white">Apply
-                Online
-                2026</button>
-              <button
-                class="text-white fw-600 font-robots outline-0 bg-white w-100 border-radius-16 bg-transparent">Collexo
-                Portal</button>
-            </div>
-            <div class="d-flex gap-3 align-items-center">
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M4.50001 20H0.249996V6.625H4.50001V20ZM2.375 4.75C1 4.75 0 3.75 0 2.375C0 1 1.125 0 2.375 0C3.75 0 4.75 1 4.75 2.375C4.75 3.75 3.75 4.75 2.375 4.75ZM20 20H15.75V12.75C15.75 10.625 14.875 10 13.625 10C12.375 10 11.125 11 11.125 12.875V20H6.875V6.625H10.875V8.5C11.25 7.625 12.75 6.25 14.875 6.25C17.25 6.25 19.75 7.625 19.75 11.75V20H20Z"
-                    fill="white" />
-                </svg>
+              <!-- Item 2 -->
+              <div class="accordion-item home-faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button home-faq-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    How does CPJIMT support placements for students?
+                    <span class="faq-icon"></span>
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body home-faq-body">
+                    CPJIMT has a dedicated Genesis Cell (Placement Cell) that actively connects students with top
+                    recruiters. The cell organizes placement drives, mock interviews, resume workshops, and industry
+                    interactions to prepare students for the job market.
+                  </div>
+                </div>
               </div>
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904 3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639 2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036 0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z"
-                    fill="white" />
-                  <path
-                    d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 11.8072 13.3735 10 13.3735Z"
-                    fill="white" />
-                  <path
-                    d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012 3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z"
-                    fill="white" />
-                </svg>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="home-faq-col">
+            <div class="accordion">
+              <div class="accordion-item home-faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button home-faq-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    Are there any scholarship programs available for students?
+                    <span class="faq-icon"></span>
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body home-faq-body">
+                    Yes, CPJIMT offers various scholarship programs for meritorious and economically weaker students.
+                    Scholarships are also available through government schemes. Visit the admissions office or the
+                    official website for eligibility and application details.
+                  </div>
+                </div>
               </div>
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15 3.625 19.125 8.375 19.875V12.875H5.875V10H8.375V7.75C8.375 5.25 9.875 3.875 12.125 3.875C13.25 3.875 14.375 4.125 14.375 4.125V6.625H13.125C11.875 6.625 11.5 7.375 11.5 8.125V10H14.25L13.75 12.875H11.375V20C16.375 19.25 20 15 20 10Z"
-                    fill="white" />
-                </svg>
+
+              <!-- Item 4 -->
+              <div class="accordion-item home-faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button home-faq-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
+                  >
+                    Can international students apply for CPJIMT?
+                    <span class="faq-icon"></span>
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body home-faq-body">
+                    CPJIMT welcomes applications from international students. Prospective international applicants
+                    should contact the admissions office directly for guidance on the application process, visa
+                    requirements, and available programs.
+                  </div>
+                </div>
               </div>
-              <div class="social-icon d-flex align-items-center justify-content-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-                  <path
-                    d="M19.5 2.125C19.25 1.25 18.625 0.625 17.75 0.375C16.25 2.23517e-07 9.87499 0 9.87499 0C9.87499 0 3.62501 2.23517e-07 2.00001 0.375C1.12501 0.625 0.499996 1.25 0.249996 2.125C-3.81842e-06 3.75 0 7 0 7C0 7 3.7998e-06 10.25 0.375004 11.875C0.625004 12.75 1.25 13.375 2.125 13.625C3.625 14 10 14 10 14C10 14 16.25 14 17.875 13.625C18.75 13.375 19.375 12.75 19.625 11.875C20 10.25 20 7 20 7C20 7 20 3.75 19.5 2.125ZM7.99999 10V4L13.25 7L7.99999 10Z"
-                    fill="white" />
-                </svg>
+
+              <!-- Item 5 -->
+              <div class="accordion-item home-faq-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button home-faq-btn collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                    aria-expanded="false"
+                    aria-controls="faq5"
+                  >
+                    Does CPJIMT organize extracurricular activities for students?
+                    <span class="faq-icon"></span>
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body home-faq-body">
+                    Absolutely. CPJIMT encourages holistic development through a wide range of extracurricular
+                    activities including sports, cultural events, NSS, clubs, committees, excursions, and national-level
+                    competitions to enrich student life beyond academics.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
-          <div class="d-flex flex-column gap-3">
-            <div class="footheadCont d-flex flex-column gap-2">
-              <h3 class="text-white foothead fw-600 font-poppins mb-0">The Institute</h3><span
-                class="bg-shad-11"></span>
-            </div>
-            <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">About CPJ Group</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Vision & Mission</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">About the College</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Leadership Council</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Advisory Board</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Accreditations & Collabs</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Ranking & Awards</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">CPJIMT in News</li>
-            </ul>
-          </div>
-        </div>
+      </div>
+    </section>
+    <!-- ===== END FAQ SECTION ===== -->
 
-        <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
-          <div class="d-flex flex-column gap-3">
-            <div class="footheadCont d-flex flex-column gap-2">
-              <h3 class="text-white foothead fw-600 font-poppins mb-0">Academics</h3><span class="bg-shad-11"></span>
+    <footer class="container-fluid footer-bg footerContainer">
+      <div class="container d-flex flex-column gap-48 gap-md-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-3">
+            <div class="d-flex flex-column gap-3 gap-md-4">
+              <div class="logo-img"><img src="images/Image.webp" class="h-100 object-fit-cover" alt="" /></div>
+              <div class="fpara">
+                <p class="font-robots mb-2 color-8 ls-2 pe-lg-4">
+                  CPJ Institute of Management and Technology is dedicated to providing students with a transformative
+                  educational experience, fostering innovation, and preparing them for leadership roles in a globalized
+                  world.
+                </p>
+              </div>
+              <div class="d-flex flex-column gap-3 faqbutton">
+                <button class="color-3 fw-600 font-robots outline-0 border-0 bg-white w-100 border-radius-16 bg-white">
+                  Apply Online 2026
+                </button>
+                <button class="text-white fw-600 font-robots outline-0 bg-white w-100 border-radius-16 bg-transparent">
+                  Collexo Portal
+                </button>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M4.50001 20H0.249996V6.625H4.50001V20ZM2.375 4.75C1 4.75 0 3.75 0 2.375C0 1 1.125 0 2.375 0C3.75 0 4.75 1 4.75 2.375C4.75 3.75 3.75 4.75 2.375 4.75ZM20 20H15.75V12.75C15.75 10.625 14.875 10 13.625 10C12.375 10 11.125 11 11.125 12.875V20H6.875V6.625H10.875V8.5C11.25 7.625 12.75 6.25 14.875 6.25C17.25 6.25 19.75 7.625 19.75 11.75V20H20Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904 3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639 2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036 0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 11.8072 13.3735 10 13.3735Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012 3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15 3.625 19.125 8.375 19.875V12.875H5.875V10H8.375V7.75C8.375 5.25 9.875 3.875 12.125 3.875C13.25 3.875 14.375 4.125 14.375 4.125V6.625H13.125C11.875 6.625 11.5 7.375 11.5 8.125V10H14.25L13.75 12.875H11.375V20C16.375 19.25 20 15 20 10Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="social-icon d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path
+                      d="M19.5 2.125C19.25 1.25 18.625 0.625 17.75 0.375C16.25 2.23517e-07 9.87499 0 9.87499 0C9.87499 0 3.62501 2.23517e-07 2.00001 0.375C1.12501 0.625 0.499996 1.25 0.249996 2.125C-3.81842e-06 3.75 0 7 0 7C0 7 3.7998e-06 10.25 0.375004 11.875C0.625004 12.75 1.25 13.375 2.125 13.625C3.625 14 10 14 10 14C10 14 16.25 14 17.875 13.625C18.75 13.375 19.375 12.75 19.625 11.875C20 10.25 20 7 20 7C20 7 20 3.75 19.5 2.125ZM7.99999 10V4L13.25 7L7.99999 10Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <ul class="d-flex flex-column gap-3 gap-md-4 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">
-                <div class="d-flex flex-column gap-2">
-                  <h6 class="mb-0 text-uppercase fw-600 font-poppins color-8 "
-                    style="letter-spacing: 0.5px; font-size:12px">
-                    Technology
-                  </h6>
-                  <span class="color-2 font-robots footParaColor fw-400 footlinks">B.Tech | MCA |
-                    BCA</span>
-                </div>
-              </li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">
-                <div class="d-flex flex-column gap-2">
-                  <h6 class="mb-0 text-uppercase fw-600 font-poppins color-8 "
-                    style="letter-spacing: 0.5px; font-size:12px">
-                    Management
-                  </h6>
-                  <span class="color-2 font-robots footParaColor fw-400 footlinks">MBA | BBA</span>
-                </div>
-              </li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">
-                <div class="d-flex flex-column gap-2">
-                  <h6 class="mb-0 text-uppercase fw-600 font-poppins color-8 "
-                    style="letter-spacing: 0.5px; font-size:12px">
-                    Law
-                  </h6>
-                  <span class="color-2 font-robots footParaColor fw-400 footlinks">BA LLB | BBA LL.B |
-                    LL.B</span>
-                </div>
-              </li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">
-                <div class="d-flex flex-column gap-2">
-                  <h6 class="mb-0 text-uppercase fw-600 font-poppins color-8 "
-                    style="letter-spacing: 0.5px; font-size:12px">
-                    Faculty
-                  </h6>
-                  <span class="color-2 font-robots footParaColor fw-400 footlinks">Administrative
-                    Team</span>
-                  <span class="color-2 font-robots footParaColor fw-400 footlinks">Adjunct
-                    Resources</span>
-                </div>
-              </li>
-            </ul>
           </div>
-        </div>
+          <div class="col-12 col-md-6 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
+            <div class="d-flex flex-column gap-3">
+              <div class="footheadCont d-flex flex-column gap-2">
+                <h3 class="text-white foothead fw-600 font-poppins mb-0">The Institute</h3>
+                <span class="bg-shad-11"></span>
+              </div>
+              <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">About CPJ Group</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Vision & Mission</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">About the College</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Leadership Council</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Advisory Board</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Accreditations & Collabs</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Ranking & Awards</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">CPJIMT in News</li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
-          <div class="d-flex flex-column gap-3">
-            <div class="footheadCont d-flex flex-column gap-2">
-              <h3 class="text-white foothead fw-600 font-poppins mb-0">Admissions</h3><span class="bg-shad-11"></span>
+          <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
+            <div class="d-flex flex-column gap-3">
+              <div class="footheadCont d-flex flex-column gap-2">
+                <h3 class="text-white foothead fw-600 font-poppins mb-0">Academics</h3>
+                <span class="bg-shad-11"></span>
+              </div>
+              <ul class="d-flex flex-column gap-3 gap-md-4 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">
+                  <div class="d-flex flex-column gap-2">
+                    <h6
+                      class="mb-0 text-uppercase fw-600 font-poppins color-8"
+                      style="letter-spacing: 0.5px; font-size: 12px"
+                    >
+                      Technology
+                    </h6>
+                    <span class="color-2 font-robots footParaColor fw-400 footlinks">B.Tech | MCA | BCA</span>
+                  </div>
+                </li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">
+                  <div class="d-flex flex-column gap-2">
+                    <h6
+                      class="mb-0 text-uppercase fw-600 font-poppins color-8"
+                      style="letter-spacing: 0.5px; font-size: 12px"
+                    >
+                      Management
+                    </h6>
+                    <span class="color-2 font-robots footParaColor fw-400 footlinks">MBA | BBA</span>
+                  </div>
+                </li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">
+                  <div class="d-flex flex-column gap-2">
+                    <h6
+                      class="mb-0 text-uppercase fw-600 font-poppins color-8"
+                      style="letter-spacing: 0.5px; font-size: 12px"
+                    >
+                      Law
+                    </h6>
+                    <span class="color-2 font-robots footParaColor fw-400 footlinks">BA LLB | BBA LL.B | LL.B</span>
+                  </div>
+                </li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">
+                  <div class="d-flex flex-column gap-2">
+                    <h6
+                      class="mb-0 text-uppercase fw-600 font-poppins color-8"
+                      style="letter-spacing: 0.5px; font-size: 12px"
+                    >
+                      Faculty
+                    </h6>
+                    <span class="color-2 font-robots footParaColor fw-400 footlinks">Administrative Team</span>
+                    <span class="color-2 font-robots footParaColor fw-400 footlinks">Adjunct Resources</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Eligibility Criteria</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Admission Brochure</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Transport Fee</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Hostel Fee</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Pixi Card</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Education Loan / ERP</li>
-            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
+            <div class="d-flex flex-column gap-3">
+              <div class="footheadCont d-flex flex-column gap-2">
+                <h3 class="text-white foothead fw-600 font-poppins mb-0">Admissions</h3>
+                <span class="bg-shad-11"></span>
+              </div>
+              <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Eligibility Criteria</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Admission Brochure</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Transport Fee</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Hostel Fee</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Pixi Card</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Education Loan / ERP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
+            <div class="d-flex flex-column gap-3">
+              <div class="footheadCont d-flex flex-column gap-2">
+                <h3 class="text-white foothead fw-600 font-poppins mb-0">Life & Careers</h3>
+                <span class="bg-shad-11"></span>
+              </div>
+              <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Industry Interface Cell</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Placement Drives</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Industrial Visits</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Infrastructure</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Events & Sports Gallery</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">NSS Cell</li>
+                <li class="color-2 font-robots footParaColor fw-400 footlinks">Blogs & Newsletter</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg d-flex flex-column align-items-md-center mb-3 mb-md-0">
-          <div class="d-flex flex-column gap-3">
-            <div class="footheadCont d-flex flex-column gap-2">
-              <h3 class="text-white foothead fw-600 font-poppins mb-0">Life & Careers</h3><span
-                class="bg-shad-11"></span>
-            </div>
-            <ul class="d-flex flex-column gap-2 gap-md-3 list-unstyled mb-md-0">
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Industry Interface Cell</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Placement Drives</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Industrial Visits</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Infrastructure</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Events & Sports Gallery</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">NSS Cell</li>
-              <li class="color-2 font-robots footParaColor fw-400 footlinks">Blogs & Newsletter</li>
+        <div class="row copyrightBorder">
+          <div
+            class="d-flex flex-wrap flex-xl-nowrap justify-content-center justify-content-xl-between text-center gap-2 gap-xl-4 pt-4"
+          >
+            <p class="color-2 font-robots copyrightPara fw-400 mb-0">
+              © 2026 CPJ Group of Institutions. All rights reserved. | Design And Develop By Mediagarh
+            </p>
+            <ul
+              class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center justify-content-md-between gap-2 gap-lg-4 list-unstyled mb-md-0"
+            >
+              <li class="color-2 font-robots copyrightPara mb-0 fw-400">E-Library</li>
+              <li class="color-2 font-robots copyrightPara mb-0 fw-400">Quick Access</li>
+              <li class="color-2 font-robots copyrightPara mb-0 fw-400">Student Awareness</li>
+              <li class="color-2 font-robots copyrightPara mb-0 fw-400">Grievance Redressal Cell</li>
+              <li class="color-2 font-robots copyrightPara mb-0 fw-400">Disclaimer</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="row copyrightBorder">
-        <div
-          class="d-flex flex-wrap flex-xl-nowrap justify-content-center justify-content-xl-between text-center gap-2 gap-xl-4 pt-4">
-          <p class="color-2 font-robots copyrightPara fw-400 mb-0 ">© 2026 CPJ Group of Institutions. All
-            rights reserved. | Design And Develop By Mediagarh
-          </p>
-          <ul
-            class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center justify-content-md-between gap-2 gap-lg-4 list-unstyled mb-md-0">
-            <li class="color-2 font-robots copyrightPara mb-0 fw-400">E-Library</li>
-            <li class="color-2 font-robots copyrightPara mb-0 fw-400">Quick Access</li>
-            <li class="color-2 font-robots copyrightPara mb-0 fw-400">Student Awareness</li>
-            <li class="color-2 font-robots copyrightPara mb-0 fw-400">Grievance Redressal Cell</li>
-            <li class="color-2 font-robots copyrightPara mb-0 fw-400">Disclaimer</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/animation.js"></script>
-  <script>
-    document.querySelectorAll(".arrow-icon").forEach(icon => {
-      icon.addEventListener("click", function (e) {
-        e.stopPropagation(); s
-        this.classList.toggle("rotate");
-      });
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper('.home-testimonial-swiper', {
-      slidesPerView: 2,
-      spaceBetween: 2,
-      loop: true,
-      autoplay: { delay: 3500, disableOnInteraction: false },
-      pagination: false,
-      navigation: false,
-      breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 20 },
-        768: { slidesPerView: 2, spaceBetween: 2 },
-      },
-    });
-  </script>
-  <script>
-    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
-      element.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        let parent = this.closest('.dropdown-submenu');
-        let isOpen = parent.classList.contains('open');
-
-        // Pehle sabhi band karo
-        document.querySelectorAll('.dropdown-submenu').forEach(function (sub) {
-          sub.classList.remove('open');
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script>
+      document.querySelectorAll('.arrow-icon').forEach((icon) => {
+        icon.addEventListener('click', function (e) {
+          e.stopPropagation();
+          s;
+          this.classList.toggle('rotate');
         });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.home-testimonial-swiper', {
+        slidesPerView: 2,
+        spaceBetween: 2,
+        loop: true,
+        autoplay: { delay: 3500, disableOnInteraction: false },
+        pagination: false,
+        navigation: false,
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 20 },
+          768: { slidesPerView: 2, spaceBetween: 2 },
+        },
+      });
+    </script>
+    <script>
+      // ===== Mobile Sliding Menu JS =====
+      (function () {
+        var drawer = document.getElementById('mobMenuDrawer');
+        var overlay = document.getElementById('mobMenuOverlay');
+        var openBtn = document.getElementById('mobMenuOpenBtn');
+        var panels = document.querySelectorAll('.mob-panel');
+        var stack = []; // history of panel ids
 
-        // Agar pehle band tha toh open karo
-        if (!isOpen) {
-          parent.classList.add('open');
+        function getActivePanel() {
+          return drawer.querySelector('.mob-panel.active');
         }
-      });
-    });
 
-    // Programmes band ho toh UG/PG bhi band ho
-    document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-      dropdown.addEventListener('hidden.bs.dropdown', function () {
-        document.querySelectorAll('.dropdown-submenu').forEach(function (sub) {
-          sub.classList.remove('open');
+        function openDrawer() {
+          // Reset to main panel
+          panels.forEach(function (p) {
+            p.classList.remove('active', 'slide-in', 'slide-out');
+          });
+          drawer.querySelector('[data-level="0"]').classList.add('active');
+          stack = [];
+          drawer.classList.add('open');
+          overlay.classList.add('open');
+        }
+
+        function closeDrawer() {
+          drawer.classList.remove('open');
+          overlay.classList.remove('open');
+          // Reset all panels after transition
+          setTimeout(function () {
+            panels.forEach(function (p) {
+              p.classList.remove('active', 'slide-in', 'slide-out');
+            });
+            drawer.querySelector('[data-level="0"]').classList.add('active');
+            stack = [];
+          }, 300);
+        }
+
+        function goForward(targetId) {
+          var current = getActivePanel();
+          var next = document.getElementById(targetId);
+          if (!next) return;
+          stack.push(current.id || 'level0');
+          current.classList.add('slide-out');
+          current.classList.remove('active');
+          next.classList.add('active', 'slide-in');
+          setTimeout(function () {
+            current.classList.remove('slide-out');
+            next.classList.remove('slide-in');
+          }, 320);
+        }
+
+        function goBack() {
+          if (stack.length === 0) {
+            closeDrawer();
+            return;
+          }
+          var prevId = stack.pop();
+          var current = getActivePanel();
+          var prev = prevId === 'level0' ? drawer.querySelector('[data-level="0"]') : document.getElementById(prevId);
+          if (!prev) return;
+          current.classList.add('slide-in-reverse');
+          current.classList.remove('active');
+          prev.classList.add('active', 'slide-out-reverse');
+          setTimeout(function () {
+            current.classList.remove('slide-in-reverse');
+            prev.classList.remove('slide-out-reverse');
+          }, 320);
+        }
+
+        // Open button
+        if (openBtn) openBtn.addEventListener('click', openDrawer);
+
+        // Overlay click closes
+        overlay.addEventListener('click', closeDrawer);
+
+        // Close buttons
+        drawer.querySelectorAll('.mob-close-btn').forEach(function (btn) {
+          btn.addEventListener('click', closeDrawer);
         });
-      });
-    });
-  </script>
-</body>
 
+        // Back buttons
+        drawer.querySelectorAll('.mob-back-btn').forEach(function (btn) {
+          btn.addEventListener('click', goBack);
+        });
+
+        // Forward: rows with has-child
+        drawer.querySelectorAll('.mob-menu-row.has-child').forEach(function (row) {
+          row.addEventListener('click', function () {
+            var target = this.getAttribute('data-target');
+            if (target) goForward(target);
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
