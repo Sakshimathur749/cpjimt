@@ -97,3 +97,51 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Escape' && videoModal.classList.contains('active')) closeVideoModal();
   });
 });
+
+// ============================================================
+// COUNTER ANIMATION
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+  const counters = document.querySelectorAll('.home-banner-stat-number');
+  const statsSection = document.querySelector('.stats-section-main');
+
+  if (!counters.length || !statsSection) return;
+
+  let hasAnimated = false;
+
+  function animateCounter(element) {
+    const target = parseInt(element.textContent.replace(/\D/g, ''));
+    const duration = 2000; // 2 seconds
+    const increment = target / (duration / 16); // 60fps
+    let current = 0;
+    const suffix = element.textContent.replace(/[0-9]/g, ''); // Get the '+' sign
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        element.textContent = target.toLocaleString() + suffix;
+        clearInterval(timer);
+      } else {
+        element.textContent = Math.floor(current).toLocaleString() + suffix;
+      }
+    }, 16);
+  }
+
+  function checkScroll() {
+    if (hasAnimated) return;
+
+    const sectionTop = statsSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop < windowHeight * 0.8) {
+      hasAnimated = true;
+      counters.forEach(counter => animateCounter(counter));
+    }
+  }
+
+  // Check on scroll
+  window.addEventListener('scroll', checkScroll);
+
+  // Check on load in case section is already visible
+  checkScroll();
+});

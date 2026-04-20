@@ -101,6 +101,25 @@
   padding: 0 !important;
   overflow: visible;
   min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s linear 0.2s;
+  pointer-events: none;
+}
+
+.custom-dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s linear 0s;
+  pointer-events: auto;
 }
 
 .custom-dropdown-menu .dropdown-item {
@@ -111,6 +130,59 @@
   padding: 6px 0px;
   border-bottom: 1px solid #e2e8f0;
   background: #fff;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    background 0.15s ease;
+}
+
+.custom-dropdown-menu.show .dropdown-item,
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.custom-dropdown-menu.show .dropdown-item:nth-child(1),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(1) {
+  transition-delay: 0.03s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(2),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(3),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(3) {
+  transition-delay: 0.09s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(4),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(4) {
+  transition-delay: 0.12s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(5),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(5) {
+  transition-delay: 0.15s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(6),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(6) {
+  transition-delay: 0.18s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(7),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(7) {
+  transition-delay: 0.21s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(8),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(8) {
+  transition-delay: 0.24s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(9),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(9) {
+  transition-delay: 0.27s;
+}
+.custom-dropdown-menu.show .dropdown-item:nth-child(10),
+.desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu .dropdown-item:nth-child(10) {
+  transition-delay: 0.3s;
 }
 
 .custom-dropdown-menu {
@@ -121,6 +193,8 @@
 .custom-dropdown-menu .dropdown-item:focus {
   background: #f0f7ff !important;
   color: #393939 !important;
+  transform: translateX(4px);
+  transition: all 0.2s ease;
 }
 
 #navbarSupportedContent .nav-link,
@@ -197,10 +271,29 @@
   transform: rotate(180deg);
 }
 
-/* Desktop: open nav dropdowns on hover */
+/* Desktop: open nav dropdowns on hover with animation */
 @media (min-width: 1024px) {
-  .desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu {
+  .desktop-nav-menu .dropdown-menu {
     display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0s linear 0.2s;
+    pointer-events: none;
+  }
+
+  .desktop-nav-menu .nav-item.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0s linear 0s;
+    pointer-events: auto;
   }
 
   .desktop-nav-menu .nav-item.dropdown:hover > .nav-link .arrow-icon {
@@ -216,7 +309,6 @@
 }
 
 .dropdown-submenu .collapse-menu {
-  display: none;
   position: absolute;
   top: 0;
   left: 100%;
@@ -228,12 +320,27 @@
   list-style: none;
   z-index: 9999;
   margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s linear 0.2s;
+  pointer-events: none;
 }
 
 /* Show flyout on hover (desktop only) */
 @media (min-width: 1024px) {
   .dropdown-submenu:hover > .collapse-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0s linear 0s;
+    pointer-events: auto;
   }
 
   .dropdown-submenu:hover > a {
@@ -252,6 +359,48 @@
   border-bottom: 1px solid #e2e8f0;
   background: #fff;
   white-space: normal;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    background 0.15s ease;
+}
+
+.dropdown-submenu:hover .collapse-menu .dropdown-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(1) {
+  transition-delay: 0.03s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(3) {
+  transition-delay: 0.09s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(4) {
+  transition-delay: 0.12s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(5) {
+  transition-delay: 0.15s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(6) {
+  transition-delay: 0.18s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(7) {
+  transition-delay: 0.21s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(8) {
+  transition-delay: 0.24s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(9) {
+  transition-delay: 0.27s;
+}
+.dropdown-submenu:hover .collapse-menu .dropdown-item:nth-child(10) {
+  transition-delay: 0.3s;
 }
 
 .dropdown-submenu .collapse-menu .dropdown-item:last-child {
@@ -260,6 +409,7 @@
 
 .dropdown-submenu .collapse-menu .dropdown-item:hover {
   background: #f0f7ff !important;
+  transform: translateX(4px);
 }
 
 /* Mobile: collapse toggle */
@@ -269,6 +419,9 @@
   box-shadow: none;
   border-radius: 0;
   padding-left: 10px !important;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 /* Arrow transition */
@@ -282,6 +435,92 @@
 /* Mobile open state: point down */
 .dropdown-submenu.open > a .submenu-arrow-icon {
   transform: rotate(0deg);
+}
+
+/* =====================
+   OPTIONAL: Flip Animation Variant for Dropdowns
+   Add class "flip-animation" to dropdown-menu for flip effect
+   ===================== */
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: perspective(400px) rotateX(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+.custom-dropdown-menu.flip-animation {
+  animation: flipIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top center;
+}
+
+.custom-dropdown-menu.flip-animation .dropdown-item {
+  animation: none;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Flip animation for submenu */
+.dropdown-submenu .collapse-menu.flip-animation {
+  animation: flipIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: left center;
+}
+
+.dropdown-submenu .collapse-menu.flip-animation .dropdown-item {
+  animation: none;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =====================
+   OPTIONAL: Scale Animation Variant for Dropdowns
+   Add class "scale-animation" to dropdown-menu for scale effect
+   ===================== */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.custom-dropdown-menu.scale-animation {
+  animation: scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top center;
+}
+
+.custom-dropdown-menu.scale-animation .dropdown-item {
+  animation: none;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =====================
+   OPTIONAL: Bounce Animation Variant for Mobile Menu Items
+   Add class "bounce-animation" to mob-menu-list for bounce effect
+   ===================== */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.mob-menu-list.bounce-animation .mob-menu-row {
+  animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .nav-item.dropdown.show .arrow-icon {
@@ -393,7 +632,8 @@
   background: rgba(0, 0, 0, 0.45);
   z-index: 1040;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(2px);
 }
 .mob-menu-overlay.open {
   display: block;
@@ -411,10 +651,11 @@
   background: #fff;
   z-index: 1050;
   transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
 }
 .mob-menu-drawer.open {
   transform: translateX(0);
@@ -437,29 +678,38 @@
   height: 100%;
   background: #fff;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  opacity: 0;
 }
 .mob-panel.active {
   transform: translateX(0);
+  opacity: 1;
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease;
 }
 /* Slide in from right */
 .mob-panel.slide-in {
   transform: translateX(0);
+  opacity: 1;
 }
 /* Slide out to left */
 .mob-panel.slide-out {
   transform: translateX(-100%);
+  opacity: 0;
 }
 /* Going back: current slides right */
 .mob-panel.slide-in-reverse {
   transform: translateX(100%);
+  opacity: 0;
 }
 /* Going back: prev slides from left to 0 */
 .mob-panel.slide-out-reverse {
   transform: translateX(0);
+  opacity: 1;
 }
 
 /* Panel header */
@@ -471,7 +721,19 @@
   border-bottom: 1px solid #e2e8f0;
   min-height: 56px;
   flex-shrink: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
+
+.mob-panel.active .mob-panel-header {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
 .mob-panel-title {
   font-size: 15px;
   font-weight: 600;
@@ -493,6 +755,15 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.mob-back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.mob-back-btn:active {
+  transform: scale(0.95);
 }
 
 /* Close button */
@@ -505,6 +776,18 @@
   cursor: pointer;
   padding: 0 0 0 8px;
   flex-shrink: 0;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.mob-close-btn:hover {
+  transform: rotate(90deg);
+  color: #dc2626;
+}
+
+.mob-close-btn:active {
+  transform: rotate(90deg) scale(0.9);
 }
 
 /* Menu list */
@@ -525,10 +808,55 @@
   font-weight: 500;
   color: #0f172a;
   cursor: pointer;
-  transition: background 0.15s;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideInMenuItem 0.3s ease forwards;
 }
+
+@keyframes slideInMenuItem {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mob-panel.active .mob-menu-row:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.mob-panel.active .mob-menu-row:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.mob-panel.active .mob-menu-row:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.mob-panel.active .mob-menu-row:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.mob-panel.active .mob-menu-row:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.mob-panel.active .mob-menu-row:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.mob-panel.active .mob-menu-row:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.mob-panel.active .mob-menu-row:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.mob-panel.active .mob-menu-row:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.mob-panel.active .mob-menu-row:nth-child(10) {
+  animation-delay: 0.5s;
+}
+
 .mob-menu-row:hover {
   background: #f8fafc;
+  transform: translateX(4px);
 }
 .mob-menu-row a {
   color: #0f172a;
@@ -544,4 +872,9 @@
 .mob-menu-row svg {
   flex-shrink: 0;
   opacity: 0.5;
+  transition: transform 0.3s ease;
+}
+
+.mob-menu-row:hover svg {
+  transform: translateX(4px);
 }
