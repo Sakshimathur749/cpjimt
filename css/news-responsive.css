@@ -13,9 +13,11 @@
     .play-overlay svg {
         width: 16px;
     }
+
     .containerPy {
         padding: 40px 10px !important;
     }
+
     .bgColorLinear {
         padding: 30px 10px;
     }
@@ -69,7 +71,8 @@
         line-height: 28px;
     }
 
-    .whyChoosePara {
+    .whyChoosePara,
+    .disclaimer-head {
         font-size: 16px;
         line-height: 24px;
     }

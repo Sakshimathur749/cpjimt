@@ -361,3 +361,6 @@ body {
     min-height: 250px;
 }
 
+.member-content {
+    padding: 20px;
+}

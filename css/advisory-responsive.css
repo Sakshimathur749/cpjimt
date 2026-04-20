@@ -13,9 +13,11 @@
     .play-overlay svg {
         width: 16px;
     }
+
     .containerPy {
         padding: 40px 10px !important;
     }
+
     .bgColorLinear {
         padding: 30px 10px;
     }
@@ -23,6 +25,10 @@
     .whyChoosePara {
         max-width: 100%;
         width: 100%;
+    }
+
+    .member-content {
+        padding: 10px 20px;
     }
 
     .whyCHooseCard,
@@ -72,7 +78,8 @@
         line-height: 28px;
     }
 
-    .whyChoosePara {
+    .whyChoosePara,
+    .member-head {
         font-size: 16px;
         line-height: 24px;
     }
@@ -84,7 +91,8 @@
     .btn-visit,
     .mainGridPara,
     .accreditionpara,
-    .cta-para {
+    .cta-para,
+    .member-subhead {
         font-size: 14px;
         line-height: 24px;
     }
@@ -94,6 +102,7 @@
         font-size: 18px;
         line-height: 28px;
     }
+
     .accreditionGrid {
         grid-template-columns: repeat(2, 1fr);
     }

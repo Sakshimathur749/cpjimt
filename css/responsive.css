@@ -1,128 +1,130 @@
 @media (max-width: 769px) {
-  .skillImage img {
-    height: auto;
-  }
+    .skillImage img {
+        height: auto;
+    }
 
-  .infra-banner img {
-    height: 310px;
-  }
+    .infra-banner img {
+        height: 310px;
+    }
 
-  .programPara,
-  .whyChoosePara {
-    max-width: 100%;
-    width: 100%;
-  }
-  .containerPy {
-    padding: 40px 10px !important;
-  }
-  .bgColorLinear {
-    padding: 30px 10px;
-  }
+    .programPara,
+    .whyChoosePara {
+        max-width: 100%;
+        width: 100%;
+    }
 
-  .infra-content,
-  .faqbutton button {
-    padding: 10px 20px;
-  }
+    .containerPy {
+        padding: 40px 10px !important;
+    }
 
-  .programCard,
-  .eligiblityCard,
-  .whyCHooseCard,
-  .plus-box {
-    padding: 20px;
-  }
+    .bgColorLinear {
+        padding: 30px 10px;
+    }
 
-  .gap-md-20 {
-    gap: 20px !important;
-  }
+    .infra-content,
+    .faqbutton button {
+        padding: 10px 20px;
+    }
 
-  .gap-md-30 {
-    gap: 30px !important;
-  }
+    .programCard,
+    .eligiblityCard,
+    .whyCHooseCard,
+    .plus-box {
+        padding: 20px;
+    }
 
-  .gap-md-40 {
-    gap: 40px !important;
-  }
+    .gap-md-20 {
+        gap: 20px !important;
+    }
 
-  .mainHeading {
-    font-size: 35px;
-    line-height: 48px;
-  }
+    .gap-md-30 {
+        gap: 30px !important;
+    }
 
-  .cta-heading,
-  .careerOppHead h3 {
-    font-size: 30px;
-    line-height: 40px;
-  }
+    .gap-md-40 {
+        gap: 40px !important;
+    }
 
-  .programHead h3,
-  .softSkillHead h3,
-  .eligibeHead h3,
-  .whyChooseHead h3,
-  .section-title {
-    font-size: 28px;
-    line-height: 30px;
-  }
+    .mainHeading {
+        font-size: 35px;
+        line-height: 48px;
+    }
 
-  .infra-content h2,
-  .text-col h2 {
-    font-size: 22px;
-    line-height: 30px;
-  }
+    .cta-heading,
+    .careerOppHead h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 
-  .softSkillPara,
-  .whyChoosePara,
-  .cta-para,
-  .careerOppPara {
-    font-size: 16px;
-    line-height: 24px;
-  }
+    .programHead h3,
+    .softSkillHead h3,
+    .eligibeHead h3,
+    .whyChooseHead h3,
+    .section-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
 
-  .mainPara,
-  .programPara,
-  .softSkillPoint,
-  .eligiblityPoint,
-  .whyChoosePara,
-  .plus-box span,
-  .btn-apply,
-  .btn-brochure,
-  .btn-visit,
-  .industialPara,
-  .text-col p,
-  .faqbutton button {
-    font-size: 14px;
-    line-height: 24px;
-  }
+    .infra-content h2,
+    .text-col h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
 
-  .iconBthHead,
-  .programHeading,
-  .whyCHooseHeading {
-    font-size: 18px;
-    line-height: 28px;
-  }
+    .softSkillPara,
+    .whyChoosePara,
+    .cta-para,
+    .careerOppPara {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
-  .careerOppPoint,
-  .copyrightPara,
-  .fpara p {
-    font-size: 12px;
-    line-height: 20px;
-  }
+    .mainPara,
+    .programPara,
+    .softSkillPoint,
+    .eligiblityPoint,
+    .whyChoosePara,
+    .plus-box span,
+    .btn-apply,
+    .btn-brochure,
+    .btn-visit,
+    .industialPara,
+    .text-col p,
+    .faqbutton button {
+        font-size: 14px;
+        line-height: 24px;
+    }
 
-  .badge-main {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
+    .iconBthHead,
+    .programHeading,
+    .whyCHooseHeading {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .careerOppPoint,
+    .copyrightPara,
+    .fpara p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .badge-main {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 764px) {
-  .gap-48 {
-    gap: 48px !important;
-  }
+    .gap-48 {
+        gap: 48px !important;
+    }
 
-  .gap-56 {
-    gap: 56px !important;
-  }
+    .gap-56 {
+        gap: 56px !important;
+    }
 
-  .gap-65 {
-    gap: 65px !important;
-  }
+    .gap-65 {
+        gap: 65px !important;
+    }
 }
