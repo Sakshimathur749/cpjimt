@@ -7,59 +7,114 @@ document.addEventListener('DOMContentLoaded', function () {
   const drawer = document.getElementById('mobMenuDrawer');
   const panels = document.getElementById('mobMenuPanels');
 
-  if (!openBtn || !drawer) return;
+  if (!openBtn || !drawer || !panels) return;
+
+  // Track navigation history
+  let navigationStack = [];
 
   function openMenu() {
     drawer.classList.add('open');
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    // Reset to root panel
+    const rootPanel = document.querySelector('.mob-panel[data-level="0"]');
+    if (rootPanel) {
+      navigationStack = [rootPanel];
+      showPanel(rootPanel);
+    }
   }
 
   function closeMenu() {
     drawer.classList.remove('open');
     overlay.classList.remove('open');
     document.body.style.overflow = '';
-    // reset to level 0
+
+    // Reset after animation
     setTimeout(() => {
-      document.querySelectorAll('.mob-panel').forEach(p => p.classList.remove('active'));
-      const root = document.querySelector('.mob-panel[data-level="0"]');
-      if (root) root.classList.add('active');
+      navigationStack = [];
+      document.querySelectorAll('.mob-panel').forEach(p => {
+        p.classList.remove('active');
+        p.style.display = 'none';
+      });
+      const rootPanel = document.querySelector('.mob-panel[data-level="0"]');
+      if (rootPanel) {
+        rootPanel.classList.add('active');
+        rootPanel.style.display = 'flex';
+      }
       if (panels) panels.style.transform = 'translateX(0)';
     }, 300);
+  }
+
+  function showPanel(targetPanel) {
+    if (!targetPanel) return;
+
+    // Hide all panels
+    document.querySelectorAll('.mob-panel').forEach(p => {
+      p.classList.remove('active');
+      p.style.display = 'none';
+    });
+
+    // Show and activate target panel
+    targetPanel.style.display = 'flex';
+    // Force reflow
+    targetPanel.offsetHeight;
+    targetPanel.classList.add('active');
   }
 
   openBtn.addEventListener('click', openMenu);
   overlay.addEventListener('click', closeMenu);
 
+  // Close button clicks
   document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('mob-close-btn')) closeMenu();
+    if (e.target.classList.contains('mob-close-btn')) {
+      closeMenu();
+    }
   });
 
+  // Forward navigation (clicking menu items with children)
   document.addEventListener('click', function (e) {
     const row = e.target.closest('.mob-menu-row.has-child');
     if (!row) return;
+
     const targetId = row.getAttribute('data-target');
     const targetPanel = document.getElementById(targetId);
-    if (!targetPanel) return;
-    const currentLevel = parseInt(row.closest('.mob-panel').getAttribute('data-level'));
-    document.querySelectorAll('.mob-panel').forEach(p => p.classList.remove('active'));
-    targetPanel.classList.add('active');
-    panels.style.transform = `translateX(-${(currentLevel + 1) * 100}%)`;
+
+    if (!targetPanel) {
+      console.error('Target panel not found:', targetId);
+      return;
+    }
+
+    // Add to navigation stack
+    navigationStack.push(targetPanel);
+
+    // Show the target panel
+    showPanel(targetPanel);
   });
 
+  // Back button navigation
   document.addEventListener('click', function (e) {
     const backBtn = e.target.closest('.mob-back-btn');
     if (!backBtn) return;
-    const currentPanel = backBtn.closest('.mob-panel');
-    const currentLevel = parseInt(currentPanel.getAttribute('data-level'));
-    currentPanel.classList.remove('active');
-    const prevLevel = currentLevel - 1;
-    panels.style.transform = `translateX(-${prevLevel * 100}%)`;
-    // activate the parent panel at prevLevel
-    const allPanels = document.querySelectorAll(`.mob-panel[data-level="${prevLevel}"]`);
-    if (allPanels.length === 1) {
-      allPanels[0].classList.add('active');
+
+    // Remove current panel from stack
+    if (navigationStack.length > 1) {
+      navigationStack.pop();
+
+      // Show previous panel
+      const previousPanel = navigationStack[navigationStack.length - 1];
+      showPanel(previousPanel);
     }
+  });
+
+  // Initialize: show only root panel
+  const rootPanel = document.querySelector('.mob-panel[data-level="0"]');
+  if (rootPanel) {
+    rootPanel.style.display = 'flex';
+    rootPanel.classList.add('active');
+  }
+  document.querySelectorAll('.mob-panel:not([data-level="0"])').forEach(p => {
+    p.style.display = 'none';
   });
 });
 
