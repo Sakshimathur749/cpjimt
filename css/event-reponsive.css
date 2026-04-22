@@ -1,5 +1,3 @@
-
-
 @media (max-width:769px) {
     .play-overlay {
         width: 50px;
@@ -9,9 +7,11 @@
     .play-overlay svg {
         width: 16px;
     }
+
     .containerPy {
         padding: 40px 10px !important;
     }
+
     .bgColorLinear {
         padding: 30px 10px;
     }
@@ -91,4 +91,3 @@
         gap: 65px !important;
     }
 }
-

@@ -201,7 +201,8 @@
         font-size: 22px;
     }
 
-    .genesis-card-text {
+    .genesis-card-text,
+    .leadershipContainer p {
         font-size: 14px;
     }
 
@@ -343,11 +344,102 @@
     .law-visit-label {
         font-size: 10px;
     }
+
+    .infrastructure-section {
+        padding: 60px 0;
+    }
+
+    .media-title {
+        font-size: 32px;
+    }
+
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .video-thumbnail {
+        height: 180px;
+    }
+
+    .play-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .media-content {
+        padding: 20px;
+    }
+
+    .media-card-title {
+        font-size: 17px;
+    }
+
+    .media-date {
+        font-size: 13px;
+    }
+
+    .video-modal-content {
+        width: 85%;
+    }
+
+    .video-modal-close {
+        top: -35px;
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 769px) {
     .infrastructure-section {
         padding: 48px 0;
+    }
+
+    .media-title {
+        font-size: 28px;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .video-thumbnail {
+        height: 220px;
+    }
+
+    .play-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .media-content {
+        padding: 20px 16px;
+    }
+
+    .media-card-title {
+        font-size: 16px;
+    }
+
+    .media-date {
+        font-size: 13px;
+    }
+
+    .video-modal-content {
+        width: 95%;
+    }
+
+    .video-modal-close {
+        top: -45px;
+        right: 0;
+        font-size: 36px;
+    }
+
+    .infrastructure-section {
+        padding: 48px 0;
+    }
+
+    .leadershipContainer {
+        padding: 20px 0px;
     }
 
     .section-title {
@@ -502,7 +594,8 @@
         height: 284px;
     }
 
-    .blog-card__title {
+    .blog-card__title,
+    .leadershipContainer h5 {
         font-size: 17px;
     }
 
@@ -541,12 +634,13 @@
     .section-title,
     .mainGridHeading,
     .accreditionHeading,
-    .softSkillHead h3 {
+    .softSkillHead h3,
+    .leadershipContainer h3,
+    .section-title {
         font-size: 28px;
         line-height: 30px;
     }
 
-    .whyChooseHead h3,
     .academicHead,
     .accreditionHeading,
     .softSkillHead h3 {
@@ -601,15 +695,21 @@
     .club-Image-Text p,
     .disclaimer-para,
     .excursion-badge,
-    .event-title {
+    .event-title,
+    .profileContent p {
         font-size: 14px;
         line-height: 24px;
+    }
+
+    .profileCard {
+        padding: 15px;
     }
 
     .iconBthHead,
     .programHeading,
     .whyCHooseHeading,
-    .disclaimer-head {
+    .disclaimer-head,
+    .profileContent h4 {
         font-size: 18px;
         line-height: 28px;
     }
@@ -1091,6 +1191,36 @@
 }
 
 @media (max-width:546px) {
+    .infrastructure-section {
+        padding: 40px 0;
+    }
+
+    .media-title {
+        font-size: 24px;
+    }
+
+    .video-thumbnail {
+        height: 200px;
+    }
+
+    .play-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .media-card-title {
+        font-size: 15px;
+    }
+
+    .media-date {
+        font-size: 12px;
+    }
+
+    .calendar-icon {
+        width: 14px;
+        height: 14px;
+    }
+
     .accreditionGrid {
         grid-template-columns: repeat(1, 1fr);
     }
