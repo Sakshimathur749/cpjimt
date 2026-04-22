@@ -24,6 +24,28 @@
     .blog-card__title {
         font-size: 18px;
     }
+
+    .grievance-tables-section {
+        padding: 60px 0;
+    }
+
+    .grievance-block-title {
+        font-size: 28px;
+    }
+
+    .grievance-table-heading {
+        font-size: 18px;
+    }
+
+    .grievance-intro-para {
+        font-size: 13px;
+    }
+
+    .grievance-table th,
+    .grievance-table td {
+        padding: 11px 14px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -54,12 +76,17 @@
         padding: 40px 10px !important;
     }
 
+    .excursion-badge {
+        padding: 10px 15px;
+    }
+
     .bgColorLinear {
         padding: 30px 10px;
     }
 
     .infra-content,
-    .faqbutton button {
+    .faqbutton button,
+    .admission-badge {
         padding: 10px 20px;
     }
 
@@ -71,7 +98,9 @@
     .accreditionCard,
     .recognitionCard,
     .academicContent,
-    .ctaContainer {
+    .ctaContainer,
+    .disclaimer-container,
+    .programmes-table thead th {
         padding: 20px;
     }
 
@@ -211,14 +240,17 @@
     .faqbutton button,
     .member-subhead,
     .rankingContent p,
-    .club-Image-Text p {
+    .club-Image-Text p,
+    .disclaimer-para,
+    .excursion-badge {
         font-size: 14px;
         line-height: 24px;
     }
 
     .iconBthHead,
     .programHeading,
-    .whyCHooseHeading {
+    .whyCHooseHeading,
+    .disclaimer-head {
         font-size: 18px;
         line-height: 28px;
     }
@@ -243,6 +275,63 @@
 
     .accreditionGrid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grievance-tables-section {
+        padding: 48px 0;
+    }
+
+    .grievance-intro {
+        margin-bottom: 32px;
+    }
+
+    .grievance-block-title {
+        font-size: 24px;
+    }
+
+    .grievance-table-heading {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .grievance-intro-para {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .grievance-table {
+        font-size: 12px;
+        min-width: 520px;
+    }
+
+    .grievance-table th,
+    .grievance-table td {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .grievance-table-block {
+        margin-bottom: 40px;
+    }
+
+    .grievance-form-card {
+        padding: 28px 20px;
+    }
+
+    .grievance-form-title {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+
+    .gf-input,
+    .gf-select,
+    .gf-textarea {
+        font-size: 13px;
+        padding: 11px 14px;
+    }
+
+    .course-grid {
+        margin: 20px;
     }
 }
 
@@ -274,6 +363,43 @@
     .blog-card__excerpt {
         font-size: 13px;
     }
+
+    .grievance-tables-section {
+        padding: 36px 0;
+    }
+
+    .grievance-block-title {
+        font-size: 20px;
+    }
+
+    .grievance-table-heading {
+        font-size: 15px;
+    }
+
+    .grievance-intro-para {
+        font-size: 12px;
+    }
+
+    .grievance-table th,
+    .grievance-table td {
+        padding: 9px 10px;
+        font-size: 11px;
+        min-width: 160px;
+    }
+
+    .grievance-form-card {
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+
+    .grievance-form-title {
+        font-size: 18px;
+    }
+
+    .gf-submit {
+        width: 100%;
+        padding: 12px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -289,6 +415,10 @@
 
     .gap-56 {
         gap: 56px !important;
+    }
+
+    .gap-30 {
+        gap: 30px !important;
     }
 
     .gap-65 {
