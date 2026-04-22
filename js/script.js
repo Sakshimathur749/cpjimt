@@ -116,6 +116,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.mob-panel:not([data-level="0"])').forEach((p) => {
     p.style.display = "none";
   });
+
+  // Initialize: show only root panel
+  const rootPanel = document.querySelector('.mob-panel[data-level="0"]');
+  if (rootPanel) {
+    rootPanel.style.display = "flex";
+    rootPanel.classList.add("active");
+  }
+  document.querySelectorAll('.mob-panel:not([data-level="0"])').forEach((p) => {
+    p.style.display = "none";
+  });
 });
 
 // ============================================================
