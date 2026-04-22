@@ -178,7 +178,6 @@
     }
 
     .programHead h3,
-    .softSkillHead h3,
     .eligibeHead h3,
     .whyChooseHead h3,
     .rankingContent h3,
@@ -191,7 +190,8 @@
 
     .whyChooseHead h3,
     .academicHead,
-    .accreditionHeading {
+    .accreditionHeading,
+    .softSkillHead h3 {
         font-size: 25px;
         line-height: 30px;
     }
