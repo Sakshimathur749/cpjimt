@@ -82,13 +82,16 @@ body {
   color: #334155 !important;
 }
 
+.color-25 {
+  color: #64748B !important;
+}
+
 .footParaColor {
   color: #d1e3f8 !important;
 }
 
 .bg-shad-1 {
   background: #014c88 !important;
-  margin-bottom: 20px;
 }
 
 .bg-shad-2 {
@@ -481,6 +484,11 @@ body {
 }
 
 .infra-overlay {
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
   background: linear-gradient(to top, rgba(10, 22, 50, 0.88) 0%, rgba(10, 22, 50, 0.4) 55%, transparent 100%);
 }
 
@@ -1373,6 +1381,63 @@ body {
 }
 
 /* Pg Section */
+/* Gallery */
+
+
+.badge-cat {
+  top: 8%;
+  left: 4%;
+  padding: 4px 10px;
+  border-radius: 30px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.badge-year {
+  bottom: 6%;
+  right: 6%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2px 6px;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.event-date,
+.showing-text {
+  font-size: 12px;
+  line-height: 16px;
+  border-top: 0.8px solid #F1F5F9;
+}
+
+.btn-load-more {
+  border-radius: 26843500px;
+  border: 1.6px solid #014C88;
+  padding: 14px 36px;
+}
+
+.showing-bar {
+  width: 100%;
+  max-width: 384px;
+  height: 6px;
+  border-radius: 26843500px;
+  background: #F1F5F9;
+  overflow: hidden;
+}
+
+.showing-progress {
+  height: 100%;
+  width: 0%;
+  background: #014C88;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.card-item {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+/* Gallery */
 /* Footer */
 .social-icon,
 .objective-icon {
@@ -1412,7 +1477,3 @@ body {
 }
 
 /* Footer */
-
-.course-grid {
-  margin-bottom: 40px;
-}

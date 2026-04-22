@@ -493,73 +493,84 @@ document.querySelectorAll(".dropdown").forEach(function (dropdown) {
 // ============================================================
 // Advisory Section
 // ============================================================
-const members = [
-  {
-    name: "Prof. (Dr.) Sanjiv Mittal",
-    role: "Vice Chancellor",
-    univ: "Sambalpur University, Orissa",
-  },
-  {
-    name: "Prof.(Dr.) R. K. Mittal",
-    role: "Vice Chancellor",
-    univ: "CSJM Bhopal",
-  },
-  { name: "Prof.(Dr.) Neena Sinha", role: "Professor", univ: "UGNB, GGS/PU" },
-  {
-    name: "Prof.(Dr.) Amit Prakash Singh",
-    role: "Professor",
-    univ: "UBCT, GGS/PU",
-  },
-  { name: "Prof.(Dr.) P. C. Parida", role: "Director", univ: "NUEBS, Delhi" },
-  { name: "Prof.(Dr.) Anuradha Jain", role: "Principal", univ: "VIPS, GGS/PU" },
-  {
-    name: "Prof.(Dr.) Namita Rajput",
-    role: "Principal",
-    univ: "Aurobindo College, University of Delhi",
-  },
-  {
-    name: "Dr. Urvashi Sharma",
-    role: "Associate Professor",
-    univ: "Department of Economics, University of Delhi",
-  },
-  {
-    name: "Prof. (Dr.) Sudhir Kr. Jain",
-    role: "Professor",
-    univ: "Department of Management Studies, IIT Delhi",
-  },
-  {
-    name: "Prof. (Dr.) Alok Kumar",
-    role: "Dean",
-    univ: "Banaras Hindu University, Varanasi",
-  },
-  {
-    name: "Prof. (Dr.) Sunita Kashyap",
-    role: "Professor",
-    univ: "Jawaharlal Nehru University, Delhi",
-  },
-  {
-    name: "Dr. Rakesh Sharma",
-    role: "Associate Professor",
-    univ: "Indian Institute of Management, Lucknow",
-  },
-];
+(function () {
+  const grid = document.getElementById("board-grid");
+  const pagination = document.getElementById("pagination");
 
-let page = 1;
-function getPerPage() {
-  if (window.innerWidth < 992) {
-    return 8;
+  if (!grid || !pagination) return;
+
+  const members = [
+    {
+      name: "Prof. (Dr.) Sanjiv Mittal",
+      role: "Vice Chancellor",
+      univ: "Sambalpur University, Orissa",
+    },
+    {
+      name: "Prof.(Dr.) R. K. Mittal",
+      role: "Vice Chancellor",
+      univ: "CSJM Bhopal",
+    },
+    { name: "Prof.(Dr.) Neena Sinha", role: "Professor", univ: "UGNB, GGS/PU" },
+    {
+      name: "Prof.(Dr.) Amit Prakash Singh",
+      role: "Professor",
+      univ: "UBCT, GGS/PU",
+    },
+    { name: "Prof.(Dr.) P. C. Parida", role: "Director", univ: "NUEBS, Delhi" },
+    {
+      name: "Prof.(Dr.) Anuradha Jain",
+      role: "Principal",
+      univ: "VIPS, GGS/PU",
+    },
+    {
+      name: "Prof.(Dr.) Namita Rajput",
+      role: "Principal",
+      univ: "Aurobindo College, University of Delhi",
+    },
+    {
+      name: "Dr. Urvashi Sharma",
+      role: "Associate Professor",
+      univ: "Department of Economics, University of Delhi",
+    },
+    {
+      name: "Prof. (Dr.) Sudhir Kr. Jain",
+      role: "Professor",
+      univ: "Department of Management Studies, IIT Delhi",
+    },
+    {
+      name: "Prof. (Dr.) Alok Kumar",
+      role: "Dean",
+      univ: "Banaras Hindu University, Varanasi",
+    },
+    {
+      name: "Prof. (Dr.) Sunita Kashyap",
+      role: "Professor",
+      univ: "Jawaharlal Nehru University, Delhi",
+    },
+    {
+      name: "Dr. Rakesh Sharma",
+      role: "Associate Professor",
+      univ: "Indian Institute of Management, Lucknow",
+    },
+  ];
+
+  let page = 1;
+
+  function getPerPage() {
+    if (window.innerWidth < 992) {
+      return 8;
+    }
+    return 9;
   }
-  return 9;
-}
-function render() {
-  const PER_PAGE = getPerPage();
-  const slice = members.slice((page - 1) * PER_PAGE, page * PER_PAGE);
-  const total = Math.ceil(members.length / PER_PAGE);
+  function render() {
+    const PER_PAGE = getPerPage();
+    const slice = members.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+    const total = Math.ceil(members.length / PER_PAGE);
 
-  // Cards
-  document.getElementById("board-grid").innerHTML = slice
-    .map(
-      (m) => `
+    // Cards
+    document.getElementById("board-grid").innerHTML = slice
+      .map(
+        (m) => `
     <div class="col-12 col-sm-6 col-lg-4 d-flex">
       <div class="member-card bg-white h-100 w-100">
         <div class="member-img bg-shad-12"></div>
@@ -571,38 +582,251 @@ function render() {
       </div>
     </div>
   `,
-    )
-    .join("");
+      )
+      .join("");
 
-  // Pagination
-  const btn = (p, label, disabled = false, active = false) =>
-    `<li class="page-item${disabled ? " disabled" : ""}${active ? " active" : ""}">
+    // Pagination
+    const btn = (p, label, disabled = false, active = false) =>
+      `<li class="page-item${disabled ? " disabled" : ""}${active ? " active" : ""}">
       <a class="page-link" href="#" data-page="${p}">${label}</a>
     </li>`;
 
-  let pHtml = btn(page - 1, "Prev", page === 1);
-  for (let i = 1; i <= total; i++) {
-    if (i === 1 || i === total || Math.abs(i - page) <= 1) {
-      pHtml += btn(i, i, false, i === page);
-    } else if (Math.abs(i - page) === 2) {
-      pHtml += `<li class="page-item disabled"><a class="page-link">...</a></li>`;
+    let pHtml = btn(page - 1, "Prev", page === 1);
+    for (let i = 1; i <= total; i++) {
+      if (i === 1 || i === total || Math.abs(i - page) <= 1) {
+        pHtml += btn(i, i, false, i === page);
+      } else if (Math.abs(i - page) === 2) {
+        pHtml += `<li class="page-item disabled"><a class="page-link">...</a></li>`;
+      }
+    }
+    pHtml += btn(page + 1, "Next", page === total);
+
+    const ul = document.getElementById("pagination");
+    ul.innerHTML = pHtml;
+    ul.querySelectorAll("[data-page]").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const p = +a.dataset.page;
+        if (p >= 1 && p <= total && p !== page) {
+          page = p;
+          render();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      });
+    });
+  }
+  render();
+})();
+// ============================================================
+// GALLERY (FIXED)
+// ============================================================
+(function () {
+  const grid = document.getElementById("gallery-grid");
+  const showingText = document.getElementById("showing-text");
+
+  if (!grid) return;
+
+  const events = [
+    {
+      title: "Legal Aid Awareness Drive",
+      date: "March 8, 2025",
+      cat: "Legal & Outreach",
+      img: "images/image 44.webp",
+      year: "2026",
+    },
+    {
+      title: "USAR – Winter Fest",
+      date: "February 15, 2025",
+      cat: "Cultural",
+      img: "images/image 45.webp",
+      year: "2026",
+    },
+    {
+      title: "Republic Day Celebration",
+      date: "January 26, 2025",
+      cat: "National Event",
+      img: "images/image 46.webp",
+      year: "2026",
+    },
+    {
+      title: "Land Celebration",
+      date: "August 15, 2024",
+      cat: "Cultural",
+      img: "images/image 47.webp",
+      year: "2026",
+    },
+    {
+      title: "Diwali Celebration",
+      date: "October 31, 2024",
+      cat: "Cultural",
+      img: "images/image 48.webp",
+      year: "2026",
+    },
+    {
+      title: "Parent Teacher Meeting",
+      date: "October 26, 2024",
+      cat: "Academic",
+      img: "images/image 49.webp",
+      year: "2026",
+    },
+    {
+      title: "Blood Donation Camp",
+      date: "September 27, 2024",
+      cat: "Health & Welfare",
+      img: "images/image 44.webp",
+      year: "2026",
+    },
+    {
+      title: "Health Mela",
+      date: "September 18, 2024",
+      cat: "Health & Wellness",
+      img: "images/image 45.webp",
+      year: "2026",
+    },
+    {
+      title: "Angrezon 2025 / Fresher's Welcome",
+      date: "September 2, 2024",
+      cat: "Programme & Events",
+      img: "images/image 46.webp",
+      year: "2026",
+    },
+    {
+      title: "Orientation 2025",
+      date: "August 12, 2024",
+      cat: "Legal & Outreach",
+      img: "images/image 47.webp",
+      year: "2026",
+    },
+    {
+      title: "Career Expo 2025",
+      date: "May 18, 2025",
+      cat: "Career & Industry",
+      img: "images/image 48.webp",
+      year: "2026",
+    },
+    {
+      title: "Mock Interview",
+      date: "May 5, 2025",
+      cat: "Programme & Events",
+      img: "images/image 49.webp",
+      year: "2026",
+    },
+    {
+      title: "Tree Plantation Drive",
+      date: "June 5, 2025",
+      cat: "Environment",
+      img: "images/image 44.webp",
+      year: "2026",
+    },
+    {
+      title: "Sports Meet 2025",
+      date: "March 20, 2025",
+      cat: "Sports",
+      img: "images/image 45.webp",
+      year: "2026",
+    },
+    {
+      title: "NSS Special Camp",
+      date: "November 10, 2024",
+      cat: "NSS",
+      img: "images/image 46.webp",
+      year: "2026",
+    },
+    {
+      title: "Cultural Fest",
+      date: "December 5, 2024",
+      cat: "Cultural",
+      img: "images/image 47.webp",
+      year: "2026",
+    },
+    {
+      title: "Alumni Meet 2025",
+      date: "January 15, 2025",
+      cat: "Alumni",
+      img: "images/image 48.webp",
+      year: "2026",
+    },
+    {
+      title: "Seminar on AI & Future",
+      date: "February 10, 2025",
+      cat: "Academic",
+      img: "images/image 49.webp",
+      year: "2026",
+    },
+  ];
+  const PER_LOAD = 12;
+  const TOTAL = events.length;
+  let shown = 0;
+  const colors = [
+    { bg: "#DBEAFE", text: "#014C88" },
+    { bg: "#F3E8FF", text: "#8200DB" },
+    { bg: "#FEF3C6", text: "#BB4D00" },
+    { bg: "#DCFCE7", text: "#008236" },
+    { bg: "#CBFBF1", text: "#00786F" },
+  ];
+  const calIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="mr-2">
+<g clip-path="url(#clip0_2983_4968)">
+<path d="M9.5 2H2.5C1.94772 2 1.5 2.44772 1.5 3V10C1.5 10.5523 1.94772 11 2.5 11H9.5C10.0523 11 10.5 10.5523 10.5 10V3C10.5 2.44772 10.0523 2 9.5 2Z" stroke="#014C88"/>
+<path d="M8 1V3" stroke="#014C88"/>
+<path d="M4 1V3" stroke="#014C88"/>
+<path d="M1.5 5H10.5" stroke="#014C88"/>
+</g>
+<defs>
+<clipPath id="clip0_2983_4968">
+  <rect width="12" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>`;
+
+  function cardHTML(ev, idx) {
+    const colorObj = colors[Math.floor(Math.random() * colors.length)];
+
+    const bg = colorObj.bg;
+    const text = colorObj.text;
+    const imgTag = ev.img
+      ? `<img src="${ev.img}" class="h-100 w-100 object-fit-cover border-radius-t-16" alt="${ev.title}">`
+      : `<div class="img-placeholder" style="background:${colors};"></div>`;
+    return `
+<div class="col-12 col-md-4 col-lg-3 d-flex">
+  <div class="card-item p-0 bg-white h-100 border-radius-16">
+    <div class="event-card position-relative">
+    ${imgTag}
+    <div class=""><span class="position-absolute font-poppins badge-cat fw-600" style="background:${bg}; color:${text}">${ev.cat}</span> 
+        <span class="position-absolute badge-year text-white">${ev.year}</span></div>
+</div>
+<div class="overlay p-3 d-flex flex-column gap-1 gap-md-2">
+  <p class="event-title color-4 font-poppins fw-700 mb-0">${ev.title}</p>
+  <p class="event-date color-6 font-robots fw-400 pt-2">${calIcon} ${ev.date}</p>
+</div>
+  </div>
+</div>`;
+  }
+  function updateUI() {
+    const remaining = TOTAL - shown;
+    document.getElementById("showing-text").textContent =
+      `Showing ${shown} of ${TOTAL} videos`;
+    document.getElementById("remaining-count").textContent = remaining;
+
+    const progressBar = document.getElementById("showing-progress");
+
+    if (progressBar) {
+      let percent = (shown / TOTAL) * 100;
+      progressBar.style.width = percent + "%";
+    }
+
+    if (remaining <= 0) {
+      document.getElementById("bottom-wrap").style.display = "none";
     }
   }
-  pHtml += btn(page + 1, "Next", page === total);
+  window.loadMore = function () {
+    const grid = document.getElementById("gallery-grid");
+    const next = events.slice(shown, shown + PER_LOAD);
+    next.forEach((ev, i) =>
+      grid.insertAdjacentHTML("beforeend", cardHTML(ev, shown + i)),
+    );
+    shown += next.length;
+    updateUI();
+  };
 
-  const ul = document.getElementById("pagination");
-  ul.innerHTML = pHtml;
-  ul.querySelectorAll("[data-page]").forEach((a) => {
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-      const p = +a.dataset.page;
-      if (p >= 1 && p <= total && p !== page) {
-        page = p;
-        render();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    });
-  });
-}
-
-render();
+  loadMore();
+})();

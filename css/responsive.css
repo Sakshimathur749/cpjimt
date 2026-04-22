@@ -53,6 +53,10 @@
         height: auto;
     }
 
+    .infra-overlay {
+        bottom: 10px;
+    }
+
     .infra-banner img {
         height: 310px;
     }
@@ -183,7 +187,8 @@
     .rankingContent h3,
     .section-title,
     .mainGridHeading,
-    .accreditionHeading {
+    .accreditionHeading,
+    .softSkillHead h3 {
         font-size: 28px;
         line-height: 30px;
     }
@@ -242,7 +247,8 @@
     .rankingContent p,
     .club-Image-Text p,
     .disclaimer-para,
-    .excursion-badge {
+    .excursion-badge,
+    .event-title {
         font-size: 14px;
         line-height: 24px;
     }
@@ -332,6 +338,10 @@
 
     .course-grid {
         margin: 20px;
+    }
+
+    .btn-load-more {
+        padding: 10px 36px;
     }
 }
 
