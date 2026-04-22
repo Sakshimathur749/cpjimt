@@ -58,6 +58,22 @@ body {
   color: #66b2ff !important;
 }
 
+.color-20 {
+  color: #94A3B8 !important;
+}
+
+.color-21 {
+  color: #1E293B !important;
+}
+
+.color-22 {
+  color: #93C5FD !important;
+}
+
+.color-23 {
+  color: #90A1B9 !important;
+}
+
 .footParaColor {
   color: #d1e3f8 !important;
 }
@@ -78,8 +94,36 @@ body {
   background: #e2180e !important;
 }
 
+
 .bg-shad-11 {
   background: #66b2ff !important;
+}
+
+.bg-shad-12 {
+  background: #EFF6FF !important;
+}
+
+.bg-shad-13 {
+  background: #FFFBEB !important;
+}
+
+.bg-shad-14 {
+  background: #DBEAFE !important;
+}
+
+.bg-shad-15 {
+  background: #F1F5F9 !important;
+}
+
+.bg-shad-16 {
+  background: #FFF5F5 !important;
+}
+
+.bg-linear {
+  background:
+    linear-gradient(180deg, rgba(1, 76, 136, 0.03) 2.5%, rgba(1, 76, 136, 0) 2.5%),
+    linear-gradient(90deg, rgba(1, 76, 136, 0.03) 2.5%, rgba(1, 76, 136, 0) 2.5%),
+    linear-gradient(90deg, #f8fafc 0%, #f8fafc 100%);
 }
 
 .footer-bg {
@@ -125,7 +169,7 @@ body {
 }
 
 /* Open hone par arrow 180deg rotate */
-.dropdown-submenu.open > a .submenu-arrow-icon {
+.dropdown-submenu.open>a .submenu-arrow-icon {
   transform: rotate(180deg);
 }
 
@@ -142,6 +186,15 @@ body {
 
 .menu {
   gap: 32px;
+}
+
+.mainGrid {
+  gap: 40px
+}
+
+.mainGridPara {
+  font-size: 15px;
+  line-height: 22.5px;
 }
 
 .menu li,
@@ -217,9 +270,11 @@ body {
 .softSkillPara,
 .careerOppPara,
 .eligiblityPoint,
+.cta-para,
 .whyChoosePara,
 .cta-para,
-.foothead {
+.foothead,
+.member-head {
   font-size: 18px;
   font-weight: 400;
   line-height: 29.25px;
@@ -244,11 +299,6 @@ body {
   border: 0.8px solid rgba(255, 255, 255, 0.3);
 }
 
-.btn-visit {
-  box-shadow: none !important;
-  border: 1.6px solid #fff;
-}
-
 /* Main */
 .countBox {
   min-width: 200px;
@@ -267,7 +317,8 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.main-img {
+.main-img,
+.club-Image-Text {
   border-radius: 16px;
   background: linear-gradient(0deg, rgba(1, 76, 136, 0.3) 0%, rgba(1, 76, 136, 0) 100%) !important;
 }
@@ -283,17 +334,15 @@ body {
 .bgLinear,
 .bgColorLinear {
   border-bottom: 0.8px solid #f1f5f9;
-  background: linear-gradient(
-    135deg,
-    #eff6ff 0%,
-    #f1f7ff 14.29%,
-    #f4f9ff 28.57%,
-    #f6faff 42.86%,
-    #f8fbff 57.14%,
-    #fafcff 71.43%,
-    #fdfeff 85.71%,
-    #fff 100%
-  );
+  background: linear-gradient(135deg,
+      #eff6ff 0%,
+      #f1f7ff 14.29%,
+      #f4f9ff 28.57%,
+      #f6faff 42.86%,
+      #f8fbff 57.14%,
+      #fafcff 71.43%,
+      #fdfeff 85.71%,
+      #fff 100%);
 }
 
 .iconBtn {
@@ -314,7 +363,8 @@ body {
 .softSkillHead h3,
 .careerOppHead h3,
 .eligibeHead h3,
-.whyChooseHead h3 {
+.whyChooseHead h3,
+.commitment h3 {
   font-size: 36px;
   line-height: 40px;
 }
@@ -323,7 +373,8 @@ body {
 .softSkillHead span,
 .careerOppHead span,
 .eligibeHead span,
-.whyChooseHead span {
+.whyChooseHead span,
+.commitment span {
   width: 80px;
   height: 6px;
   border-radius: 26843500px;
@@ -339,6 +390,9 @@ body {
 }
 
 .programIcon,
+.disclaimer-icon,
+.icon-box,
+.academicIcon,
 .whyCHooseIcon {
   width: 60px;
   height: 60px;
@@ -358,8 +412,7 @@ body {
 
 .eligiblityBg {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       #014c88 0%,
       #014e8b 14.29%,
       #01508e 28.57%,
@@ -367,8 +420,7 @@ body {
       #025494 57.14%,
       #025698 71.43%,
       #02589b 85.71%,
-      #025a9e 100%
-    ),
+      #025a9e 100%),
     #fff;
 }
 
@@ -434,8 +486,379 @@ body {
   width: 100%;
 }
 
+/* About College  */
+
+.careerOppPara {
+  max-width: 900px;
+}
+
+.objective {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.objectiveCard {
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 25px;
+}
+
+/* About College  */
+
+/* About */
+
+.welfare-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(180deg, #014c88 0%, #60a5fa 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+.welfare-card {
+  padding: 35px;
+}
+
+.welfare-head span {
+  border-radius: 6px;
+  background: #f1f5f9;
+  padding: 4px 12px;
+  letter-spacing: 0.3px;
+}
+
+.welfare-mid-sec h5,
+.welfare-head span {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.list-card {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 7px 14px;
+}
+
+.card-title {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.welfare-end {
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+  padding: 20px;
+}
+
+.academicRightIcon {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+
+/* About */
+
+/* Accredition */
+.accreditionCard {
+  border-radius: 24px;
+  border: 1px solid #FDE68A;
+  background: #FFF;
+  padding: 40px;
+  gap: 40px;
+}
+
+.accreditionImg {
+  border-radius: 20px;
+  border: 2px solid #FCD34D;
+  background: #F1F5F9;
+  padding: 32px;
+}
+
+.accreditionBadge {
+  border-radius: 33554400px;
+  background: #FEF3C7;
+  padding: 4px 16px;
+  color: #92400E;
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+.accreditionHeading,
+.ctaHead {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.accreditionGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.accreditionPoint {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+
+.academicContent>div {
+  padding: 4px 12px;
+  border-radius: 33554400px;
+  background: #FEE2E2;
+}
+
+/* Recognition */
+.recognitionCard {
+  border-radius: 20px;
+  border: 1px solid #FECACA;
+  background: #FFF5F5;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
+  padding: 30px;
+}
+
+.recognition-img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Academic & Industry Collaborations */
+.academicIndustryCard {
+  border-radius: 20px;
+  border: 1px solid #FECACA;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
+}
+
+.academicImgBox {
+  padding: 32px;
+  background: #FFF5F5;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.academicImgBox>div {
+  height: 100px;
+}
+
+.academicBadge {
+  color: #991B1B;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.academicContent {
+  padding: 30px;
+}
+
+.ctaContainer {
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #BFDBFE;
+  background: #EFF6FF;
+}
+
+.btn-apply,
+.btn-brochure,
+.btn-visit {
+  padding: 14px 32px;
+  border-radius: 26843500px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Advisory */
+
+
+.pagination .page-link {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 10px;
+  color: black;
+  background-color: rgba(176, 23, 24, 0.05);
+  font-family: Synonym;
+  margin: 0px 10px;
+  border-radius: 2.5px;
+}
+
+.pagination .page-item.active .page-link {
+  background: #FBAF2B;
+  color: #fff;
+  border: 0px;
+}
+
+.pagination .page-item.disabled .page-link {
+  display: none;
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  background: #FBAF2B;
+  color: #fff;
+  border-radius: 2.5px;
+  border: 0px;
+}
+
+.member-card,
+.member-img {
+  border-radius: 2.5px;
+  border: 1px solid #DFDFDF;
+}
+
+.member-img {
+  min-height: 250px;
+}
+
+.member-content {
+  padding: 20px;
+}
+
+/* Advisory */
+
+/* Awards */
+
+.rankingCard {
+  border-radius: 24px;
+  border: 0.8px solid #F1F5F9;
+  box-shadow: 0 20px 25px -5px rgba(226, 232, 240, 0.50), 0 8px 10px -6px rgba(226, 232, 240, 0.50);
+  padding: 20px;
+  gap: 20px;
+}
+
+.rankingContent h5 {
+  font-size: 18px;
+  line-height: 22.5px;
+}
+
+.rankingfooter p {
+  font-size: 12px !important;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+}
+
+.rankingfooter div {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 26843500px;
+  opacity: 0.9466;
+  background: #2B7FFF;
+}
+
+/* Awards */
+
+
+/* Blog Card  */
+.blog-cards-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.blog-cards-list {
+  max-width: 1096px;
+}
+
+.blog-section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.blog-section-subtitle {
+  font-size: 14px;
+  color: #e53e3e;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.blog-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.blog-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.blog-card:last-child {
+  margin-bottom: 0;
+}
+
+.blog-card--reverse {
+  flex-direction: row-reverse;
+}
+
+.blog-card__img-wrap {
+  flex: 0 0 604px;
+  max-width: 604px;
+  border-radius: 2.5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.blog-card__img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.blog-card__excerpt {
+  font-size: 14px;
+  color: 343434;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.blog-card__link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9c1009;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.blog-card__link:hover {
+  text-decoration: underline;
+  color: #c53030;
+}
+
+/* blog */
+
+/* Club */
+.studentClubPara {
+  max-width: 650px;
+  width: 100%;
+}
+
+/* Club */
 /* Footer */
-.social-icon {
+.social-icon,
+.objective-icon {
   width: 40px;
   height: 40px;
   aspect-ratio: 1/1;
@@ -446,7 +869,8 @@ body {
 
 .fpara p,
 .footlinks,
-.iconBthPara {
+.iconBthPara,
+.list-card {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
