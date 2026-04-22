@@ -2662,6 +2662,724 @@ body {
   width: 100%;
 }
 
+/* Industrial Visit */
+.industialHead h2,
+.section-title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.industialHead h3,
+.industryCardHeading {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.industialHead span {
+  width: 80px;
+  height: 6px;
+  border-radius: 26843500px;
+}
+
+.industialPara {
+  max-width: 740px;
+  width: 100%;
+}
+
+.industialPara {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.section-label::before,
+.section-label::after {
+  display: inline-block;
+  content: '';
+  width: 36px;
+  height: 2px;
+  background: #014C88;
+  border-radius: 2px;
+}
+
+.section-label,
+.industryCarddate {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.section-label {
+  letter-spacing: 1.2px;
+}
+
+.industryExprosure {
+  border: 0.759px solid #F1F5F9;
+  box-shadow: 0 0.948px 2.844px 0 rgba(0, 0, 0, 0.10), 0 0.948px 1.896px -0.948px rgba(0, 0, 0, 0.10);
+}
+
+.industry-badge {
+  border-radius: 25451328px;
+  background: rgba(0, 0, 0, 0.30);
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 15px;
+  top: 15px;
+  right: 15px;
+}
+
+/* Industy Interface */
+/* =====================
+   Genesis Section
+   ===================== */
+.genesis-section {
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.genesis-title {
+  font-size: 36px;
+  color: #0f172a;
+  position: relative;
+  display: inline-block;
+}
+
+.genesis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.genesis-card {
+  border-radius: 16px;
+  border: 1px solid #374151;
+  overflow: hidden;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.genesis-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.genesis-card-inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1.5fr;
+  gap: 32px;
+  min-height: 320px;
+}
+
+.genesis-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.genesis-image img {
+  transition: transform 0.5s ease;
+}
+
+.genesis-card:hover .genesis-image img {
+  transform: scale(1.05);
+}
+
+.genesis-content {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.genesis-card-title {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.genesis-card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.genesis-btn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Variants via nth-child */
+
+/* 1st card - Cyan */
+.genesis-card:nth-child(1) {
+  background: #008b9f;
+}
+
+.genesis-card:nth-child(1) .genesis-btn {
+  color: #0891b2;
+}
+
+.genesis-card:nth-child(1) .genesis-btn:hover {
+  background-color: #0891b2;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+}
+
+/* 2nd card - Yellow */
+.genesis-card:nth-child(2) {
+  background: #c29c25;
+}
+
+.genesis-card:nth-child(2) .genesis-btn {
+  color: #ca8a04;
+}
+
+.genesis-card:nth-child(2) .genesis-btn:hover {
+  background-color: #ca8a04;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(202, 138, 4, 0.3);
+}
+
+/* 3rd card - Blue */
+.genesis-card:nth-child(3) {
+  background: #05518c;
+}
+
+.genesis-card:nth-child(3) .genesis-btn {
+  color: #1e40af;
+}
+
+.genesis-card:nth-child(3) .genesis-btn:hover {
+  background-color: #1e40af;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+/* 4th card - Red */
+.genesis-card:nth-child(4) {
+  background: #a2473b;
+}
+
+.genesis-card:nth-child(4) .genesis-btn {
+  color: #b91c1c;
+}
+
+.genesis-card:nth-child(4) .genesis-btn:hover {
+  background-color: #b91c1c;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+}
+
+/* =====================
+   Placements Section
+   ===================== */
+.placements-section {
+  position: relative;
+  padding: 80px 0;
+  background-image: url('../images/placement-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.placements-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(59, 130, 246, 0.75) 100%);
+  z-index: 1;
+}
+
+.placements-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.placements-subtitle {
+  font-size: 16px;
+  color: #dbeafe;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.placements-title {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.placements-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-divider {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stat-item:last-child .stat-divider {
+  display: none;
+}
+
+.stat-number {
+  font-size: 38px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #dbeafe;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* =====================
+   Top Recruiters Section
+   ===================== */
+.recruiters-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.recruiters-title {
+  font-size: 38px;
+  color: #0f172a;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.recruiters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 48px;
+  max-width: 1096px;
+}
+
+.recruiter-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  min-height: 75px;
+  max-height: 75px;
+  width: calc(20% - 20px);
+  flex: 0 0 calc(20% - 20px);
+}
+
+.recruiter-card:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.recruiter-logo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recruiter-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.3s ease;
+}
+
+.recruiter-card:hover .recruiter-logo img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* =====================
+   Infrastructure & Facilities Section
+   ===================== */
+.infrastructure-section {
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #0f172a;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  width: 100px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-azure-27, #014c88);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.facility-card {
+  border-radius: 16px;
+  background: #fff;
+  box-shadow:
+    0 4px 24px 0 rgba(1, 76, 136, 0.1),
+    0 1px 4px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #003b5c 0%, #005a8c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.18);
+  transition: background 0.3s ease;
+}
+
+.video-thumbnail:hover::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.play-icon {
+  position: relative;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.facility-content {
+  padding: 28px;
+}
+
+.facility-title {
+  font-size: 20px;
+  color: #0f172a;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.facility-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: #003b5c;
+}
+
+.facility-description {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* =====================
+   Video Modal
+   ===================== */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.3s ease;
+}
+
+.video-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.video-modal-content {
+  position: relative;
+  width: 60%;
+  max-width: 900px;
+  max-height: 80vh;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10000;
+  line-height: 1;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.video-modal-close:hover {
+  transform: rotate(90deg);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 8px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Law Academic */
+.law-visits-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.law-visits-header {
+  margin-bottom: 16px;
+}
+
+.law-visits-title {
+  font-size: 28px;
+  color: #014c88;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.law-visits-underline {
+  width: 60px;
+  height: 3px;
+  background: #e63946;
+  border-radius: 2px;
+  margin: 0 auto 28px;
+}
+
+.law-visits-intro {
+  font-size: 14px;
+  color: #45556c;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  max-width: 1084px;
+}
+
+/* =====================
+   Photo Grid
+   ===================== */
+.law-visits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.law-visit-card {
+  position: relative;
+  border-radius: 15.148px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #e2e8f0;
+  box-shadow:
+    0 3.787px 5.68px -0.947px rgba(0, 0, 0, 0.1),
+    0 1.893px 3.787px -1.893px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.law-visit-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.32) 50%, rgba(0, 0, 0, 0) 75%);
+}
+
+.law-visit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.law-visit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.law-visit-card:hover .law-visit-img {
+  transform: scale(1.04);
+}
+
+.law-visit-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 16px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+}
+
+.date-text {
+  display: block;
+  color: #fff;
+  font-size: 9.467px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.201px;
+  /* 150% */
+}
+
+.law-visit-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  display: block;
+}
 
 /* Footer */
 .social-icon,

@@ -179,9 +179,229 @@
     .home-faq-body.accordion-body {
         padding: 0 20px 18px !important;
     }
+
+    .genesis-section {
+        padding: 60px 0;
+    }
+
+    .genesis-title {
+        font-size: 32px;
+    }
+
+    .genesis-grid {
+        gap: 28px;
+        margin-top: 40px;
+    }
+
+    .genesis-card-inner {
+        min-height: 280px;
+    }
+
+    .genesis-card-title {
+        font-size: 22px;
+    }
+
+    .genesis-card-text {
+        font-size: 14px;
+    }
+
+    .genesis-btn {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+
+    /* Placements */
+    .placements-section {
+        padding: 80px 0;
+    }
+
+    .placements-subtitle {
+        font-size: 15px;
+    }
+
+    .placements-title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .placements-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0;
+        max-width: 600px;
+    }
+
+    .stat-item {
+        padding: 15px;
+    }
+
+    .stat-divider {
+        height: 70px;
+    }
+
+    .stat-item:nth-child(2) .stat-divider,
+    .stat-item:nth-child(4) .stat-divider {
+        display: none;
+    }
+
+    .stat-number {
+        font-size: 42px;
+    }
+
+    .stat-label {
+        font-size: 15px;
+    }
+
+    /* Recruiters */
+    .recruiters-section {
+        padding: 60px 0;
+    }
+
+    .recruiters-title {
+        font-size: 32px;
+    }
+
+    .recruiters-grid {
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .recruiter-card {
+        padding: 12px 26px;
+        min-height: 80px;
+        width: calc(25% - 16px);
+        flex: 0 0 calc(25% - 16px);
+    }
+
+    .recruiter-logo {
+        height: 70px;
+    }
+
+    .infrastructure-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 15px;
+    }
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .video-thumbnail {
+        height: 180px;
+    }
+
+    .play-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .facility-content {
+        padding: 20px;
+    }
+
+    .facility-title {
+        font-size: 18px;
+    }
+
+    .facility-description {
+        font-size: 13px;
+    }
+
+    .video-modal-content {
+        width: 85%;
+    }
+
+    .video-modal-close {
+        top: -35px;
+        font-size: 35px;
+    }
+
+    .law-visits-section {
+        padding: 60px 0;
+    }
+
+    .law-visits-title {
+        font-size: 24px;
+    }
+
+    .law-visits-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .law-visits-intro {
+        font-size: 13px;
+    }
+
+    .law-visit-label {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 769px) {
+    .infrastructure-section {
+        padding: 48px 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .video-thumbnail {
+        height: 220px;
+    }
+
+    .play-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .facility-content {
+        padding: 20px 16px;
+    }
+
+    .facility-title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .facility-title::after {
+        width: 35px;
+        height: 2.5px;
+    }
+
+    .facility-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .video-modal-content {
+        width: 95%;
+    }
+
+    .video-modal-close {
+        top: -45px;
+        right: 0;
+        font-size: 36px;
+    }
+
     .skillImage img {
         height: auto;
     }
@@ -730,6 +950,144 @@
         height: 40px;
         font-size: 30px;
     }
+
+    .section-title {
+        font-size: 28px !important;
+        line-height: 30px !important;
+    }
+
+    .industryCardHeading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .genesis-section {
+        padding: 48px 0;
+    }
+
+    .genesis-title {
+        font-size: 28px;
+    }
+
+    .genesis-grid {
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+    .genesis-card-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .genesis-image {
+        height: 240px;
+    }
+
+    .genesis-card-title {
+        font-size: 20px;
+        margin-bottom: 16px !important;
+    }
+
+    .genesis-card-text {
+        font-size: 14px;
+        margin-bottom: 16px !important;
+    }
+
+    .genesis-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    /* Placements */
+    .placements-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+
+    .placements-subtitle {
+        font-size: 14px;
+    }
+
+    .placements-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .placements-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px 0;
+        max-width: 500px;
+    }
+
+    .stat-item {
+        padding: 12px;
+    }
+
+    .stat-divider {
+        height: 60px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+
+    /* Recruiters */
+    .recruiters-section {
+        padding: 48px 0;
+    }
+
+    .recruiters-title {
+        font-size: 28px;
+    }
+
+    .recruiters-grid {
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+    .recruiter-card {
+        min-height: 60px;
+        width: calc(33.333% - 12px);
+        flex: 0 0 calc(33.333% - 12px);
+    }
+
+    .recruiter-logo {
+        height: 60px;
+    }
+
+    .law-visit-card {
+        border-radius: 10.148px;
+    }
+
+    .law-visits-section {
+        padding: 48px 0;
+    }
+
+    .law-visits-title {
+        font-size: 22px;
+    }
+
+    .law-visits-underline {
+        margin-bottom: 20px;
+    }
+
+    .law-visits-intro {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    .law-visits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .law-visit-label {
+        font-size: 10px;
+    }
 }
 
 @media (max-width:546px) {
@@ -987,6 +1345,148 @@
         height: 34px;
         font-size: 24px;
     }
+
+    .genesis-section {
+        padding: 40px 0;
+    }
+
+    .genesis-title {
+        font-size: 24px;
+    }
+
+    .genesis-grid {
+        gap: 20px;
+        margin-top: 28px;
+    }
+
+    .genesis-image {
+        height: 200px;
+    }
+
+    .genesis-card-title {
+        font-size: 18px;
+        margin-bottom: 12px !important;
+    }
+
+    .genesis-card-text {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 12px !important;
+    }
+
+    .genesis-btn {
+        padding: 9px 20px;
+        font-size: 13px;
+    }
+
+    /* Placements */
+    .placements-section {
+        padding: 50px 0;
+    }
+
+    .placements-subtitle {
+        font-size: 13px;
+    }
+
+    .placements-title {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+
+    .placements-stats {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 300px;
+    }
+
+    .stat-item {
+        padding: 10px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-number {
+        font-size: 32px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+    }
+
+    /* Recruiters */
+    .recruiters-section {
+        padding: 40px 0;
+    }
+
+    .recruiters-title {
+        font-size: 24px;
+    }
+
+    .recruiters-grid {
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .recruiter-card {
+        width: calc(50% - 8px);
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .recruiter-logo {
+        height: 50px;
+    }
+
+    .infrastructure-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 13px;
+    }
+
+    .video-thumbnail {
+        height: 200px;
+    }
+
+    .play-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .facility-title {
+        font-size: 17px;
+    }
+
+    .facility-description {
+        font-size: 13px;
+    }
+
+    .law-visits-section {
+        padding: 36px 0;
+    }
+
+    .law-visits-title {
+        font-size: 20px;
+    }
+
+    .law-visits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .law-visit-label {
+        font-size: 9px;
+    }
+
+    .law-visit-overlay {
+        padding: 16px 6px 6px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -1024,5 +1524,23 @@
 
     .pr-100 {
         padding-right: 100px;
+    }
+
+    .genesis-card-inner {
+        display: block;
+        min-height: auto;
+    }
+
+    .genesis-image {
+        max-height: 280px;
+        margin-bottom: 16px;
+    }
+
+    .genesis-image img {
+        max-height: 280px;
+    }
+
+    .genesis-card {
+        padding: 16px;
     }
 }
