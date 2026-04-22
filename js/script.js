@@ -116,16 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.mob-panel:not([data-level="0"])').forEach((p) => {
     p.style.display = "none";
   });
-
-  // Initialize: show only root panel
-  const rootPanel = document.querySelector('.mob-panel[data-level="0"]');
-  if (rootPanel) {
-    rootPanel.style.display = "flex";
-    rootPanel.classList.add("active");
-  }
-  document.querySelectorAll('.mob-panel:not([data-level="0"])').forEach((p) => {
-    p.style.display = "none";
-  });
 });
 
 // ============================================================
@@ -352,14 +342,120 @@ document.querySelectorAll(".arrow-icon").forEach((icon) => {
   const pagination = document.getElementById("pagination");
 
   if (!grid || !pagination) return;
-
   const members = [
-    /* SAME DATA */
+    {
+      name: "Prof. (Dr.) Sanjiv Mittal",
+      role: "Vice Chancellor",
+      univ: "Sambalpur University, Orissa",
+    },
+    {
+      name: "Prof.(Dr.) R. K. Mittal",
+      role: "Vice Chancellor",
+      univ: "CSJM Bhopal",
+    },
+    { name: "Prof.(Dr.) Neena Sinha", role: "Professor", univ: "UGNB, GGS/PU" },
+    {
+      name: "Prof.(Dr.) Amit Prakash Singh",
+      role: "Professor",
+      univ: "UBCT, GGS/PU",
+    },
+    { name: "Prof.(Dr.) P. C. Parida", role: "Director", univ: "NUEBS, Delhi" },
+    {
+      name: "Prof.(Dr.) Anuradha Jain",
+      role: "Principal",
+      univ: "VIPS, GGS/PU",
+    },
+    {
+      name: "Prof.(Dr.) Namita Rajput",
+      role: "Principal",
+      univ: "Aurobindo College, University of Delhi",
+    },
+    {
+      name: "Dr. Urvashi Sharma",
+      role: "Associate Professor",
+      univ: "Department of Economics, University of Delhi",
+    },
+    {
+      name: "Prof. (Dr.) Sudhir Kr. Jain",
+      role: "Professor",
+      univ: "Department of Management Studies, IIT Delhi",
+    },
+    {
+      name: "Prof. (Dr.) Alok Kumar",
+      role: "Dean",
+      univ: "Banaras Hindu University, Varanasi",
+    },
+    {
+      name: "Prof. (Dr.) Sunita Kashyap",
+      role: "Professor",
+      univ: "Jawaharlal Nehru University, Delhi",
+    },
+    {
+      name: "Dr. Rakesh Sharma",
+      role: "Associate Professor",
+      univ: "Indian Institute of Management, Lucknow",
+    },
   ];
-  let page = 1;
 
+  let page = 1;
+  function getPerPage() {
+    if (window.innerWidth < 992) {
+      return 8;
+    }
+    return 9;
+  }
   function render() {
-    grid.innerHTML = members.map((m) => `<div>${m.name}</div>`).join("");
+    const PER_PAGE = getPerPage();
+    const slice = members.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+    const total = Math.ceil(members.length / PER_PAGE);
+
+    // Cards
+    grid.innerHTML = slice
+      .map(
+        (m) => `
+    <div class="col-12 col-sm-6 col-lg-4 d-flex">
+      <div class="member-card bg-white h-100 w-100">
+        <div class="member-img bg-shad-12"></div>
+        <div class="member-content">
+          <p class="mb-1 fw-600 text-black fw-600 member-head font-poppins">${m.name}</p>
+          <p class="mb-2 mb-md-4 fw-400 text-black fw-400 member-subhead font-poppins">${m.role}</p>
+          <p class="mb-0 fw-600 color-3 font-poppins member-subhead">${m.univ}</p>
+        </div>
+      </div>
+    </div>
+  `,
+      )
+      .join("");
+
+    // Pagination
+    const btn = (p, label, disabled = false, active = false) =>
+      `<li class="page-item${disabled ? " disabled" : ""}${active ? " active" : ""}">
+      <a class="page-link" href="#" data-page="${p}">${label}</a>
+    </li>`;
+
+    let pHtml = btn(page - 1, "Prev", page === 1);
+    for (let i = 1; i <= total; i++) {
+      if (i === 1 || i === total || Math.abs(i - page) <= 1) {
+        pHtml += btn(i, i, false, i === page);
+      } else if (Math.abs(i - page) === 2) {
+        pHtml += `<li class="page-item disabled"><a class="page-link">...</a></li>`;
+      }
+    }
+    pHtml += btn(page + 1, "Next", page === total);
+
+    const ul = document.getElementById("pagination");
+    ul.innerHTML = pHtml;
+    ul.querySelectorAll("[data-page]").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        const p = +a.dataset.page;
+        if (p >= 1 && p <= total && p !== page) {
+          page = p;
+          render();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      });
+    });
   }
 
   render();
@@ -466,7 +562,7 @@ function render() {
       (m) => `
     <div class="col-12 col-sm-6 col-lg-4 d-flex">
       <div class="member-card bg-white h-100 w-100">
-        <div class="member-img bg-shad-6"></div>
+        <div class="member-img bg-shad-12"></div>
         <div class="member-content">
           <p class="mb-1 fw-600 text-black fw-600 member-head font-poppins">${m.name}</p>
           <p class="mb-2 mb-md-4 fw-400 text-black fw-400 member-subhead font-poppins">${m.role}</p>

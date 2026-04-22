@@ -18,6 +18,10 @@ body {
   width: fit-content !important;
 }
 
+.border-btn {
+  border: 1px solid #014c88;
+}
+
 .border-radius-16 {
   border-radius: 16px !important;
 }
