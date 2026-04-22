@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .font-robots {
@@ -147,6 +148,10 @@ body {
   background: #F9F2E8 !important;
 }
 
+.bg-shad-20 {
+  background: #9810FA !important;
+}
+
 .bg-linear {
   background:
     linear-gradient(180deg, rgba(1, 76, 136, 0.03) 2.5%, rgba(1, 76, 136, 0) 2.5%),
@@ -249,7 +254,8 @@ body {
 .whyChoosePara,
 .careerOppPoint,
 .headbanner,
-.academicRightContent p {
+.academicRightContent p,
+.activity-title {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -881,7 +887,8 @@ body {
   margin-bottom: 0;
 }
 
-.blog-card__excerpt {
+.blog-card__excerpt,
+.card-date {
   font-size: 14px;
   color: 343434;
   line-height: 1.7;
@@ -3647,6 +3654,646 @@ body {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1.2px;
+}
+
+/* CPJIMT in News Section */
+.news-grid-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.news-grid-header {
+  margin-bottom: 40px;
+}
+
+.news-grid-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.news-grid-subtitle {
+  font-size: 15px;
+  color: #475569;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* News Card */
+.news-card {
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+}
+
+.news-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.news-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-card-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.news-card-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.news-card-date {
+  font-size: 14px;
+  color: #0f172a;
+}
+
+/* Nss cell */
+
+.about-right {
+  padding: 30px;
+  border: 0.8px solid #F3F4F6;
+  background: #F9FAFB;
+}
+
+.about-right h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.guidedIcon {
+  border-radius: 26843500px;
+  background: #DBEAFE;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.aboutCircle {
+  width: 100px;
+  height: 100px;
+  top: -20px;
+  right: -20px;
+}
+
+.nssHeadPara {
+  max-width: 600px;
+}
+
+.activityPara {
+  max-width: 700px;
+}
+
+.card-item {
+  border: 0.8px solid #F1F5F9;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  max-width: 400px;
+  gap: 30px;
+}
+
+.activity-card {
+  border-radius: 16px;
+  border: 0.8px solid #F1F5F9;
+  background: #FFF;
+  border-top: 6px solid #FBBF24;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card .placeholder-img {
+  width: 100%;
+  height: 200px;
+  background: #cde0f5;
+  border-radius: 16px 16px 0px 0px;
+  display: block;
+}
+
+.placeholder-img img {
+  border-radius: 16px 16px 0px 0px;
+
+}
+
+.activity-card .card-body {
+  padding: 20px;
+}
+
+.activity-item {
+  border-radius: 16px;
+  border: 0.8px solid #F1F5F9;
+  background: #FFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 32.8px 32.737px 38.8px 32.801px;
+  gap: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* ================================
+   Placement & Internship Drives Section
+   ================================ */
+.placement-drives-section {
+  padding: 80px 0;
+  background-color: #090909;
+  background-image: url('../images/placement-section-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.placement-drives-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.placement-drives-title {
+  font-size: 36px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+/* Grid */
+.placement-drives-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 1096px;
+}
+
+/* Card */
+.placement-drive-card {
+  border-radius: 2.5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.placement-drive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.placement-drive-img {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.placement-drive-img img {
+  transition: transform 0.4s ease;
+}
+
+.placement-drive-card:hover .placement-drive-img img {
+  transform: scale(1.04);
+}
+
+.placement-drive-info {
+  padding: 14px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.placement-drive-name {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.placement-drive-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #ffffff;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-right: 20px;
+}
+
+.placement-cal-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Sports */
+.sport-card {
+  height: 314px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+
+/* =====================
+   Student Awareness Section
+   ===================== */
+.awareness-section {
+  padding: 80px 0;
+}
+
+/* Page Title */
+.awareness-page-header {
+  margin-bottom: 40px;
+}
+
+.awareness-page-title {
+  font-size: 36px;
+  color: #0f172a;
+  position: relative;
+  display: inline-block;
+}
+
+.awareness-page-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #ff6b35;
+  border-radius: 2px;
+}
+
+/* Block Headers (CODE OF CONDUCT, DO's, DON'Ts, HOLIDAYS LIST) */
+.awareness-block-header {
+  margin-bottom: 48px;
+}
+
+.awareness-block-title {
+  font-size: 36px;
+  color: #008b9f;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.awareness-underline {
+  width: 60px;
+  height: 4px;
+  background: #ff6b35;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Policy Blocks */
+.awareness-policy-block {
+  margin-bottom: 28px;
+}
+
+.awareness-policy-block:last-child {
+  margin-bottom: 0;
+}
+
+.awareness-policy-heading {
+  font-size: 20px;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+/* Lists */
+.awareness-list {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.awareness-list li {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.awareness-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Paragraphs */
+.awareness-para {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.awareness-highlight {
+  color: #0f172a;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* Download Button */
+.awareness-download-btn {
+  display: inline-block;
+  background-color: #008b9f;
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.awareness-download-btn:hover {
+  background-color: #0097a7;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* =====================
+   Success Stories Section
+   ===================== */
+.ss-section {
+  padding: 80px 0;
+}
+
+.ss-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ss-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  position: relative;
+  display: inline-block;
+}
+
+/* Grid: 3 columns, last row centered */
+.ss-grid {
+  max-width: 1096px;
+}
+
+/* Card */
+.ss-card {
+  border-radius: 2.5px;
+  border: 1px solid #dfdfdf;
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ss-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Card image area */
+.ss-card-image {
+  position: relative;
+  width: 100%;
+  height: 248px;
+  background-color: #9b2c2c;
+  /* default red/brown */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ss-card-image.ss-bg-blue {
+  background-color: #1e3a8a;
+}
+
+/* Company logo top-left */
+.ss-logo-wrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 110px;
+  height: 50px;
+  z-index: 2;
+}
+
+.ss-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Person photo */
+.ss-person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Card body */
+.ss-card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ss-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.ss-quote {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Equal height cols */
+.ss-grid .row>[class*='col-'] {
+  display: flex;
+}
+
+.ss-card:nth-child(7),
+.ss-card:nth-child(8) {
+  grid-column: auto;
+}
+
+/* Center last row of 2 in a 3-col grid */
+.ss-card:nth-child(7) {
+  grid-column: 1 / 2;
+}
+
+.ss-card:nth-child(8) {
+  grid-column: 2 / 3;
+}
+
+/* Videp */
+
+.featureBorder {
+  width: 6px;
+  height: 24px;
+  border-radius: 26843500px;
+}
+
+.upnextCard {
+  border: 0.8px solid #f1f5f9;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.video-placeholder {
+  background-color: #0a0a0a;
+}
+
+/* Vission Mission */
+
+.welfare-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(180deg, #014c88 0%, #60a5fa 100%);
+  border-radius: 16px 16px 0 0;
+}
+
+.welfare-card {
+  padding: 35px;
+}
+
+.card-title {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.badge-cat {
+  top: 8%;
+  left: 4%;
+  padding: 4px 10px;
+  border-radius: 30px;
+}
+
+.badge-year {
+  bottom: 6%;
+  right: 6%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 2px 6px;
+}
+
+.badge-year,
+.badge-cat,
+.up-next {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.thumbnail-box {
+  width: 120px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.event-date,
+.showing-text,
+.uptext-para,
+.allVideoCount {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.event-date,
+.showing-text {
+  border-top: 0.8px solid #f1f5f9;
+}
+
+.btn-load-more {
+  border-radius: 26843500px;
+  border: 1.6px solid #014c88;
+  padding: 14px 36px;
+}
+
+.showing-bar {
+  width: 100%;
+  max-width: 384px;
+  height: 6px;
+  border-radius: 26843500px;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.showing-progress {
+  height: 100%;
+  width: 0%;
+  background: #014c88;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.featureBorder {
+  width: 6px;
+  height: 24px;
+  border-radius: 26843500px;
+}
+
+.upnextCard {
+  border: 0.8px solid #f1f5f9;
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.video-placeholder {
+  background-color: #0a0a0a;
+}
+
+/* Play Button Styling */
+.play-button {
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
 }
 
 /* Footer */

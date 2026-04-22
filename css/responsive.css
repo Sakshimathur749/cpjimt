@@ -1,4 +1,87 @@
 @media (max-width: 1024px) {
+    .ss-section {
+        padding: 60px 0;
+    }
+
+    .ss-title {
+        font-size: 32px;
+    }
+
+    .ss-header {
+        margin-bottom: 36px;
+    }
+
+    .ss-card-image {
+        height: 230px;
+    }
+
+    .ss-card-body {
+        padding: 18px;
+    }
+
+    .ss-name {
+        font-size: 15px;
+    }
+
+    .ss-quote {
+        font-size: 13px;
+    }
+
+    /* Reset desktop centering overrides */
+    .ss-card:nth-child(7) {
+        grid-column: auto;
+    }
+
+    .ss-card:nth-child(8) {
+        grid-column: auto;
+    }
+
+    .awareness-section {
+        padding: 60px 0;
+    }
+
+    .awareness-page-title {
+        font-size: 30px;
+    }
+
+    .awareness-block-title {
+        font-size: 24px;
+    }
+
+    .awareness-policy-heading {
+        font-size: 15px;
+    }
+
+    .awareness-list li,
+    .awareness-para {
+        font-size: 13px;
+    }
+
+    .placement-drives-section {
+        padding: 60px 0;
+    }
+
+    .placement-drives-title {
+        font-size: 32px;
+    }
+
+    .placement-drives-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .placement-drive-img {
+        height: 180px;
+    }
+
+    .placement-drive-name {
+        font-size: 13px;
+    }
+
+    .placement-drive-date {
+        font-size: 12px;
+    }
+
     .blog-cards-section {
         padding: 60px 0;
     }
@@ -390,6 +473,124 @@
 }
 
 @media (max-width: 769px) {
+    .ss-section {
+        padding: 48px 0;
+    }
+
+    .ss-title {
+        font-size: 28px;
+    }
+
+    .ss-header {
+        margin-bottom: 28px;
+    }
+
+    .ss-card-image {
+        height: 240px;
+    }
+
+    .ss-card-body {
+        padding: 16px;
+    }
+
+    .ss-name {
+        font-size: 15px;
+    }
+
+    .ss-quote {
+        font-size: 13px;
+    }
+
+    .ss-card:nth-child(7) {
+        grid-column: auto;
+    }
+
+    .ss-card:nth-child(8) {
+        grid-column: auto;
+    }
+
+    .awareness-section {
+        padding: 48px 0;
+    }
+
+    .awareness-page-title {
+        font-size: 26px;
+    }
+
+    .awareness-block-title {
+        font-size: 22px;
+    }
+
+    .awareness-policy-heading {
+        font-size: 14px;
+    }
+
+    .awareness-list li,
+    .awareness-para {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .awareness-download-btn {
+        padding: 10px 32px;
+        font-size: 15px;
+    }
+
+    .placement-drives-section {
+        padding: 48px 0;
+    }
+
+    .placement-drives-title {
+        font-size: 28px;
+    }
+
+    .placement-drives-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .placement-drive-img {
+        height: 160px;
+    }
+
+    .placement-drive-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 12px 14px;
+    }
+
+    .placement-drive-name {
+        font-size: 13px;
+    }
+
+    .placement-drive-date {
+        font-size: 12px;
+    }
+
+    .activity-item {
+        padding: 20px;
+        gap: 20px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .news-grid-section {
+        padding: 40px 0;
+    }
+
+    .news-grid-title {
+        font-size: 24px;
+    }
+
+    .news-grid-subtitle {
+        font-size: 14px;
+    }
+
+    .news-card-img-wrap {
+        aspect-ratio: 16 / 10;
+    }
+
     .infrastructure-section {
         padding: 48px 0;
     }
@@ -662,6 +863,7 @@
 
     .softSkillPara,
     .whyChoosePara,
+    .videoText,
     .cta-para,
     .academicRightContent h4,
     .academicPara,
@@ -1191,6 +1393,95 @@
 }
 
 @media (max-width:546px) {
+    .ss-section {
+        padding: 40px 0;
+    }
+
+    .ss-title {
+        font-size: 24px;
+    }
+
+    .ss-card-image {
+        height: 240px;
+    }
+
+    .ss-logo-wrap {
+        max-width: 110px;
+        height: 50px;
+    }
+
+    .ss-name {
+        font-size: 14px;
+    }
+
+    .ss-quote {
+        font-size: 12px;
+    }
+
+    .awareness-section {
+        padding: 40px 0;
+    }
+
+    .awareness-page-title {
+        font-size: 22px;
+    }
+
+    .awareness-block-title {
+        font-size: 20px;
+    }
+
+    .awareness-list li,
+    .awareness-para {
+        font-size: 12px;
+    }
+
+    .awareness-download-btn {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+
+    .placement-drives-section {
+        padding: 40px 0;
+    }
+
+    .placement-drives-title {
+        font-size: 24px;
+    }
+
+    .placement-drives-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .placement-drive-img {
+        height: 200px;
+    }
+
+    .placement-drive-name {
+        font-size: 14px;
+    }
+
+    .placement-drive-date {
+        font-size: 12px;
+    }
+
+    .placement-cal-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .news-grid-header {
+        margin-bottom: 28px;
+    }
+
+    .news-grid-title {
+        font-size: 22px;
+    }
+
+    .news-card-img-wrap {
+        aspect-ratio: unset;
+    }
+
     .infrastructure-section {
         padding: 40px 0;
     }

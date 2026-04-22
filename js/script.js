@@ -830,3 +830,217 @@ document.querySelectorAll(".dropdown").forEach(function (dropdown) {
 
   loadMore();
 })();
+// ============================================================
+// Video (FIXED)
+// ============================================================
+(function () {
+  const events = [
+    {
+      title: "Legal Aid Awareness Drive",
+      date: "March 8, 2025",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "USAR – Winter Fest",
+      date: "February 15, 2025",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Republic Day Celebration",
+      date: "January 26, 2025",
+      cat: "🎭 Events & Cultural Event",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Land Celebration",
+      date: "August 15, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Diwali Celebration",
+      date: "October 31, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Parent Teacher Meeting",
+      date: "October 26, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Blood Donation Camp",
+      date: "September 27, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Health Mela",
+      date: "September 18, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Angrezon 2025 / Fresher's Welcome",
+      date: "September 2, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Orientation 2025",
+      date: "August 12, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Career Expo 2025",
+      date: "May 18, 2025",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Land Celebration",
+      date: "August 15, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Diwali Celebration",
+      date: "October 31, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Parent Teacher Meeting",
+      date: "October 26, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Blood Donation Camp",
+      date: "September 27, 2024",
+      cat: "🎭 Events & Cultural",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Health Mela",
+      date: "September 18, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Angrezon 2025 / Fresher's Welcome",
+      date: "September 2, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Orientation 2025",
+      date: "August 12, 2024",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+    {
+      title: "Career Expo 2025",
+      date: "May 18, 2025",
+      cat: "⚖️ Moot Court & Legal",
+      video: "",
+      year: "20:26",
+    },
+  ];
+
+  const PER_LOAD = 12;
+  const TOTAL = events.length;
+  let shown = 0;
+
+  const colors = [
+    { bg: "#9810FA", text: "#fff" },
+    { bg: "#014C88", text: "#fff" },
+  ];
+  const calIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" class="mr-2">
+<g clip-path="url(#clip0_2983_4968)">
+<path d="M9.5 2H2.5C1.94772 2 1.5 2.44772 1.5 3V10C1.5 10.5523 1.94772 11 2.5 11H9.5C10.0523 11 10.5 10.5523 10.5 10V3C10.5 2.44772 10.0523 2 9.5 2Z" stroke="#014C88"/>
+<path d="M8 1V3" stroke="#014C88"/>
+<path d="M4 1V3" stroke="#014C88"/>
+<path d="M1.5 5H10.5" stroke="#014C88"/>
+</g>
+<defs>
+<clipPath id="clip0_2983_4968">
+  <rect width="12" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>`;
+
+  function cardHTML(ev, idx) {
+    const colorObj = colors[Math.floor(Math.random() * colors.length)];
+
+    const bg = colorObj.bg;
+    const text = colorObj.text;
+    return `
+<div class="col-12 col-md-4 col-lg-3 d-block">
+  <div class="card-item p-0 bg-white h-100">
+    <div class="event-card ratio ratio-16x9 video-placeholder position-relative d-flex align-items-center justify-content-center border-radius-t-16 cursor-pointer"> 
+    <div class="play-button  top-50 start-50 translate-middle position-absolute d-flex align-items-center justify-content-center rounded-circle cursor-pointer">
+       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M6 3.75V14.25L14.25 9L6 3.75Z" fill="#014C88"/>
+</svg>
+    </div> 
+    <div class=""><span class="position-absolute font-poppins badge-cat fw-600" style="background:${bg}; color:${text}">${ev.cat}</span> 
+        <span class="position-absolute badge-year text-white">${ev.year}</span></div>
+</div>
+<div class="overlay p-3 d-flex flex-column gap-1 gap-md-2">
+  <p class="event-title color-4 font-poppins fw-700 mb-0">${ev.title}</p> 
+</div>
+  </div>
+</div>`;
+  }
+  function updateUI() {
+    const remaining = TOTAL - shown;
+    document.getElementById("showing-text").textContent =
+      `Showing ${shown} of ${TOTAL} videos`;
+    document.getElementById("remaining-count").textContent = remaining;
+
+    const progressBar = document.getElementById("showing-progress");
+
+    if (progressBar) {
+      let percent = (shown / TOTAL) * 100;
+      progressBar.style.width = percent + "%";
+    }
+
+    if (remaining <= 0) {
+      document.getElementById("bottom-wrap").style.display = "none";
+    }
+  }
+  function loadMore() {
+    const grid = document.getElementById("video-grid");
+    const next = events.slice(shown, shown + PER_LOAD);
+    next.forEach((ev, i) =>
+      grid.insertAdjacentHTML("beforeend", cardHTML(ev, shown + i)),
+    );
+    shown += next.length;
+    updateUI();
+  }
+
+  loadMore();
+})();
