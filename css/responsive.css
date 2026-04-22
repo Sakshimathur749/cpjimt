@@ -46,6 +46,139 @@
         padding: 11px 14px;
         font-size: 12px;
     }
+
+    /* Common */
+    .home-section-title {
+        font-size: 30px;
+    }
+
+    /* Banner */
+    .home-banner-container {
+        padding: 60px 16px 0px;
+        gap: 24px;
+    }
+
+    .home-banner-content {
+        flex: 0 0 52%;
+        max-width: 52%;
+    }
+
+    .home-banner-heading {
+        font-size: 36px;
+    }
+
+    .home-banner-images {
+        flex: 0 0 44%;
+        max-width: 44%;
+        height: 500px;
+    }
+
+    .home-banner-student-img {
+        max-height: 500px;
+    }
+
+    .home-banner-bg-layer {
+        width: 130px;
+        right: 70px;
+    }
+
+    .home-banner-stats-inner {
+        padding: 22px 16px;
+        gap: 12px;
+    }
+
+    .home-banner-stat-number {
+        font-size: 26px;
+    }
+
+    .home-banner-stat-label {
+        font-size: 12px;
+    }
+
+    /* Programs Offered */
+    .programs-offered-section {
+        padding: 56px 0px;
+    }
+
+    .programs-offered-grid {
+        gap: 20px;
+    }
+
+    /* Why Love */
+    .why-love-section {
+        padding-bottom: 56px;
+    }
+
+    .why-love-card {
+        padding: 28px 20px;
+    }
+
+    /* Placements */
+    .home-placements-section {
+        padding: 80px 0;
+    }
+
+    .home-placements-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0;
+    }
+
+    .home-stat-item {
+        padding: 15px;
+    }
+
+    .home-stat-divider {
+        height: 70px;
+    }
+
+    .home-stat-item:nth-child(2) .home-stat-divider,
+    .home-stat-item:nth-child(4) .home-stat-divider {
+        display: none;
+    }
+
+    .home-stat-number {
+        font-size: 42px;
+    }
+
+    .home-stat-label {
+        font-size: 15px;
+    }
+
+    /* Gallery */
+    .student-life-section {
+        padding: 56px 0;
+    }
+
+    .gallery-img {
+        height: 180px;
+    }
+
+    .gallery-item:nth-child(n + 8) .gallery-img {
+        height: 200px;
+    }
+
+    /* Testimonial */
+    .home-testimonial-section {
+        padding: 64px 0;
+    }
+
+    .home-testimonial-card {
+        padding: 28px 24px 22px;
+    }
+
+    /* FAQ */
+    .home-faq-section {
+        padding: 64px 0;
+    }
+
+    .home-faq-btn.accordion-button {
+        font-size: 14px !important;
+        padding: 18px 20px !important;
+    }
+
+    .home-faq-body.accordion-body {
+        padding: 0 20px 18px !important;
+    }
 }
 
 @media (max-width: 769px) {
@@ -343,6 +476,260 @@
     .btn-load-more {
         padding: 10px 36px;
     }
+
+    /* Common */
+    .home-section-title {
+        font-size: 26px;
+    }
+
+    /* Banner */
+    .home-banner-section {
+        min-height: auto;
+    }
+
+    .home-banner-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 48px 16px 48px;
+        gap: 32px;
+    }
+
+    .home-banner-content {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        gap: 16px;
+        padding-bottom: 60px !important;
+    }
+
+    .home-banner-heading {
+        font-size: 32px;
+    }
+
+    .home-banner-desc {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .home-banner-images {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+        height: 280px;
+        justify-content: center;
+    }
+
+    .home-banner-student-img {
+        max-height: 280px;
+    }
+
+    .home-banner-bg-layer {
+        width: 110px;
+        right: 0;
+        top: 5px;
+    }
+
+    .home-banner-stats-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        padding: 20px 16px;
+    }
+
+    .home-banner-stat-item {
+        flex: 0 0 calc(33.33% - 2px);
+        padding: 16px 8px;
+        text-align: center;
+        align-items: center;
+        min-height: 106px;
+    }
+
+    .home-banner-stat-divider {
+        display: none;
+    }
+
+    .home-banner-stat-number {
+        font-size: 28px;
+    }
+
+    .home-banner-stat-label {
+        font-size: 12px;
+    }
+
+    /* Programs Offered */
+    .programs-offered-section {
+        padding: 48px 0px;
+    }
+
+    .programs-offered-card-body {
+        padding: 16px;
+    }
+
+    .programs-offered-card-title {
+        font-size: 16px;
+    }
+
+    .programs-offered-header {
+        margin-bottom: 32px;
+    }
+
+    .programs-offered-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Why Love */
+    .why-love-section {
+        padding-bottom: 48px;
+    }
+
+    .why-love-header {
+        margin-bottom: 32px;
+    }
+
+    .why-love-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-love-card {
+        padding: 24px 18px;
+        gap: 16px;
+    }
+
+    .why-love-card-title {
+        font-size: 15px;
+    }
+
+    /* Placements */
+    .home-placements-section {
+        padding: 60px 0;
+        background-attachment: scroll;
+    }
+
+    .home-placements-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .home-placements-subtitle {
+        font-size: 13px;
+    }
+
+    .home-placements-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px 0;
+    }
+
+    .home-stat-item {
+        padding: 12px;
+    }
+
+    .home-stat-divider {
+        height: 60px;
+    }
+
+    .home-stat-number {
+        font-size: 36px;
+    }
+
+    .home-stat-label {
+        font-size: 14px;
+    }
+
+    /* Recruiters */
+    .home-recruiters-grid {
+        gap: 10px;
+    }
+
+    .home-recruiter-card {
+        min-width: 140px;
+    }
+
+    /* Gallery */
+    .student-life-section {
+        padding: 48px 0;
+    }
+
+    .student-life-header {
+        margin-bottom: 28px;
+    }
+
+    .student-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8),
+    .gallery-item:nth-child(9),
+    .gallery-item:nth-child(10) {
+        grid-column: span 1;
+    }
+
+    .gallery-img,
+    .gallery-item:nth-child(n + 8) .gallery-img {
+        height: 180px;
+    }
+
+    /* Testimonial */
+    .home-testimonial-section {
+        padding: 48px 0;
+    }
+
+    .home-testimonial-header {
+        margin-bottom: 32px;
+    }
+
+    .home-testimonial-quotes-img {
+        width: 120px;
+    }
+
+    .home-testimonial-card {
+        padding: 24px 20px 20px;
+        gap: 20px;
+    }
+
+    .home-testimonial-text {
+        font-size: 14px;
+    }
+
+    /* FAQ */
+    .home-faq-section {
+        padding: 48px 0;
+    }
+
+    .home-faq-header {
+        margin-bottom: 32px;
+    }
+
+    .home-faq-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .home-faq-col:first-child {
+        margin-bottom: 16px;
+    }
+
+    .gallery-modal-content {
+        margin: 0 12px;
+        max-height: 280px;
+    }
+
+    .gallery-modal-img {
+        height: 280px;
+    }
+
+    .gallery-modal-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
 }
 
 @media (max-width:546px) {
@@ -409,6 +796,196 @@
     .gf-submit {
         width: 100%;
         padding: 12px;
+    }
+
+    /* Common */
+    .home-section-title {
+        font-size: 22px;
+    }
+
+    /* Banner */
+    .home-banner-container {
+        padding: 66px 16px 36px;
+        gap: 24px;
+    }
+
+    .home-banner-heading {
+        font-size: 30px;
+    }
+
+    .home-banner-tag {
+        font-size: 11px;
+    }
+
+    .home-banner-desc {
+        font-size: 13px;
+    }
+
+    .home-banner-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .home-banner-images {
+        height: 220px;
+    }
+
+    .home-banner-student-img {
+        max-height: 220px;
+    }
+
+    .home-banner-bg-layer {
+        width: 90px;
+    }
+
+    .home-banner-stat-item {
+        flex: 0 0 50%;
+    }
+
+    /* Programs Offered */
+    .programs-offered-section {
+        padding: 40px 0px;
+    }
+
+    .programs-offered-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* Why Love */
+    .why-love-section {
+        padding-bottom: 40px;
+    }
+
+    .why-love-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-love-card {
+        padding: 20px 14px;
+        gap: 14px;
+    }
+
+    .why-love-icon-wrap {
+        width: 38px;
+        height: 38px;
+    }
+
+    .why-love-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .why-love-card-title {
+        font-size: 13px;
+    }
+
+    /* Placements */
+    .home-placements-section {
+        padding: 50px 0;
+    }
+
+    .home-placements-title {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .home-placements-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 0;
+    }
+
+    .home-stat-item {
+        padding: 10px;
+    }
+
+    .home-stat-divider {
+        display: none;
+    }
+
+    .home-stat-number {
+        font-size: 32px;
+    }
+
+    .home-stat-label {
+        font-size: 13px;
+    }
+
+    /* Gallery */
+    .student-life-section {
+        padding: 40px 0;
+    }
+
+    .student-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .gallery-img,
+    .gallery-item:nth-child(n + 8) .gallery-img {
+        height: 140px;
+    }
+
+    /* Testimonial */
+    .home-testimonial-section {
+        padding: 40px 0;
+    }
+
+    .home-testimonial-quotes-bg {
+        top: 20px;
+        left: 16px;
+    }
+
+    .home-testimonial-quotes-img {
+        width: 90px;
+    }
+
+    .home-testimonial-card {
+        padding: 20px 16px 18px;
+        gap: 18px;
+    }
+
+    .home-testimonial-text {
+        font-size: 13px;
+    }
+
+    .home-testimonial-avatar {
+        width: 44px;
+        height: 44px;
+    }
+
+    .home-testimonial-name {
+        font-size: 14px;
+    }
+
+    /* FAQ */
+    .home-faq-section {
+        padding: 40px 0;
+    }
+
+    .home-faq-btn.accordion-button {
+        font-size: 13px !important;
+        padding: 16px !important;
+    }
+
+    .home-faq-body.accordion-body {
+        font-size: 12px !important;
+        padding: 0 16px 16px !important;
+    }
+
+    .gallery-modal-content {
+        margin: 0 8px;
+        max-height: 220px;
+    }
+
+    .gallery-modal-img {
+        height: 220px;
+    }
+
+    .gallery-modal-nav {
+        width: 34px;
+        height: 34px;
+        font-size: 24px;
     }
 }
 
