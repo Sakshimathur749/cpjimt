@@ -4335,3 +4335,26 @@ body {
 }
 
 /* Footer */
+.contact-icon {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.contact-contactTitle {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contactTitle {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+}
